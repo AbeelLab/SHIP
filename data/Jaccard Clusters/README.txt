@@ -1,0 +1,1 @@
+This folder should contain the clustering output from cluster_plasmids.py.
