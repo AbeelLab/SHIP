@@ -5,12 +5,18 @@ import yaml
 import pandas as pd
 from Bio.SeqIO import parse
 import numpy as np
+import os
 
 if __name__ == '__main__':
-    with open('./configs/data_config.yaml', 'r') as config_file:
+    with open('configs/data_config.yaml', 'r') as config_file:
         config = yaml.load(config_file, Loader=yaml.Loader)
 
-    with open(config['paths']['genbank_summary']) as instream:
+    with open(
+        os.path.join(
+            config['paths']['plasmids_gb'],
+            'concat_features.gb'
+        )
+    ) as instream:
         for n, plasmid in enumerate(parse(instream, 'genbank')):
             species = ' '.join(plasmid.description.split(' ')[:2])
             strain = plasmid.description.split('plasmid')[0].split(' ')[-2]
