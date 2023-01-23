@@ -1,0 +1,118 @@
+[11:02:51] This is prokka 1.12
+[11:02:51] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[11:02:51] Homepage is https://github.com/tseemann/prokka
+[11:02:51] Local time is Mon Jan 23 11:02:51 2023
+[11:02:51] You are marcoat
+[11:02:51] Operating system is linux
+[11:02:51] You have BioPerl 1.7.8
+[11:02:51] System has 10 cores.
+[11:02:51] Will use maximum of 8 cores.
+[11:02:51] Annotating as >>> Bacteria <<<
+[11:02:51] Generating locus_tag from 'data/Plasmid FASTA/E_coli/NZ_AF313472.fa' contents.
+[11:02:51] Setting --locustag HMKDGAKJ from MD5 164d0a433a95aab2b240d3d62b97d9f5
+[11:02:51] Creating new output folder: data/Annotations/E_coli/NZ_AF313472
+[11:02:51] Running: mkdir -p data\/Annotations\/E_coli\/NZ_AF313472
+[11:02:51] Using filename prefix: PROKKA_01232023.XXX
+[11:02:51] Setting HMMER_NCPU=1
+[11:02:51] Writing log to: data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.log
+[11:02:51] Command: /home/marcoat/anaconda3/envs/prokka/bin/prokka --outdir data/Annotations/E_coli/NZ_AF313472 --proteins data/Plasmid_Protein_Database/proteins.faa data/Plasmid FASTA/E_coli/NZ_AF313472.fa
+[11:02:51] Appending to PATH: /home/marcoat/anaconda3/envs/prokka/bin
+[11:02:51] Looking for 'aragorn' - found /home/marcoat/anaconda3/envs/prokka/bin/aragorn
+[11:02:51] Determined aragorn version is 1.2
+[11:02:51] Looking for 'barrnap' - found /home/marcoat/anaconda3/envs/prokka/bin/barrnap
+[11:02:51] Determined barrnap version is 0.9
+[11:02:51] Looking for 'blastp' - found /home/marcoat/anaconda3/envs/prokka/bin/blastp
+[11:02:51] Determined blastp version is 2.13
+[11:02:51] Looking for 'cmpress' - found /home/marcoat/anaconda3/envs/prokka/bin/cmpress
+[11:02:51] Determined cmpress version is 1.1
+[11:02:51] Looking for 'cmscan' - found /home/marcoat/anaconda3/envs/prokka/bin/cmscan
+[11:02:51] Determined cmscan version is 1.1
+[11:02:51] Looking for 'egrep' - found /usr/bin/egrep
+[11:02:51] Looking for 'find' - found /usr/bin/find
+[11:02:51] Looking for 'grep' - found /usr/bin/grep
+[11:02:51] Looking for 'hmmpress' - found /home/marcoat/anaconda3/envs/prokka/bin/hmmpress
+[11:02:51] Determined hmmpress version is 3.3
+[11:02:51] Looking for 'hmmscan' - found /home/marcoat/anaconda3/envs/prokka/bin/hmmscan
+[11:02:51] Determined hmmscan version is 3.3
+[11:02:51] Looking for 'java' - found /home/marcoat/anaconda3/envs/prokka/bin/java
+[11:02:51] Looking for 'less' - found /usr/bin/less
+[11:02:51] Looking for 'makeblastdb' - found /home/marcoat/anaconda3/envs/prokka/bin/makeblastdb
+[11:02:51] Determined makeblastdb version is 2.13
+[11:02:51] Looking for 'minced' - found /home/marcoat/anaconda3/envs/prokka/bin/minced
+[11:02:51] Determined minced version is 4.2
+[11:02:51] Looking for 'parallel' - found /home/marcoat/anaconda3/envs/prokka/bin/parallel
+[11:02:51] Determined parallel version is 20220722
+[11:02:51] Looking for 'prodigal' - found /home/marcoat/anaconda3/envs/prokka/bin/prodigal
+[11:02:51] Determined prodigal version is 2.6
+[11:02:51] Looking for 'prokka-genbank_to_fasta_db' - found /home/marcoat/anaconda3/envs/prokka/bin/prokka-genbank_to_fasta_db
+[11:02:51] Looking for 'sed' - found /usr/bin/sed
+[11:02:51] Looking for 'tbl2asn' - found /home/marcoat/anaconda3/envs/prokka/bin/tbl2asn
+[11:02:51] Determined tbl2asn version is 25.8
+[11:02:51] Using genetic code table 11.
+[11:02:51] Loading and checking input file: data/Plasmid FASTA/E_coli/NZ_AF313472.fa
+[11:02:51] Wrote 1 contigs totalling 19630 bp.
+[11:02:51] Predicting tRNAs and tmRNAs
+[11:02:51] Running: aragorn -l -gc11  -w data\/Annotations\/E_coli\/NZ_AF313472\/PROKKA_01232023\.fna
+[11:02:51] Found 0 tRNAs
+[11:02:51] Predicting Ribosomal RNAs
+[11:02:51] Running Barrnap with 8 threads
+[11:02:51] Found 0 rRNAs
+[11:02:51] Skipping ncRNA search, enable with --rfam if desired.
+[11:02:51] Total of 0 tRNA + rRNA features
+[11:02:51] Searching for CRISPR repeats
+[11:02:52] Found 0 CRISPRs
+[11:02:52] Predicting coding sequences
+[11:02:52] Contigs total 19630 bp, so using meta mode
+[11:02:52] Running: prodigal -i data\/Annotations\/E_coli\/NZ_AF313472\/PROKKA_01232023\.fna -c -m -g 11 -p meta -f sco -q
+[11:02:52] Found 16 CDS
+[11:02:52] Connecting features back to sequences
+[11:02:52] Not using genus-specific database. Try --usegenus to enable it.
+[11:02:52] Preparing user-supplied primary BLAST annotation source: data/Plasmid_Protein_Database/proteins.faa
+[11:02:52] Guessed source was in fasta format.
+[11:02:52] Running: makeblastdb -dbtype prot -in data\/Plasmid_Protein_Database\/proteins\.faa -out data\/Annotations\/E_coli\/NZ_AF313472\/proteins -logfile /dev/null
+[11:03:22] Using /inference source as 'proteins.faa'
+[11:03:22] Annotating CDS, please be patient.
+[11:03:22] Will use 8 CPUs for similarity searching.
+[11:03:22] There are still 16 unannotated CDS left (started with 16)
+[11:03:22] Will use blast to search against data/Annotations/E_coli/NZ_AF313472/proteins with 8 CPUs
+[11:03:22] Running: cat data\/Annotations\/E_coli\/NZ_AF313472\/proteins\.faa | parallel --gnu --plain -j 8 --block 356 --recstart '>' --pipe blastp -query - -db data/Annotations/E_coli/NZ_AF313472/proteins -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > data\/Annotations\/E_coli\/NZ_AF313472\/proteins\.blast 2> /dev/null
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/proteins.faa
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/proteins.blast
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/proteins.psq
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/proteins.phr
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/proteins.pin
+[11:04:02] Found 2 unique /gene codes.
+[11:04:02] Fixed 0 colliding /gene names.
+[11:04:02] Adding /locus_tag identifiers
+[11:04:02] Assigned 16 locus_tags to CDS and RNA features.
+[11:04:02] Writing outputs to data/Annotations/E_coli/NZ_AF313472/
+[11:04:02] Generating annotation statistics file
+[11:04:02] Generating Genbank and Sequin files
+[11:04:02] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.12 from https://github.com/tseemann/prokka' -Z data\/Annotations\/E_coli\/NZ_AF313472\/PROKKA_01232023\.err -i data\/Annotations\/E_coli\/NZ_AF313472\/PROKKA_01232023\.fsa 2> /dev/null
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/errorsummary.val
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.dr
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.fixedproducts
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.ecn
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.val
+[11:04:02] Repairing broken .GBK output that tbl2asn produces...
+[11:04:02] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < data\/Annotations\/E_coli\/NZ_AF313472\/PROKKA_01232023\.gbf > data\/Annotations\/E_coli\/NZ_AF313472\/PROKKA_01232023\.gbk
+[11:04:02] Deleting unwanted file: data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.gbf
+[11:04:02] Output files:
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.sqn
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.tbl
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.fsa
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.ffn
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.txt
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.fna
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.gbk
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.tsv
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.gff
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.err
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.faa
+[11:04:02] data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023.log
+[11:04:02] Annotation finished successfully.
+[11:04:02] Walltime used: 1.18 minutes
+[11:04:02] If you use this result please cite the Prokka paper:
+[11:04:02] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[11:04:02] Type 'prokka --citation' for more details.
+[11:04:02] Share and enjoy!

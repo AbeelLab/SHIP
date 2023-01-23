@@ -1,0 +1,137 @@
+Discrepancy Report Results
+
+Summary
+FATAL: MISSING_PROTEIN_ID:16 proteins have invalid IDs.
+DISC_SOURCE_QUALS_ASNDISC:strain (all present, all unique)
+DISC_SOURCE_QUALS_ASNDISC:taxname (all present, all unique)
+DISC_FEATURE_COUNT:CDS: 16 present
+DISC_COUNT_NUCLEOTIDES:1 nucleotide Bioseqs are present
+FEATURE_LOCATION_CONFLICT:16 features have inconsistent gene locations.
+DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
+ONCALLER_COMMENT_PRESENT:1 comment descriptors were found (all same)
+MISSING_GENOMEASSEMBLY_COMMENTS:1 bioseqs are missing GenomeAssembly structured comments
+MOLTYPE_NOT_MRNA:1 molecule types are not set as mRNA.
+TECHNIQUE_NOT_TSA:1 technique are not set as TSA
+MISSING_STRUCTURED_COMMENT:1 sequences do not include structured comments.
+MISSING_PROJECT:17 sequences do not include project.
+DISC_INCONSISTENT_MOLINFO_TECH:Molinfo Technique Report (some missing, all same)
+
+
+Detailed Report
+
+FATAL: DiscRep_ALL:MISSING_PROTEIN_ID::16 proteins have invalid IDs.
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_1 (length 988)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_2 (length 186)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_3 (length 337)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_4 (length 304)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_5 (length 419)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_6 (length 259)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_7 (length 117)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_8 (length 254)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_9 (length 495)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_10 (length 961)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_11 (length 204)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_12 (length 139)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_13 (length 278)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_14 (length 247)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_15 (length 119)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_16 (length 320)
+
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::strain (all present, all unique)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::1 sources have unique values for strain
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::taxname (all present, all unique)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::1 sources have unique values for taxname
+DiscRep_ALL:DISC_FEATURE_COUNT::CDS: 16 present
+DiscRep_ALL:DISC_COUNT_NUCLEOTIDES::1 nucleotide Bioseqs are present
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1 (length 19630)
+
+DiscRep_ALL:FEATURE_LOCATION_CONFLICT::16 features have inconsistent gene locations.
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	Tn3 family transposase	NZ_AF313472.1:c3000-34	HMKDGAKJ_00001
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	recombinase family protein	NZ_AF313472.1:c3564-3004	HMKDGAKJ_00002
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	class 1 integron integrase IntI1	NZ_AF313472.1:c4952-3939	HMKDGAKJ_00003
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	PSE family carbenicillin-hydrolyzing class A beta-lactamase CARB-2	NZ_AF313472.1:5110-6024	HMKDGAKJ_00004
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	chloramphenicol efflux MFS transporter CmlA6	NZ_AF313472.1:6339-7598	HMKDGAKJ_00005
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1	NZ_AF313472.1:7703-8482	HMKDGAKJ_00006
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	quaternary ammonium compound efflux SMR transporter QacE delta 1	NZ_AF313472.1:8646-8999	HMKDGAKJ_00007
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	IS6-like element IS6100 family transposase	NZ_AF313472.1:9032-9796	HMKDGAKJ_00008
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	SulP family inorganic anion transporter	NZ_AF313472.1:10353-11840	HMKDGAKJ_00009
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	Tn3 family transposase	NZ_AF313472.1:c14788-11903	HMKDGAKJ_00010
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	recombinase family protein	NZ_AF313472.1:14914-15528	HMKDGAKJ_00011
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	APH(3'') family aminoglycoside O-phosphotransferase	NZ_AF313472.1:15978-16397	HMKDGAKJ_00012
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	aminoglycoside O-phosphotransferase APH(6)-Id	NZ_AF313472.1:16397-17233	HMKDGAKJ_00013
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	universal stress protein	NZ_AF313472.1:17438-18181	HMKDGAKJ_00014
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	TraR/DksA family transcriptional regulator	NZ_AF313472.1:18181-18540	HMKDGAKJ_00015
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:CDS	SdiA-regulated domain-containing protein	NZ_AF313472.1:18586-19548	HMKDGAKJ_00016
+
+DiscRep_ALL:DISC_QUALITY_SCORES::Quality scores are missing on all sequences.
+
+DiscRep_ALL:ONCALLER_COMMENT_PRESENT::1 comment descriptors were found (all same)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1:Annotated using prokka 1.12 from https://github.com/tseemann/prokka
+
+DiscRep_ALL:MISSING_GENOMEASSEMBLY_COMMENTS::1 bioseqs are missing GenomeAssembly structured comments
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1 (length 19630)
+
+DiscRep_ALL:MOLTYPE_NOT_MRNA::1 molecule types are not set as mRNA.
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1 (length 19630)
+
+DiscRep_ALL:TECHNIQUE_NOT_TSA::1 technique are not set as TSA
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1 (length 19630)
+
+DiscRep_ALL:MISSING_STRUCTURED_COMMENT::1 sequences do not include structured comments.
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1 (length 19630)
+
+DiscRep_ALL:MISSING_PROJECT::17 sequences do not include project.
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1 (length 19630)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_1 (length 988)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_2 (length 186)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_3 (length 337)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_4 (length 304)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_5 (length 419)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_6 (length 259)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_7 (length 117)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_8 (length 254)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_9 (length 495)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_10 (length 961)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_11 (length 204)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_12 (length 139)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_13 (length 278)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_14 (length 247)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_15 (length 119)
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1_16 (length 320)
+
+DiscRep_ALL:DISC_INCONSISTENT_MOLINFO_TECH::Molinfo Technique Report (some missing, all same)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::technique (all missing)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::1 Molinfos are missing field technique
+data/Annotations/E_coli/NZ_AF313472/PROKKA_01232023:NZ_AF313472.1 (length 19630)
+

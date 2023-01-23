@@ -1,0 +1,83 @@
+>Feature NZ_AF313472.1
+3000	34	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_003090772.1
+			locus_tag	HMKDGAKJ_00001
+			product	Tn3 family transposase
+3564	3004	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_003090771.1
+			locus_tag	HMKDGAKJ_00002
+			product	recombinase family protein
+4952	3939	CDS
+			gene	intI1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_000845048.1
+			locus_tag	HMKDGAKJ_00003
+			product	class 1 integron integrase IntI1
+5110	6024	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_001931474.1
+			locus_tag	HMKDGAKJ_00004
+			product	PSE family carbenicillin-hydrolyzing class A beta-lactamase CARB-2
+6339	7598	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_001256773.1
+			locus_tag	HMKDGAKJ_00005
+			product	chloramphenicol efflux MFS transporter CmlA6
+7703	8482	CDS
+			gene	aadA1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_001209508.1
+			locus_tag	HMKDGAKJ_00006
+			product	ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA1
+8646	8999	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_000679427.1
+			locus_tag	HMKDGAKJ_00007
+			product	quaternary ammonium compound efflux SMR transporter QacE delta 1
+9032	9796	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_001389365.1
+			locus_tag	HMKDGAKJ_00008
+			product	IS6-like element IS6100 family transposase
+10353	11840	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_003090759.1
+			locus_tag	HMKDGAKJ_00009
+			product	SulP family inorganic anion transporter
+14788	11903	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_010794533.1
+			locus_tag	HMKDGAKJ_00010
+			product	Tn3 family transposase
+14914	15528	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_000904906.1
+			locus_tag	HMKDGAKJ_00011
+			product	recombinase family protein
+15978	16397	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_001145207.1
+			locus_tag	HMKDGAKJ_00012
+			product	APH(3'') family aminoglycoside O-phosphotransferase
+16397	17233	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_000480968.1
+			locus_tag	HMKDGAKJ_00013
+			product	aminoglycoside O-phosphotransferase APH(6)-Id
+17438	18181	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_003090760.1
+			locus_tag	HMKDGAKJ_00014
+			product	universal stress protein
+18181	18540	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_003090764.1
+			locus_tag	HMKDGAKJ_00015
+			product	TraR/DksA family transcriptional regulator
+18586	19548	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:proteins.faa:WP_010794530.1
+			locus_tag	HMKDGAKJ_00016
+			product	SdiA-regulated domain-containing protein
