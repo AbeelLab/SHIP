@@ -1,3 +1,4 @@
+#%%
 '''
 Obtains the plasmid gene sequence with homolog cluster representatives.
 '''
@@ -40,6 +41,11 @@ if __name__ == '__main__':
         prot_clust.get_raw_proteins(accessions)
     )
     prot_clust.clustered_proteins_to_tsv(
-        config['paths']['plasmids']
+        os.path.join(
+            config['paths']['plasmids'],
+            'Plasmids with Clustered Proteins_s9_k5'
+        )
     )
 
+
+# %%
