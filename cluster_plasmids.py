@@ -26,14 +26,13 @@ args = parser.parse_args()
 
 if __name__ == '__main__':
     LOAD = args.load
-    with open('./configs/clustering_config.yaml', 'r') as config_file:
+    with open('configs/clustering_config.yaml', 'r') as config_file:
         config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('./configs/data_config.yaml', 'r') as config_file:
+    with open('configs/data_config.yaml', 'r') as config_file:
         data_config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('./configs/phylo_config.yaml', 'r') as config_file:
+    with open('configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
 
-    #%%
     if not LOAD:
         timestamp = datetime.datetime.now().strftime('%d-%b-%Y__%H-%M-%S')
         write_dir = os.path.join(

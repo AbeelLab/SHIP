@@ -9,3 +9,6 @@ python make_plasmid_info_df.py
 python find_amr.py
 # Join outputs into a DataFrame
 python make_amrfinder_df.py
+# Cluster homolog proteins
+python homolog_clustering.py
+python replace_with_homologs.py
