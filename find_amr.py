@@ -27,6 +27,12 @@ if __name__ == "__main__":
                         os.path.join(
                             config['paths']['amrfinder_output'],
                             xx.split('.')[0]+'.txt'
+                        ),
+                        '--log',
+                        os.path.join(
+                            config['paths']['amrfinder_output'],
+                            'Logs',
+                            'Logfile_'+xx.split('.')[0]+'.err'
                         )
                     ]
                 )

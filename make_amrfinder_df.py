@@ -7,7 +7,7 @@ import pandas as pd
 import os
 import yaml
 
-if __name__ == 'main':
+if __name__ == '__main__':
     with open('configs/data_config.yaml', 'r') as config_file:
         config = yaml.load(config_file, Loader=yaml.Loader)
 
@@ -19,16 +19,25 @@ if __name__ == 'main':
     )
     files = [x for x in os.walk(config['paths']['amrfinder_output'])][0][2]
 
+    individual_df = []
+    for filename in files:
+        if filename.endswith('.txt'):
+            try:
+                individual_df.append(
+                    pd.read_csv(
+                        os.path.join(
+                            config['paths']['amrfinder_output'],
+                            filename
+                        ),
+                        sep = '\t'
+                    )
+                )
+            except pd.errors.EmptyDataError:
+                pass  
     amr_df = pd.concat(
         [
-            pd.read_csv(
-                os.path.join(
-                    config['paths']['amrfinder_output'],
-                    filename
-                ),
-                sep = '\t'
-            )
-            for filename in files
+            df
+            for df in individual_df
         ]
     ).drop(
         [
@@ -45,12 +54,14 @@ if __name__ == 'main':
     )
 
     # Drop indices not in the info DataFrame
+    
     amr_df.drop(
         set(
             amr_df.index.get_level_values('Contig id')
         ).difference(info.index),
         inplace = True
     )
+    
 
     # Join the two dataframes. This is weird because amr_df has a pair of
     # primary keys

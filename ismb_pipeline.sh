@@ -7,3 +7,5 @@ python annotate.py --build
 python make_plasmid_info_df.py
 # Find AMR genes with AMRFinder+
 python find_amr.py
+# Join outputs into a DataFrame
+python make_amrfinder_df.py

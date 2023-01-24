@@ -1,0 +1,125 @@
+[11:24:49] This is prokka 1.12
+[11:24:49] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[11:24:49] Homepage is https://github.com/tseemann/prokka
+[11:24:49] Local time is Tue Jan 24 11:24:49 2023
+[11:24:49] You are marcoat
+[11:24:49] Operating system is linux
+[11:24:49] You have BioPerl 1.7.8
+[11:24:49] System has 10 cores.
+[11:24:49] Will use maximum of 8 cores.
+[11:24:49] Annotating as >>> Bacteria <<<
+[11:24:49] Generating locus_tag from 'data/Plasmid FASTA/A_baumannii/NZ_AP025271.fa' contents.
+[11:24:49] Setting --locustag HJDKBCLM from MD5 13d4bc569e4b48fdf7baf11c38e1e0f7
+[11:24:49] Creating new output folder: data/Annotations/A_baumannii/NZ_AP025271
+[11:24:49] Running: mkdir -p data\/Annotations\/A_baumannii\/NZ_AP025271
+[11:24:49] Using filename prefix: PROKKA_01242023.XXX
+[11:24:49] Setting HMMER_NCPU=1
+[11:24:49] Writing log to: data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.log
+[11:24:49] Command: /home/marcoat/anaconda3/envs/prokka/bin/prokka --outdir data/Annotations/A_baumannii/NZ_AP025271 --proteins data/Plasmid_Protein_Database/proteins.faa data/Plasmid FASTA/A_baumannii/NZ_AP025271.fa
+[11:24:49] Appending to PATH: /home/marcoat/anaconda3/envs/prokka/bin
+[11:24:49] Looking for 'aragorn' - found /home/marcoat/anaconda3/envs/prokka/bin/aragorn
+[11:24:49] Determined aragorn version is 1.2
+[11:24:49] Looking for 'barrnap' - found /home/marcoat/anaconda3/envs/prokka/bin/barrnap
+[11:24:49] Determined barrnap version is 0.9
+[11:24:49] Looking for 'blastp' - found /home/marcoat/anaconda3/envs/prokka/bin/blastp
+[11:24:49] Determined blastp version is 2.13
+[11:24:49] Looking for 'cmpress' - found /home/marcoat/anaconda3/envs/prokka/bin/cmpress
+[11:24:49] Determined cmpress version is 1.1
+[11:24:49] Looking for 'cmscan' - found /home/marcoat/anaconda3/envs/prokka/bin/cmscan
+[11:24:49] Determined cmscan version is 1.1
+[11:24:49] Looking for 'egrep' - found /usr/bin/egrep
+[11:24:49] Looking for 'find' - found /usr/bin/find
+[11:24:49] Looking for 'grep' - found /usr/bin/grep
+[11:24:49] Looking for 'hmmpress' - found /home/marcoat/anaconda3/envs/prokka/bin/hmmpress
+[11:24:49] Determined hmmpress version is 3.3
+[11:24:49] Looking for 'hmmscan' - found /home/marcoat/anaconda3/envs/prokka/bin/hmmscan
+[11:24:49] Determined hmmscan version is 3.3
+[11:24:49] Looking for 'java' - found /home/marcoat/anaconda3/envs/prokka/bin/java
+[11:24:49] Looking for 'less' - found /usr/bin/less
+[11:24:49] Looking for 'makeblastdb' - found /home/marcoat/anaconda3/envs/prokka/bin/makeblastdb
+[11:24:49] Determined makeblastdb version is 2.13
+[11:24:49] Looking for 'minced' - found /home/marcoat/anaconda3/envs/prokka/bin/minced
+[11:24:49] Determined minced version is 4.2
+[11:24:49] Looking for 'parallel' - found /home/marcoat/anaconda3/envs/prokka/bin/parallel
+[11:24:49] Determined parallel version is 20220722
+[11:24:49] Looking for 'prodigal' - found /home/marcoat/anaconda3/envs/prokka/bin/prodigal
+[11:24:49] Determined prodigal version is 2.6
+[11:24:49] Looking for 'prokka-genbank_to_fasta_db' - found /home/marcoat/anaconda3/envs/prokka/bin/prokka-genbank_to_fasta_db
+[11:24:49] Looking for 'sed' - found /usr/bin/sed
+[11:24:49] Looking for 'tbl2asn' - found /home/marcoat/anaconda3/envs/prokka/bin/tbl2asn
+[11:24:49] Determined tbl2asn version is 25.8
+[11:24:49] Using genetic code table 11.
+[11:24:49] Loading and checking input file: data/Plasmid FASTA/A_baumannii/NZ_AP025271.fa
+[11:24:49] Wrote 1 contigs totalling 64595 bp.
+[11:24:49] Predicting tRNAs and tmRNAs
+[11:24:49] Running: aragorn -l -gc11  -w data\/Annotations\/A_baumannii\/NZ_AP025271\/PROKKA_01242023\.fna
+[11:24:49] Found 0 tRNAs
+[11:24:49] Predicting Ribosomal RNAs
+[11:24:49] Running Barrnap with 8 threads
+[11:24:49] Found 0 rRNAs
+[11:24:49] Skipping ncRNA search, enable with --rfam if desired.
+[11:24:49] Total of 0 tRNA + rRNA features
+[11:24:49] Searching for CRISPR repeats
+[11:24:49] Found 0 CRISPRs
+[11:24:49] Predicting coding sequences
+[11:24:49] Contigs total 64595 bp, so using meta mode
+[11:24:49] Running: prodigal -i data\/Annotations\/A_baumannii\/NZ_AP025271\/PROKKA_01242023\.fna -c -m -g 11 -p meta -f sco -q
+[11:24:49] Found 63 CDS
+[11:24:49] Connecting features back to sequences
+[11:24:49] Not using genus-specific database. Try --usegenus to enable it.
+[11:24:49] Annotating CDS, please be patient.
+[11:24:49] Will use 8 CPUs for similarity searching.
+[11:24:49] There are still 63 unannotated CDS left (started with 63)
+[11:24:49] Will use blast to search against /home/marcoat/anaconda3/envs/prokka/bin/../db/kingdom/Bacteria/sprot with 8 CPUs
+[11:24:49] Running: cat data\/Annotations\/A_baumannii\/NZ_AP025271\/sprot\.faa | parallel --gnu --plain -j 8 --block 968 --recstart '>' --pipe blastp -query - -db /home/marcoat/anaconda3/envs/prokka/bin/../db/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > data\/Annotations\/A_baumannii\/NZ_AP025271\/sprot\.blast 2> /dev/null
+[11:24:50] Modify product: Uncharacterized lipoprotein YcdA => putative lipoprotein YcdA
+[11:24:50] Modify product: N-acetylmuramoyl-L-alanine amidase domain-containing protein SAOUHSC_02979 => N-acetylmuramoyl-L-alanine amidase domain-containing protein
+[11:24:50] Cleaned 2 /product names
+[11:24:50] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/sprot.faa
+[11:24:50] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/sprot.blast
+[11:24:50] There are still 38 unannotated CDS left (started with 63)
+[11:24:50] Will use hmmer3 to search against /home/marcoat/anaconda3/envs/prokka/bin/../db/hmm/HAMAP.hmm with 8 CPUs
+[11:24:50] Running: cat data\/Annotations\/A_baumannii\/NZ_AP025271\/HAMAP\.hmm\.faa | parallel --gnu --plain -j 8 --block 404 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 /home/marcoat/anaconda3/envs/prokka/bin/../db/hmm/HAMAP.hmm /dev/stdin > data\/Annotations\/A_baumannii\/NZ_AP025271\/HAMAP\.hmm\.hmmer3 2> /dev/null
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/HAMAP.hmm.faa
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/HAMAP.hmm.hmmer3
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/proteins.psq
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/proteins.phr
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/proteins.pin
+[11:24:51] Labelling remaining 38 proteins as 'hypothetical protein'
+[11:24:51] Found 20 unique /gene codes.
+[11:24:51] Fixed 2 duplicate /gene - ebh_1 ebh_2
+[11:24:51] Fixed 3 duplicate /gene - prgT_1 prgT_2 prgT_3
+[11:24:51] Fixed 2 colliding /gene names.
+[11:24:51] Adding /locus_tag identifiers
+[11:24:51] Assigned 63 locus_tags to CDS and RNA features.
+[11:24:51] Writing outputs to data/Annotations/A_baumannii/NZ_AP025271/
+[11:24:51] Generating annotation statistics file
+[11:24:51] Generating Genbank and Sequin files
+[11:24:51] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.12 from https://github.com/tseemann/prokka' -Z data\/Annotations\/A_baumannii\/NZ_AP025271\/PROKKA_01242023\.err -i data\/Annotations\/A_baumannii\/NZ_AP025271\/PROKKA_01242023\.fsa 2> /dev/null
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/errorsummary.val
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.dr
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.fixedproducts
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.ecn
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.val
+[11:24:51] Repairing broken .GBK output that tbl2asn produces...
+[11:24:51] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < data\/Annotations\/A_baumannii\/NZ_AP025271\/PROKKA_01242023\.gbf > data\/Annotations\/A_baumannii\/NZ_AP025271\/PROKKA_01242023\.gbk
+[11:24:51] Deleting unwanted file: data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.gbf
+[11:24:51] Output files:
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.err
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.sqn
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.ffn
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.fsa
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.tsv
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.txt
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.gbk
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.gff
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.tbl
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.faa
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.fna
+[11:24:51] data/Annotations/A_baumannii/NZ_AP025271/PROKKA_01242023.log
+[11:24:51] Annotation finished successfully.
+[11:24:51] Walltime used: 0.03 minutes
+[11:24:51] If you use this result please cite the Prokka paper:
+[11:24:51] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[11:24:51] Type 'prokka --citation' for more details.
+[11:24:51] Thank you, come again.

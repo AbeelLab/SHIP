@@ -1,0 +1,583 @@
+>Feature NZ_CP031384.1
+1	849	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00001
+			product	hypothetical protein
+965	1705	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00002
+			product	hypothetical protein
+1774	2313	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00003
+			product	hypothetical protein
+2323	3720	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00004
+			product	hypothetical protein
+3907	5019	CDS
+			EC_number	2.7.7.-
+			gene	dnaG
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P63964
+			locus_tag	BAHOIAMM_00005
+			product	DNA primase
+5016	5372	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00006
+			product	hypothetical protein
+5384	5899	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00007
+			product	hypothetical protein
+5896	6318	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00008
+			product	hypothetical protein
+6401	7000	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00009
+			product	hypothetical protein
+7021	7278	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00010
+			product	hypothetical protein
+7307	8710	CDS
+			EC_number	6.5.1.1
+			gene	lig
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00407
+			locus_tag	BAHOIAMM_00011
+			product	DNA ligase
+8716	9105	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00012
+			product	hypothetical protein
+9118	9744	CDS
+			EC_number	2.7.4.8
+			gene	gmk
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q5HGM3
+			locus_tag	BAHOIAMM_00013
+			product	Guanylate kinase
+9824	10438	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00014
+			product	hypothetical protein
+10453	10857	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00015
+			product	hypothetical protein
+11459	11043	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00016
+			product	hypothetical protein
+12123	11446	CDS
+			EC_number	3.6.-.-
+			gene	soj
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q72H90
+			locus_tag	BAHOIAMM_00017
+			product	Chromosome-partitioning ATPase Soj
+12912	12325	CDS
+			gene	xerD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P0A0P0
+			locus_tag	BAHOIAMM_00018
+			product	Tyrosine recombinase XerD
+13741	13277	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00019
+			product	hypothetical protein
+14343	14543	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00020
+			product	hypothetical protein
+14703	16760	CDS
+			EC_number	6.6.1.2
+			gene	cobT
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P29934
+			locus_tag	BAHOIAMM_00021
+			product	Aerobic cobaltochelatase subunit CobT
+16900	18099	CDS
+			EC_number	6.6.1.2
+			gene	cobS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P29933
+			locus_tag	BAHOIAMM_00022
+			product	Aerobic cobaltochelatase subunit CobS
+18129	18812	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00023
+			product	hypothetical protein
+18888	19577	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00024
+			product	hypothetical protein
+19609	23064	CDS
+			EC_number	2.7.7.7
+			gene	dnaE
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9XDH5
+			locus_tag	BAHOIAMM_00025
+			product	DNA polymerase III subunit alpha
+23149	24255	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00026
+			product	hypothetical protein
+24406	25293	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00027
+			product	hypothetical protein
+25350	26414	CDS
+			EC_number	2.7.7.7
+			gene	polA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P9WNU5
+			locus_tag	BAHOIAMM_00028
+			product	DNA polymerase I
+26425	27921	CDS
+			gene	recA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00268
+			locus_tag	BAHOIAMM_00029
+			product	Protein RecA
+27994	28347	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00030
+			product	hypothetical protein
+28344	28742	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00031
+			product	hypothetical protein
+28742	29179	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00032
+			product	hypothetical protein
+29176	29694	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00033
+			product	hypothetical protein
+29691	30056	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00034
+			product	hypothetical protein
+30091	30339	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00035
+			product	hypothetical protein
+30339	30737	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00036
+			product	hypothetical protein
+30799	31893	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00037
+			product	hypothetical protein
+31893	33845	CDS
+			gene	smc_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01894
+			locus_tag	BAHOIAMM_00038
+			product	Chromosome partition protein Smc
+33946	34578	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00039
+			product	hypothetical protein
+34582	35175	CDS
+			EC_number	3.1.22.4
+			gene	ruvC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00034
+			locus_tag	BAHOIAMM_00040
+			product	Crossover junction endodeoxyribonuclease RuvC
+35273	35863	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00041
+			product	hypothetical protein
+35857	36177	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00042
+			product	hypothetical protein
+36223	38613	CDS
+			EC_number	1.17.4.1
+			gene	nrdA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P00452
+			locus_tag	BAHOIAMM_00043
+			product	Ribonucleoside-diphosphate reductase 1 subunit alpha
+38693	39685	CDS
+			EC_number	1.17.4.1
+			gene	nrdB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O84835
+			locus_tag	BAHOIAMM_00044
+			product	Ribonucleoside-diphosphate reductase subunit beta
+40131	39712	CDS
+			gene	doc
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:A0QRY0
+			locus_tag	BAHOIAMM_00045
+			product	Toxin Doc
+40493	40131	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00046
+			product	hypothetical protein
+40724	41584	CDS
+			EC_number	2.1.1.148
+			gene	thyX
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01408
+			locus_tag	BAHOIAMM_00047
+			product	Thymidylate synthase ThyX
+41581	41874	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00048
+			product	hypothetical protein
+41874	42332	CDS
+			EC_number	3.6.1.23
+			gene	dut
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P06968
+			locus_tag	BAHOIAMM_00049
+			product	Deoxyuridine 5'-triphosphate nucleotidohydrolase
+42332	43015	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00050
+			product	hypothetical protein
+43108	43311	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00051
+			product	hypothetical protein
+43479	43649	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00052
+			product	hypothetical protein
+43646	44041	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00053
+			product	hypothetical protein
+44028	44216	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00054
+			product	hypothetical protein
+44213	44521	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00055
+			product	hypothetical protein
+44518	44754	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00056
+			product	hypothetical protein
+44744	44947	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00057
+			product	hypothetical protein
+44940	45362	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00058
+			product	hypothetical protein
+45352	45450	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00059
+			product	hypothetical protein
+45454	45729	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00060
+			product	hypothetical protein
+45739	46104	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00061
+			product	hypothetical protein
+46076	46930	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00062
+			product	hypothetical protein
+47013	47504	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00063
+			product	hypothetical protein
+47494	47952	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00064
+			product	hypothetical protein
+47958	48296	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00065
+			product	hypothetical protein
+48449	49165	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00066
+			product	hypothetical protein
+49168	49401	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00067
+			product	hypothetical protein
+49398	49580	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00068
+			product	hypothetical protein
+49582	50403	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00069
+			product	hypothetical protein
+50499	50774	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00070
+			product	hypothetical protein
+50771	51304	CDS
+			EC_number	2.7.7.7
+			gene	dnaQ
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P03007
+			locus_tag	BAHOIAMM_00071
+			product	DNA polymerase III subunit epsilon
+51923	52174	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00072
+			product	hypothetical protein
+52263	52973	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00073
+			product	hypothetical protein
+53092	54030	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00074
+			product	hypothetical protein
+54037	54423	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00075
+			product	hypothetical protein
+54635	55042	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00076
+			product	hypothetical protein
+55109	56311	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00077
+			product	hypothetical protein
+56382	56978	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00078
+			product	hypothetical protein
+56975	57511	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00079
+			product	hypothetical protein
+57489	57980	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00080
+			product	hypothetical protein
+57967	58056	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00081
+			product	hypothetical protein
+58057	58683	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00082
+			product	hypothetical protein
+58783	59160	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00083
+			product	hypothetical protein
+59160	59792	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00084
+			product	hypothetical protein
+59823	60164	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00085
+			product	hypothetical protein
+60574	60951	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00086
+			product	hypothetical protein
+61087	61629	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00087
+			product	hypothetical protein
+61777	61956	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00088
+			product	hypothetical protein
+63396	63770	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00089
+			product	hypothetical protein
+63864	64229	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00090
+			product	hypothetical protein
+64466	64963	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00091
+			product	hypothetical protein
+65486	65812	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00092
+			product	hypothetical protein
+66047	66748	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00093
+			product	hypothetical protein
+67520	67242	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00094
+			product	hypothetical protein
+69328	67613	CDS
+			gene	uvrB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q56243
+			locus_tag	BAHOIAMM_00095
+			product	UvrABC system protein B
+69359	70039	CDS
+			gene	noc_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_02015
+			locus_tag	BAHOIAMM_00096
+			product	Nucleoid occlusion protein
+70051	70572	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00097
+			product	hypothetical protein
+70580	71221	CDS
+			gene	noc_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_02015
+			locus_tag	BAHOIAMM_00098
+			product	Nucleoid occlusion protein
+71218	71874	CDS
+			EC_number	3.6.3.-
+			gene	metN
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P30750
+			locus_tag	BAHOIAMM_00099
+			product	Methionine import ATP-binding protein MetN
+71885	72238	CDS
+			gene	trxA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q7M1B9
+			locus_tag	BAHOIAMM_00100
+			product	Thioredoxin
+72282	73232	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00101
+			product	hypothetical protein
+73222	73548	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00102
+			product	hypothetical protein
+73651	74046	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00103
+			product	hypothetical protein
+74166	74756	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00104
+			product	hypothetical protein
+74798	76003	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00105
+			product	hypothetical protein
+76043	77743	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00106
+			product	hypothetical protein
+77793	78644	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00107
+			product	hypothetical protein
+78815	79717	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00108
+			product	hypothetical protein
+79840	80337	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00109
+			product	hypothetical protein
+80337	81110	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00110
+			product	hypothetical protein
+81110	81586	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00111
+			product	hypothetical protein
+81573	81938	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00112
+			product	hypothetical protein
+81916	82305	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00113
+			product	hypothetical protein
+82306	82806	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00114
+			product	hypothetical protein
+82876	83403	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00115
+			product	hypothetical protein
+83492	83815	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00116
+			product	hypothetical protein
+83872	84150	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00117
+			product	hypothetical protein
+84167	89911	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00118
+			product	hypothetical protein
+89948	90277	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00119
+			product	hypothetical protein
+90286	90996	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00120
+			product	hypothetical protein
+90983	91741	CDS
+			EC_number	3.4.-.-
+			gene	mepH
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P76190
+			locus_tag	BAHOIAMM_00121
+			product	Murein DD-endopeptidase MepH
+91731	92351	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00122
+			product	hypothetical protein
+92320	103998	CDS
+			gene	smc_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01894
+			locus_tag	BAHOIAMM_00123
+			product	Chromosome partition protein Smc
+103998	104555	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00124
+			product	hypothetical protein
+104673	104804	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00125
+			product	hypothetical protein
+105031	104855	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00126
+			product	hypothetical protein
+105239	105556	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00127
+			product	hypothetical protein
+105556	106125	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00128
+			product	hypothetical protein
+106129	106287	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	BAHOIAMM_00129
+			product	hypothetical protein
