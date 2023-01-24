@@ -8,7 +8,7 @@ import os
 import yaml
 
 if __name__ == 'main':
-    with open('./configs/data_config.yaml', 'r') as config_file:
+    with open('configs/data_config.yaml', 'r') as config_file:
         config = yaml.load(config_file, Loader=yaml.Loader)
 
     # Load info file
