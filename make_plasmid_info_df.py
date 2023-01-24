@@ -43,6 +43,7 @@ if __name__ == '__main__':
                     ]
                 )
 
+    info_df = info_df.drop_duplicates(keep='first')
     info_df.to_csv(
         config['paths']['info_df'],
         sep = '\t'

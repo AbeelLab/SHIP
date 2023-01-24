@@ -12,3 +12,7 @@ python make_amrfinder_df.py
 # Cluster homolog proteins
 python homolog_clustering.py
 python replace_with_homologs.py
+# Initial Jaccard-based clustering
+python cluster_plasmids.py
+# Get stats and plots from the clustering results
+python cluster_analysis.py

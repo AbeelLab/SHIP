@@ -34,12 +34,16 @@ if __name__ == '__main__':
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
 
     if not LOAD:
+        
+        '''
         timestamp = datetime.datetime.now().strftime('%d-%b-%Y__%H-%M-%S')
         write_dir = os.path.join(
                 config['paths'][config['similarity']],
                 'Clustering_Results_' + timestamp
             )
         os.mkdir(write_dir)
+        '''
+        write_dir = config['paths'][config['similarity']]
 
         with open(
             os.path.join(
@@ -76,6 +80,7 @@ if __name__ == '__main__':
         clustering.save(write_dir)
         affinity = clustering.affinity.loc[clusters['Plasmids'].sum()][clusters['Plasmids'].sum()]
         clustering.score()
+        
     else:
         clusters = joblib.load(
             phylo_config['paths']['plasmid-clusters']
@@ -143,3 +148,5 @@ if __name__ == '__main__':
         )
         
         plot.plot_stats(figsize = (12, 12), heatmap=True)
+
+# %%

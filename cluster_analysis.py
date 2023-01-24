@@ -1,7 +1,7 @@
 '''
 Computes statitics for Jaccard-based clusters.
 '''
-
+#%%
 import os
 import joblib
 import pandas as pd
@@ -9,7 +9,7 @@ import yaml
 import numpy as np
 from scipy.stats import fisher_exact
 from utils.plasmid_typing import LabeledNetwork
-
+#%%
 
 if __name__ == '__main__':
     with open('./configs/clustering_config.yaml', 'r') as config_file:
@@ -87,9 +87,12 @@ if __name__ == '__main__':
                 print(f'Cluster {cluster} has a unique distribution for species {species} (p={p:.5}).')
                 print(f'{np.round(table[0,0]/counts[cluster]*100)}% of the plasmids in cluster {cluster} are from {species}.')
                 print(f'{np.round(table[0,0]/(table[1,0]+table[0,0])*100, 0)}% of the {species} plasmids are in cluster {cluster}.\n')
-    # %% Core genes
-    # TODO: Fix path
-    sequences = joblib.load('InitialClustering/Representative Proteins/Plasmids with Clustered Proteins_s9_k5.pkl')['Proteins']
+    sequences = joblib.load(
+        os.path.join(
+            config['paths']['plasmids'],
+            'Plasmids with Clustered Proteins_s9_k5.pkl'
+        )
+    )['Proteins']
     for cluster in phylo_config['clusters']:
         cluster_seqs = sequences.loc[clusters[cluster]]
         all_genes = np.unique(cluster_seqs.sum())
@@ -107,7 +110,7 @@ if __name__ == '__main__':
         print(f'Number of core genes in cluster {cluster}: {n_core}')
     # %% Plot Network with Species Labels
     net = LabeledNetwork(
-        distance_threshold = .2
+        distance_threshold = .5
     )
     affinity = pd.read_csv(
         os.path.join(
@@ -117,9 +120,12 @@ if __name__ == '__main__':
         sep = '\t',
         index_col = 0
     )
-    affinity = affinity[np.sum(clusters)][np.sum(clusters)]
+    affinity = affinity.loc[np.sum(clusters)][np.sum(clusters)]
+    # Get common indices
+    common_idx = list(set(affinity.index).intersection(info.index))
     net.from_distance(
-        1-affinity,
-        info['Organism']
+        1-affinity.loc[common_idx][common_idx],
+        info['Organism'].loc[common_idx]
     )
     net.show()
+# %%

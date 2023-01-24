@@ -1,7 +1,7 @@
 '''
 Class to process CD-HIT outputs and build homolog families.
 '''
-
+#%%
 import os
 import warnings
 import pandas as pd
@@ -216,14 +216,15 @@ class ProteinClusters:
             self.clusters,
             raw_proteins
         )
-
-        raw_proteins['Replaced'] = self.clusters.loc[
-            raw_proteins.index
-        ]['Representative']
+        #self.clusters, raw_proteins = self.clusters.drop_duplicates(keep='first'), raw_proteins.drop_duplicates(keep = 'first')
+        raw_proteins = raw_proteins.join(
+            self.clusters['Representative']
+        )
+        
         # Group DataFrame according to plasmid id.
         # Join all representative proteins in a list
         self.clustered_proteins = raw_proteins.groupby('Plasmid').apply(
-            lambda x: list(x['Replaced'].values)
+            lambda x: list(x['Representative'].values)
         ).to_frame()
         self.clustered_proteins.columns = ['Proteins']
 
