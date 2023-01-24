@@ -11,9 +11,6 @@ import numpy as np
 import joblib
 from copy import deepcopy
 
-with open('./configs/DBL/data_config.yaml', 'r') as config_file:
-    config = yaml.load(config_file, Loader=yaml.Loader)
-
 class ProteinClusters:
 
     def __init__(
