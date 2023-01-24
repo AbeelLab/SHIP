@@ -1,8 +1,8 @@
 paths:
   plasmid-clusters: data/Jaccard Clusters/Clusters.pkl
-  representative-proteins: data/Homolog Clusters/Protein Family Membership/protein_cluster_membership.tsv
-  protein-names: data/Homolog Clusters/Representative Proteins/Protein Clusters.tsv
-  sequences: data/Homolog Clusters/Representative Proteins/Plasmids with Clustered Proteins_s9_k5.pkl
+  representative-proteins: data/Homolog Clusters/Protein Family Membership/protein_cluster_membership_s0.9_k5.tsv
+  protein-names: data/Homolog Clusters/Protein Family Membership/Protein Clusters.tsv
+  sequences: data/Homolog Clusters/Representative Proteins/Plasmids with Clustered Proteins.pkl
 
 output: data/Plasmid Networks
 output-paths:
@@ -44,4 +44,4 @@ break-distance:
   k: 3
   indel-size-penalty: 0.5
 
-results-dir: data/Plasmid Networks/Plasmid_Network_Run_29-Nov-2022__15-02-39
+results-dir: data/Plasmid Networks

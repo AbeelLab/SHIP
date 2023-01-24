@@ -18,3 +18,5 @@ paths:
   annotations: 'data/Annotations'
   # Path to MOBSuite input files
   mob-suite: 'data/MOBSuite Input'
+  # Plasmid FASTA concatenated per species
+  concat-fasta: 'data/Concatenated_Plasmid_FASTA'
