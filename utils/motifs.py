@@ -113,6 +113,8 @@ class GeneMotifs:
                     gene = protein_clusters[feature.id]
                 except KeyError:
                     gene = feature.id
+                if type(gene) == pd.Series:
+                    gene = gene.iloc[0]
                 if gene not in added_nodes:
                     try:
                         if self.is_amr[gene]:
@@ -139,10 +141,14 @@ class GeneMotifs:
                     e1_ = protein_clusters[e1.id]
                 except KeyError:
                     e1_ = e1.id
+                if type(e1_) == pd.Series:
+                    e1_ = e1_.iloc[0]
                 try:
                     e2_ = protein_clusters[e2.id]
                 except KeyError:
                     e2_ = e2.id
+                if type(e2_) == pd.Series:
+                    e2_ = e2_.iloc[0]
                 edge = np.sort([e1_, e2_])
                 if '-'.join(edge) not in added_edges:
                     added_edges.append('-'.join(edge))
