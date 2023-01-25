@@ -8,13 +8,25 @@ Delft Bioinformatics Lab, Delft University of Technology, Delft, 2628 XE, Nether
 ## Dependencies
 
 Requires:
-- AMRFinder+ 3.10.45
-- MOBSuite 3.0.3
+- Python 3.8
+- AMRFinder+ version 3.10.45
+- MOBSuite version 3.0.3
 - Biopython version 1.79
 - Prokka version 1.12
 - CD-HIT version 4.8.1
 - Pyvis version 0.2.1
 - NetworkX version 2.8.6
+- markov-clustering 0.0.6
+- pyMC 4.2.2
+- Numpy
+- Pandas
+- Joblib
+- Matplotlib
+- Pyyaml
+- Scipy
+- scikit-learn
+
+Developed for Ubuntu 20.04.
 
 # Running
 
