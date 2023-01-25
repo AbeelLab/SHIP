@@ -28,14 +28,37 @@ parser.add_argument(
     action = 'store_true',
     help = 'If set, plots plasmid networks colored on plasmid types from MOBSuite.'
 )
+parser.add_argument(
+    '--paper',
+    action = 'store_const',
+    const = True, 
+    default = False, 
+    help = 'Loads the Jaccard-based clusters used in the original paper.'
+)
+parser.add_argument(
+    '--panplasmidomes',
+    action = 'store_const',
+    const = True, 
+    default = False, 
+    help = 'Shows the panplasmidome graphs for each subcluster in the networks.'
+)
 args = parser.parse_args() 
 
 if __name__ == '__main__':
-    print(args.types)
-    with open('./configs/data_config.yaml', 'r') as config_file:
+    with open('configs/data_config.yaml', 'r') as config_file:
         data_config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('./configs/phylo_config.yaml', 'r') as config_file:
+    with open('configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
+
+    if args.paper:
+        phylo_config['results-dir'] = os.path.join(
+            phylo_config['results-dir'],
+            'Paper'
+        )
+        data_config['paths']['mob-types'] = os.path.join(
+            data_config['paths']['mob-types'],
+            'Paper'
+        )
 
     for k in phylo_config['output-paths']:
         phylo_config['output-paths'][k] = os.path.join(
@@ -48,7 +71,7 @@ if __name__ == '__main__':
         index_col = 0,
         sep = '\t'
     )
-    SHOW_PANGENOME = False
+    SHOW_PANGENOME = args.panplasmidomes
     #%%
     for cluster in np.unique(clusters['Megacluster']):
 
@@ -157,7 +180,7 @@ if __name__ == '__main__':
                 )
                 typings = pd.read_csv(
                     os.path.join(
-                        data_config['paths']['mob-suite'],
+                        data_config['paths']['mob-types'],
                         f'MOBSuite_{name_}.tsv'
                     ),
                     sep = '\t',

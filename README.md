@@ -24,3 +24,18 @@ GenBank files for these plasmids, with features, should be placed in data/Plasmi
 
 To run each script, `bash pipeline_networks.py` or `bash pipeline_clustering.sh`
 
+# Scripts
+
+## `annotate.py`
+
+Requires Prokka version 1.12
+
+Runs Prokka on plasmid FASTA files to transfer the original annotations. Outputs the annotations to an Annotations folder. Requires a FASTA file with all products concatenated per group (FASTA folder) in data/Plasmid_Features.
+
+If run for the first time, --build should be set.
+
+### Options
+
+- `--build`: Builds a protein FASTA database with all plasmid features. Must be set at least once.
+
+
