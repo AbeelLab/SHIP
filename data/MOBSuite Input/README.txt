@@ -1,1 +1,0 @@
-This folder should contain the output from prepare_mobsuite_input.py

@@ -1,0 +1,60 @@
+/tmp/amrfinder.KTE23e
+
+[1;31m*** ERROR ***[0m
+Cannot open file 'K/K_pneumoniae.fa' to get file size
+
+HOSTNAME: ?
+SHELL: /bin/bash
+PWD: /home/marcoat/DBL/plasmidHGT
+PATH: /home/marcoat/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/bin/remote-cli:/home/marcoat/anaconda3/envs/amrfinder/bin:/home/marcoat/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Portugal Identity Card:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/marco/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/marco/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/marco/anaconda3:/mnt/c/Users/marco/anaconda3/Scripts:/mnt/c/Users/marco/anaconda3/Library/bin:/snap/bin:/home/marcoat/edirect:/home/marcoat/edirect
+Progam name:  amrfinder
+Command line: amrfinder -n K/K_pneumoniae.fa -o data/AMRFinder_Output/K_pneumoniae.txt --log data/AMRFinder_Output/Logs/Logfile_K_pneumoniae.err
+/tmp/amrfinder.IuqnVi
+'/home/marcoat/anaconda3/envs/amrfinder/bin/fasta_check' 'data/Concatenated Plasmid FASTA/K_pneumoniae.fa'  -len /tmp/amrfinder.IuqnVi/len  -hyphen  -log /tmp/amrfinder.IuqnVi/log > /tmp/amrfinder.IuqnVi/nseq
+status = 0
+'/home/marcoat/anaconda3/envs/amrfinder/bin/makeblastdb'  -in 'data/Concatenated Plasmid FASTA/K_pneumoniae.fa' -out /tmp/amrfinder.IuqnVi/nucl  -dbtype nucl  -logfile /dev/null
+status = 256
+
+[1;31m*** ERROR ***[0m
+'/home/marcoat/anaconda3/envs/amrfinder/bin/makeblastdb'  -in 'data/Concatenated Plasmid FASTA/K_pneumoniae.fa' -out /tmp/amrfinder.IuqnVi/nucl  -dbtype nucl  -logfile /dev/null
+status = 256
+
+HOSTNAME: ?
+SHELL: /bin/bash
+PWD: /home/marcoat/DBL/plasmidHGT
+PATH: /home/marcoat/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/bin/remote-cli:/home/marcoat/anaconda3/envs/amrfinder/bin:/home/marcoat/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Portugal Identity Card:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/marco/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/marco/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/marco/anaconda3:/mnt/c/Users/marco/anaconda3/Scripts:/mnt/c/Users/marco/anaconda3/Library/bin:/snap/bin:/home/marcoat/edirect:/home/marcoat/edirect
+Progam name:  amrfinder
+Command line: amrfinder -n 'data/Concatenated Plasmid FASTA/K_pneumoniae.fa' -o data/AMRFinder_Output/K_pneumoniae.txt --log data/AMRFinder_Output/Logs/Logfile_K_pneumoniae.err
+/tmp/amrfinder.ko50io
+'/home/marcoat/anaconda3/envs/amrfinder/bin/fasta_check' 'data/Concatenated Plasmid FASTA/K_pneumoniae.fa'  -len /tmp/amrfinder.ko50io/len  -hyphen  -log /tmp/amrfinder.ko50io/log > /tmp/amrfinder.ko50io/nseq
+status = 0
+'/home/marcoat/anaconda3/envs/amrfinder/bin/makeblastdb'  -in 'data/Concatenated Plasmid FASTA/K_pneumoniae.fa' -out /tmp/amrfinder.ko50io/nucl  -dbtype nucl  -logfile /dev/null
+status = 256
+
+[1;31m*** ERROR ***[0m
+'/home/marcoat/anaconda3/envs/amrfinder/bin/makeblastdb'  -in 'data/Concatenated Plasmid FASTA/K_pneumoniae.fa' -out /tmp/amrfinder.ko50io/nucl  -dbtype nucl  -logfile /dev/null
+status = 256
+
+HOSTNAME: ?
+SHELL: /bin/bash
+PWD: /home/marcoat/DBL/plasmidHGT
+PATH: /home/marcoat/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/bin/remote-cli:/home/marcoat/anaconda3/envs/amrfinder/bin:/home/marcoat/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Portugal Identity Card:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/marco/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/marco/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/marco/anaconda3:/mnt/c/Users/marco/anaconda3/Scripts:/mnt/c/Users/marco/anaconda3/Library/bin:/snap/bin:/home/marcoat/edirect:/home/marcoat/edirect
+Progam name:  amrfinder
+Command line: amrfinder -n 'data/Concatenated Plasmid FASTA/K_pneumoniae.fa' -o data/AMRFinder_Output/K_pneumoniae.txt --log data/AMRFinder_Output/Logs/Logfile_K_pneumoniae.err
+/tmp/amrfinder.jMik1P
+'/home/marcoat/anaconda3/envs/amrfinder/bin/fasta_check' 'data/Concatenated_Plasmid_FASTA/K_pneumoniae.fa'  -len /tmp/amrfinder.jMik1P/len  -hyphen  -log /tmp/amrfinder.jMik1P/log > /tmp/amrfinder.jMik1P/nseq
+status = 0
+'/home/marcoat/anaconda3/envs/amrfinder/bin/makeblastdb'  -in 'data/Concatenated_Plasmid_FASTA/K_pneumoniae.fa' -out /tmp/amrfinder.jMik1P/nucl  -dbtype nucl  -logfile /dev/null
+status = 0
+'/home/marcoat/anaconda3/envs/amrfinder/bin/fasta2parts'  '/home/marcoat/anaconda3/envs/amrfinder/share/amrfinderplus/data/latest/AMRProt' 4 /tmp/amrfinder.jMik1P/AMRProt_chunk -log /tmp/amrfinder.jMik1P/log
+status = 0
+'/home/marcoat/anaconda3/envs/amrfinder/bin/tblastn'   -db /tmp/amrfinder.jMik1P/nucl  -query /tmp/amrfinder.jMik1P/AMRProt_chunk/3  -comp_based_stats 0  -evalue 1e-10  -seg no  -max_target_seqs 10000  -word_size 3 -outfmt '6 sseqid qseqid sstart send slen qstart qend qlen sseq qseq'  -out /tmp/amrfinder.jMik1P/tblastn_dir/3 > /dev/null 2> /tmp/amrfinder.jMik1P/tblastn_dir.err/3
+'/home/marcoat/anaconda3/envs/amrfinder/bin/tblastn'   -db /tmp/amrfinder.jMik1P/nucl  -query /tmp/amrfinder.jMik1P/AMRProt_chunk/4  -comp_based_stats 0  -evalue 1e-10  -seg no  -max_target_seqs 10000  -word_size 3 -outfmt '6 sseqid qseqid sstart send slen qstart qend qlen sseq qseq'  -out /tmp/amrfinder.jMik1P/tblastn_dir/4 > /dev/null 2> /tmp/amrfinder.jMik1P/tblastn_dir.err/4
+'/home/marcoat/anaconda3/envs/amrfinder/bin/tblastn'   -db /tmp/amrfinder.jMik1P/nucl  -query /tmp/amrfinder.jMik1P/AMRProt_chunk/2  -comp_based_stats 0  -evalue 1e-10  -seg no  -max_target_seqs 10000  -word_size 3 -outfmt '6 sseqid qseqid sstart send slen qstart qend qlen sseq qseq'  -out /tmp/amrfinder.jMik1P/tblastn_dir/2 > /dev/null 2> /tmp/amrfinder.jMik1P/tblastn_dir.err/2
+'/home/marcoat/anaconda3/envs/amrfinder/bin/tblastn'   -db /tmp/amrfinder.jMik1P/nucl  -query /tmp/amrfinder.jMik1P/AMRProt_chunk/1  -comp_based_stats 0  -evalue 1e-10  -seg no  -max_target_seqs 10000  -word_size 3 -outfmt '6 sseqid qseqid sstart send slen qstart qend qlen sseq qseq'  -out /tmp/amrfinder.jMik1P/tblastn_dir/1 > /dev/null 2> /tmp/amrfinder.jMik1P/tblastn_dir.err/1
+status = 0
+status = 0
+status = 0
+status = 0
+'/home/marcoat/anaconda3/envs/amrfinder/bin/amr_report'  -fam '/home/marcoat/anaconda3/envs/amrfinder/share/amrfinderplus/data/latest/fam.tab'    -blastx /tmp/amrfinder.jMik1P/blastx  -dna_len /tmp/amrfinder.jMik1P/len  -organism ""  -mutation '/home/marcoat/anaconda3/envs/amrfinder/share/amrfinderplus/data/latest/AMRProt-mutation.tab'  -susceptible '/home/marcoat/anaconda3/envs/amrfinder/share/amrfinderplus/data/latest/AMRProt-susceptible.tab'   -pseudo -core  -coverage_min 0.5  -log /tmp/amrfinder.jMik1P/log > /tmp/amrfinder.jMik1P/amr
+status = 0
