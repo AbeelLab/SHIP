@@ -9,6 +9,22 @@ import yaml
 import numpy as np
 from scipy.stats import fisher_exact
 from utils.plasmid_typing import LabeledNetwork
+import argparse
+
+parser = argparse.ArgumentParser(
+    description = '''
+Computes statitics for Jaccard-based clusters.
+'''
+)
+parser.add_argument(
+    '--paper',
+    action = 'store_const',
+    const = True, 
+    default = False, 
+    help = 'Loads the Jaccard-based clusters used in the original paper.'
+)
+
+args = parser.parse_args()
 #%%
 
 if __name__ == '__main__':
@@ -19,8 +35,15 @@ if __name__ == '__main__':
     with open('configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
 
-    clusters = joblib.load(
+    if not args.paper:
+        clusters = joblib.load(
             phylo_config['paths']['plasmid-clusters']
+        )
+    else:
+        clusters = joblib.load(
+            os.path.join(
+                *(phylo_config['paths']['plasmid-clusters'].split('/')[:-1]+['Paper/Clusters.pkl'])
+            )
         )
     counts = clusters['Plasmids'].apply(lambda x: len(x))
     info = pd.read_csv(
@@ -90,7 +113,7 @@ if __name__ == '__main__':
     sequences = joblib.load(
         os.path.join(
             config['paths']['plasmids'],
-            'Plasmids with Clustered Proteins_s9_k5.pkl'
+            'Plasmids with Clustered Proteins.pkl'
         )
     )['Proteins']
     for cluster in phylo_config['clusters']:
@@ -112,14 +135,25 @@ if __name__ == '__main__':
     net = LabeledNetwork(
         distance_threshold = .5
     )
-    affinity = pd.read_csv(
-        os.path.join(
-            config['paths']['jaccard'],
-            'Affinity.tsv'
-        ),
-        sep = '\t',
-        index_col = 0
-    )
+    if not args.paper:
+        affinity = pd.read_csv(
+            os.path.join(
+                config['paths']['jaccard'],
+                'Affinity.tsv'
+            ),
+            sep = '\t',
+            index_col = 0
+        )
+    else:
+        affinity = pd.read_csv(
+            os.path.join(
+                config['paths']['jaccard'],
+                'Paper',
+                'Affinity.tsv'
+            ),
+            sep = '\t',
+            index_col = 0
+        )
     affinity = affinity.loc[np.sum(clusters)][np.sum(clusters)]
     # Get common indices
     common_idx = list(set(affinity.index).intersection(info.index))
@@ -128,4 +162,3 @@ if __name__ == '__main__':
         info['Organism'].loc[common_idx]
     )
     net.show()
-# %%

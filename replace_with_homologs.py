@@ -1,10 +1,12 @@
 '''
 Obtains the plasmid gene sequence with homolog cluster representatives.
 '''
+#%%
 import os
 import pandas as pd
 import yaml
 from utils.proteins import ProteinClusters
+import joblib
 
 if __name__ == '__main__':
 
@@ -26,6 +28,16 @@ if __name__ == '__main__':
             'protein_cluster_membership'
         )
     )
+    
+    joblib.dump(
+        prot_clust.clusters,
+        os.path.join(
+            config['paths']['membership'],
+            'protein_cluster_membership_s9_k5.pkl'
+        ),
+        compress = 3
+    )
+
     prot_clust.build_protein_db(
         os.path.join(
             config['paths']['membership'],
@@ -54,3 +66,5 @@ if __name__ == '__main__':
             'Plasmids with Clustered Proteins'
         )
     )
+
+# %%
