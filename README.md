@@ -25,6 +25,8 @@ GenBank files for these plasmids, with features, should be placed in data/Plasmi
 
 `pipeline_networks.py` builds and analyzes detailed plasmid networks for some of the clusters found with `pipeline_clustering.sh`. Alternatively, the data used in the manuscript can be loaded.
 
+`pipeline_mobsuites.py` runs MOBSuite on the plasmid sequences. Required for further network analysis.
+
 To run each script, `bash pipeline_networks.py` or `bash pipeline_clustering.sh`
 
 # Scripts
@@ -64,4 +66,49 @@ Defines homolog gene clusters with 90% amino acid similarity using CD-HIT.
 ## `replace_with_homologs`
 
 Processes the CD-HIT output to replace the CDS annotations in the plasmid sequences with the representative CDS.
+
+## `cluster_plasmids`
+
+Clusters plasmids according to the Jaccard similarity on gene content. Plots the panplasmidome of the plasmids in each cluster. The computed clusters are saved in data/Jaccard Clusters.
+
+### Options
+
+- `--load`: Loads pre-computed clusters and plots stats and the panplasmidome graphs.
+
+## `cluster_analysis`
+
+Provides statistics for the clusters computed by `cluster_plasmids.py`. Can use either the clusters more recently obtained with `cluster_plasmids.py` or those used in the paper.
+
+### Options
+
+- `--paper`: If set, uses the clusters computed and described in the paper, instead of those lastly obtained with `cluster_plasmids.py`.
+
+## `prepare_mobsuite_input`
+
+Copies the plasmid sequence FASTA files into one folder, to act as input for MOBSuite. Uses the files in data/Plasmid Networks or the clusters defined in the paper. Includes all plasmids in the Jaccard-Subclusters.tsv file.
+
+*Note:* if `--paper` is not set, `build_networks.py` must be executed before calling `prepare_mobsuite_input`.
+
+### Options
+
+- `--paper`: If set, uses the clusters computed and described in the paper.
+
+## `make_mobsuite_db`
+
+Concatenates the MOBSuite outputs and creates one table per plasmid typing scheme.
+
+## `build_networks`
+
+Creates detailed plasmid similarity networks based on the proposed method for the specified clusters. Stores a SimpleDendrogram object that can be used for further analysis. Can use the Jaccard-based clusters used in the paper.
+
+### Options
+
+- `--paper`: If set, uses the Jaccard-based clusters computed and described in the paper.
+- `--clusters`: One or more clusters for which to build the more detailed networks. Must be integers corresponding to Jaccard-based cluster numbers. Redundant and not required if `--paper` is set.
+
+### Example
+
+`python build_networks.py --clusters 0 5 10 16 37`
+
+
 
