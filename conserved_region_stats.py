@@ -10,6 +10,7 @@ from utils.files import get_amr
 from matplotlib import pyplot as plt
 import os
 from copy import deepcopy
+import argparse
 
 def line_splitter(
     line: pd.Series,
@@ -47,19 +48,32 @@ def is_nested(
 
     return is_nested
 
+parser = argparse.ArgumentParser(
+    description = '''
+Gets statistics of the conserved AMR regions found by bulk_find_conserved_regions.py.
+'''
+)
+
+parser.add_argument(
+    '--input',
+    nargs = 1,
+    help = 'Directory containing the output files from bulk_find_conserved_regions.py.'
+)
+
 if __name__ == '__main__':
-    with open('./configs/data_config.yaml', 'r') as config_file:
+    args = parser.parse_args()
+    with open('configs/data_config.yaml', 'r') as config_file:
         data_config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('./configs/phylo_config.yaml', 'r') as config_file:
+    with open('configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('./configs/motif_config.yaml', 'r') as config_file:
-        motif_config = yaml.load(config_file, Loader=yaml.Loader)
 
     for k in phylo_config['output-paths']:
         phylo_config['output-paths'][k] = os.path.join(
             phylo_config['results-dir'],
             phylo_config['output-paths'][k]
         )
+
+    motif_config = {'motif-finder-output-dir': args.input[0]}
 
     info = pd.read_csv(
         data_config['paths']['info_df'],

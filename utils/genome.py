@@ -46,6 +46,9 @@ class GraphGenome:
             sep = '\t',
             index_col = 0
         )
+        self.representatives = self.representatives[
+            ~self.representatives.index.duplicated(keep='first')
+        ]
 
         return self.representatives
 
@@ -217,21 +220,39 @@ class GraphGenome:
             index_df = self.representatives_with_duplicates
         else:
             index_df = self.representatives
-        positions = pd.DataFrame(
-            [
+
+        try:
+            positions = pd.DataFrame(
                 [
-                    x.location.start.position, 
-                    x.location.end.position,
-                    x.location.end.position - x.location.start.position
-                ] for x in contents if x.id in index_df.index
-            ],
-            index = [
-                index_df.loc[x.id]['Representative'] 
-                for x in contents 
-                if x.id in index_df.index
-            ],
-            columns = ['Start', 'End', 'Size']
-        )
+                    [
+                        x.location.start.position, 
+                        x.location.end.position,
+                        x.location.end.position - x.location.start.position
+                    ] for x in contents if x.id in index_df.index
+                ],
+                index = [
+                    index_df.loc[x.id]['Representative'] 
+                    for x in contents 
+                    if x.id in index_df.index
+                ],
+                columns = ['Start', 'End', 'Size']
+            )
+        except:
+            positions = pd.DataFrame(
+                [
+                    [
+                        x.location.start.position, 
+                        x.location.end.position,
+                        x.location.end.position - x.location.start.position
+                    ] for x in contents if x.id in index_df.index
+                ],
+                index = [
+                    index_df.loc[x.id]['Representative'].iloc[0]
+                    for x in contents 
+                    if x.id in index_df.index
+                ],
+                columns = ['Start', 'End', 'Size']
+            )
 
         if include_duplicates:
             self.positions_with_duplicates = positions

@@ -32,12 +32,17 @@ parser.add_argument(
     nargs = 1,
     help = 'Output directory.'
 )
+parser.add_argument(
+    '--limits', 
+    nargs = 2,
+    help = 'CDS IDs of the region extremeties in any of the plasmids containing it.'
+)
 args = parser.parse_args() 
 
 if __name__ == '__main__':
-    with open('./configs/data_config.yaml', 'r') as config_file:
+    with open('configs/data_config.yaml', 'r') as config_file:
         data_config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('./configs/phylo_config.yaml', 'r') as config_file:
+    with open('configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
 
     for k in phylo_config['output-paths']:
@@ -70,10 +75,9 @@ if __name__ == '__main__':
 
     if description == 'integron':
         ids = ['NZ_CP101516', 'NZ_CP102878', 'NZ_CP102884', 'NZ_CP103504']
-        start, end = 'KEBDPHEG_00078', 'HFMAGJGA_00569'
     elif description == 'recombination':
         ids = ['NZ_CP053182', 'NZ_CP068250', 'NZ_CP098027', 'NZ_CP098420']
-        start, end = 'CBGDDEJM_00007', 'CBGDDEJM_00013' 
+    start, end = args.limits
 
     representatives = pd.read_csv(phylo_config['paths']['representative-proteins'], sep='\t', index_col = 0)['Representative']
     start = representatives[representatives==start].index.to_numpy()

@@ -2,7 +2,7 @@
 import os
 from typing import Iterable
 import warnings
-from Bio import SeqIO
+#from Bio import SeqIO
 import subprocess
 
 
@@ -39,6 +39,7 @@ def cat_genbank(
             ]
 
         command = ['cat'] + files + ['>'] + [out_path] + ['|'] + ['less']
+        print('Running '+ ' '.join(command))
         process = subprocess.run(command)
         if process.returncode != 0:
             warnings.warn(f'Subprocess exited with exit code {process.returncode}.')
@@ -89,27 +90,7 @@ def concat_genbank_files(
             '\n'.join(content)
         )
 
-def genbank_to_embl(
-    path: str,
-    output_dir: str
-) -> None:
-
-    bio_convert(
-        path,
-        output_dir,
-        'genbank',
-        'embl'
-    )
-
-def bio_convert(
-    path: str,
-    output_dir: str,
-    in_fmt: str,
-    out_fmt: str
-) -> None:
-    content = SeqIO.parse(path, in_fmt)
-    SeqIO.write(content, output_dir, out_fmt)
-
+'''
 def fasta_to_genbank(
     path: str,
     output_dir: str
@@ -119,6 +100,7 @@ def fasta_to_genbank(
         sequence.annotations['molecule_type'] = 'DNA'
     with open(output_dir, 'w') as stream:
         SeqIO.write(content, stream, 'genbank')
+'''
 
 def concat_protein_annotations(
     annotations_path: str,

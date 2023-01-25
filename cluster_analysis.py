@@ -12,11 +12,11 @@ from utils.plasmid_typing import LabeledNetwork
 #%%
 
 if __name__ == '__main__':
-    with open('./configs/clustering_config.yaml', 'r') as config_file:
+    with open('configs/clustering_config.yaml', 'r') as config_file:
         config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('./configs/data_config.yaml', 'r') as config_file:
+    with open('configs/data_config.yaml', 'r') as config_file:
         data_config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('./configs/phylo_config.yaml', 'r') as config_file:
+    with open('configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
 
     clusters = joblib.load(

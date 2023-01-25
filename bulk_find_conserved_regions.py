@@ -20,7 +20,14 @@ of query nodes and paths.
 '''
 )
 parser.add_argument(
-    '--min-dist',
+    '--paper',
+    action = 'store_const',
+    const = True, 
+    default = False, 
+    help = 'Loads the Jaccard-based clusters used in the original paper.'
+)
+parser.add_argument(
+    '--min_dist',
     default = 0.1,
     nargs = 1,
     help = 'Minimum average plasmid distance for region inclusion. Default is 0.1.'
@@ -53,26 +60,33 @@ args = parser.parse_args()
 
 if __name__ == '__main__':
 
-    with open('./configs/data_config.yaml', 'r') as config_file:
+    with open('configs/data_config.yaml', 'r') as config_file:
         data_config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('./configs/phylo_config.yaml', 'r') as config_file:
+    with open('configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
-    #with open('./configs/motif_config.yaml', 'r') as config_file:
+    #with open('configs/motif_config.yaml', 'r') as config_file:
     #    motif_config = yaml.load(config_file, Loader=yaml.Loader)
 
     motif_config = {
-        'min-distance': args.min_dist[0],
-        'min-length': args.min_len[0],
-        'max-length': args.max_len[0],
-        'min-n-plasmids': args.min_n[0],
+        'min-distance': float(args.min_dist[0]),
+        'min-length': int(args.min_len[0]),
+        'max-length': int(args.max_len[0]),
+        'min-n-plasmids': int(args.min_n[0]),
         'motif-finder-output-dir': args.out[0]
     }
 
     for k in phylo_config['output-paths']:
-        phylo_config['output-paths'][k] = os.path.join(
-            phylo_config['results-dir'],
-            phylo_config['output-paths'][k]
-        )
+        if args.paper:
+            phylo_config['output-paths'][k] = os.path.join(
+                phylo_config['results-dir'],
+                'Paper',
+                phylo_config['output-paths'][k]
+            )
+        else:
+            phylo_config['output-paths'][k] = os.path.join(
+                phylo_config['results-dir'],
+                phylo_config['output-paths'][k]
+            )
 
     phylos = joblib.load(phylo_config['output-paths']['phylogenies'])
 
@@ -95,41 +109,40 @@ if __name__ == '__main__':
         )
 
     for n, (cluster, phylo) in enumerate(phylos.items()):
-        if cluster == 37:
-            print(f'Finding motifs for cluster {cluster} ({n+1}/{len(phylos)})...')
-            plasmid_ids = phylo.accessions
-            amr_df = get_amr(
-                plasmid_ids,
-                data_config['paths']['amr_hits']
-            )
-            resistant_ids = np.unique(amr_df[amr_df['Gene symbol']!= 'Susceptible'].index)
+        print(f'Finding motifs for cluster {cluster} ({n+1}/{len(phylos)})...')
+        plasmid_ids = phylo.accessions
+        amr_df = get_amr(
+            plasmid_ids,
+            data_config['paths']['amr_hits']
+        )
+        resistant_ids = np.unique(amr_df[amr_df['Gene symbol']!= 'Susceptible'].index)
+        bmf = BulkMotifFinder(
+            resistant_ids,
+            phylo,
+            data_config,
+            phylo_config
+        )
+        result = bmf.search(
+            motif_config['min-distance'],
+            motif_config['min-length'],
+            motif_config['max-length'],
+            motif_config['min-n-plasmids']
+        )
 
-            bmf = BulkMotifFinder(
-                resistant_ids,
-                phylo,
-                data_config,
-                phylo_config
+        bmf.save_report(
+            os.path.join(
+                motif_config['motif-finder-output-dir'],
+                f'Motif_Finder_Results_Cluster_{cluster}.tsv'
             )
-            result = bmf.search(
-                motif_config['min-distance'],
-                motif_config['min-length'],
-                motif_config['max-length'],
-                motif_config['min-n-plasmids']
-            )
-            bmf.save_report(
-                os.path.join(
-                    motif_config['motif-finder-output-dir'],
-                    f'Motif_Finder_Results_Cluster_{cluster}.tsv'
-                )
-            )
-            joblib.dump(
-                result,
-                os.path.join(
-                    motif_config['motif-finder-output-dir'],
-                    f'Motif_Finder_Results_Cluster_{cluster}.pkl'
-                ),
-                compress = 3
-            )
+        )
+        joblib.dump(
+            result,
+            os.path.join(
+                motif_config['motif-finder-output-dir'],
+                f'Motif_Finder_Results_Cluster_{cluster}.pkl'
+            ),
+            compress = 3
+        )
     # Concatenate data for all clusters
     results = pd.concat(
         [

@@ -21,14 +21,21 @@ that can be used for further analysis.
 '''
 )
 parser.add_argument(
-    '--description',
-    default = 'Plasmid_Similarity',
-    nargs = 1,
-    help = 'Name of the output files. The current date and time will be added after the description. Default is "Plasmid_Similarity".'
+    '--clusters',
+    nargs = '+',
+    required = False,
+    help = 'Jaccard cluster numbers for which to compute plasmid networks'
 )
-args = parser.parse_args() 
+parser.add_argument(
+    '--paper',
+    action = 'store_const',
+    const = True, 
+    default = False, 
+    help = 'Loads the Jaccard-based clusters used in the original paper.'
+)
 
 if __name__ == '__main__':
+    args = parser.parse_args()
     with open('configs/clustering_config.yaml', 'r') as config_file:
         clustering_config = yaml.load(config_file, Loader=yaml.Loader)
     with open('configs/data_config.yaml', 'r') as config_file:
@@ -38,15 +45,13 @@ if __name__ == '__main__':
 
     timestamp = datetime.datetime.now().strftime('%d-%b-%Y__%H-%M-%S')
     home_dir = os.path.join(
-        phylo_config['output'],
-        args.description[0]+'_'+timestamp
+        phylo_config['output']
     )
     for k in phylo_config['output-paths']:
         phylo_config['output-paths'][k] = os.path.join(
             home_dir,
             phylo_config['output-paths'][k]
         )
-    os.mkdir(home_dir)
 
     if phylo_config['agglomerative-clustering']['adaptative']:
         ratio_ = phylo_config['agglomerative-clustering']['distance-threshold']
@@ -73,7 +78,15 @@ if __name__ == '__main__':
     )
     all_phylos = {}
 
-    for cluster in phylo_config['clusters']:
+    if args.paper:
+        clusters_input = phylo_config['clusters']
+        phylo_config['paths']['plasmid-clusters'] = os.path.join(
+            *(phylo_config['paths']['plasmid-clusters'].split('/')[:-1]+['Paper', 'Clusters.pkl'])
+        )
+    else:
+        clusters_input = [int(x) for x in args.clusters]
+
+    for cluster in clusters_input:
 
         plasmid_accessions = joblib.load(phylo_config['paths']['plasmid-clusters']).loc[
             cluster

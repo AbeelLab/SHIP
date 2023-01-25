@@ -14,26 +14,25 @@ if __name__ == "__main__":
 
     files = []
     for x in list(
-        os.walk(config['paths']['plasmids'])
-    )[1:]:
-        for xx in x[-1]:
-            if xx.endswith('.fa') or xx.endswith('.fasta') or xx.endswith('.faa'):
-                subprocess.run(
-                    [
-                        'amrfinder',
-                        '-n',
-                        os.path.join(x[0], xx),
-                        '-o',
-                        os.path.join(
-                            config['paths']['amrfinder_output'],
-                            xx.split('.')[0]+'.txt'
-                        ),
-                        '--log',
-                        os.path.join(
-                            config['paths']['amrfinder_output'],
-                            'Logs',
-                            'Logfile_'+xx.split('.')[0]+'.err'
-                        )
-                    ]
-                )
-    
+        os.walk(config['paths']['concat-fasta'])
+    )[0][-1]:
+        print(x)
+        if x.endswith('.fa'):
+            subprocess.run(
+                [
+                    'amrfinder',
+                    '-n',
+                    os.path.join(config['paths']['concat-fasta'], x),
+                    '-o',
+                    os.path.join(
+                        config['paths']['amrfinder_output'],
+                        x.split('.')[0]+'.txt'
+                    ),
+                    '--log',
+                    os.path.join(
+                        config['paths']['amrfinder_output'],
+                        'Logs',
+                        'Logfile_'+x.split('.')[0]+'.err'
+                    )
+                ]
+            )

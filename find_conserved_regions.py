@@ -21,6 +21,14 @@ parser.add_argument(
     nargs = 1,
     help = 'Jaccard cluster in which to find AMR genes. If not specified, assumes that there is only one cluster.'
 )
+parser.add_argument(
+    '--paper',
+    action = 'store_const',
+    const = True, 
+    default = False, 
+    help = 'Loads the Jaccard-based clusters used in the original paper.'
+)
+
 args = parser.parse_args() 
 
 if __name__ == '__main__':
@@ -29,6 +37,11 @@ if __name__ == '__main__':
     with open('./configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
 
+    if args.paper:
+        phylo_config['results-dir'] = os.path.join(
+            phylo_config['results-dir'],
+            'Paper'
+        )
     for k in phylo_config['output-paths']:
         phylo_config['output-paths'][k] = os.path.join(
             phylo_config['results-dir'],

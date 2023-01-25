@@ -51,6 +51,6 @@ if __name__ == '__main__':
     prot_clust.clustered_proteins_to_tsv(
         os.path.join(
             config['paths']['plasmids'],
-            'Plasmids with Clustered Proteins_s9_k5'
+            'Plasmids with Clustered Proteins'
         )
     )

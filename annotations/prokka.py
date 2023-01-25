@@ -58,7 +58,6 @@ def batch_annotate(
         x[2] 
         for x in os.walk(path)
     ][1:]
-    print(path)
     folders = [
         x[0] 
         for x in os.walk(path)
