@@ -1,0 +1,200 @@
+N°	Name	Family	Group	Synomyns	Iso	Origin	Length	IR	DR	ORF	Accession
+Number
+1	IS15DI 	IS6		IS15-DeltaI	IS26 	Salmonella panama 	820 	14 	8 	234 (64-768)
+	M12900
+2	IS1R 	IS1			IS1A 	Escherichia coli 	768 	18/23 		91 (56-331)
+174 (229-753)
+232 (56-753)
+	J01730
+3	ISAba1 	IS4	IS10 			Acinetobacter baumannii 	1180 	14/15 	9 	189 (72-641)
+178 (626-1162)
+	AY758396
+4	ISAba10 	IS5	IS903 			Acinetobacter baumannii 	1023 	17/18 	9 	309 (42-971)
+	GQ379223
+5	ISAba11 	IS701	ISAba11 			Acinetobacter baumannii 	1101 	13 	5 	342 (57-1085)
+	CP000521
+6	ISAba12 	IS5	IS903 			Acinetobacter baumannii 	1039 	16 		310 (55-987)
+	NZ_ACYR01000092
+7	ISAba125 	IS30				Acinetobacter baumannii 	1087 	20/26 	3 	322 (112-1080)
+	AY751533
+8	ISAba13 	IS5	IS903 	ISN1		Acinetobacter baumannii 	1039 	16 		310 (55-987)
+	NC_011586
+9	ISAba14 	IS3	IS150 	ISAba35		Acinetobacter baumannii 	1282 	35/54 	4 	105 (77-394)
+292 (343-1221)
+381 (77-1221)
+	CP001921
+10	ISAba15 	IS5	IS1031 			Acinetobacter baumannii 	873 	14/15 		100 (70-372)
+177 (332-865)
+264 (70-865)
+	JN187417
+11	ISAba16 	IS66				Acinetobacter baumannii 	2552 	12/16 	8 	127 (87-470)
+111 (467-802)
+548 (877-2523)
+	JN415682
+12	ISAba17 	IS66				Acinetobacter baumannii 	2594 	19/21 	8 	142 (82-510)
+111 (507-842)
+548 (917-2563)
+	
+13	ISAba18 	IS3	IS51 			Acinetobacter baumannii 	1309 	24/25 	3 	105 (51-368)
+301 (365-1270)
+406 (51-1270)
+	CP000521
+14	ISAba19 	IS3	IS51 			Acinetobacter baumannii 	1309 	25 	3 	105 (51-368)
+320 (308-1270)
+406 (51-1270)
+	
+15	ISAba2 	IS3	IS51 			Acinetobacter baumannii 	1308 	26 	3 	105 (51-368)
+316 (320-1270)
+406 (51-1270)
+	AY665723
+16	ISAba20 	IS3	IS407 			Acinetobacter baumannii 	1199 	33/46 	4 	88 (72-338)
+285 (290-1147)
+358 (72-1147)
+	
+17	ISAba21 	IS3	IS3 			Acinetobacter baumannii 	1274 	28/36 		99 (67-366)
+303 (321-1232)
+388 (67-1232)
+	JQ364968
+18	ISAba22 	IS3	IS3 			Acinetobacter baumannii 	1274 	26/36 	3 	99 (67-366)
+303 (321-1232)
+388 (67-1232)
+	CP001937
+19	ISAba23 	IS5	IS5 			Acinetobacter baumannii 	1249 	15/16 	5 	330 (85-1077)
+	
+20	ISAba24 	IS66				Acinetobacter baumannii 	2421 	21/22 	8 	94 (85-369)
+118 (372-728)
+519 (821-2380)
+	CP006963
+21	ISAba25 	IS66				Acinetobacter baumannii 	2491 	10/11 	8 	127 (87-470)
+111 (467-802)
+527 (877-2460)
+	CP007712
+22	ISAba26 	IS256				Acinetobacter baumannii 	1318 	19/26 	8 	402 (76-1284)
+	CP007712
+23	ISAba27 	IS5	ISL2 			Acinetobacter baumannii 	883 	17 	3 	132 (42-440)
+149 (415-864)
+273 (42-864)
+	CP009534
+24	ISAba28 	IS66				Acinetobacter baumannii 	2740 	22 	9 	93 (81-362)
+116 (362-712)
+552 (734-2392)
+87 (2420-2683)
+	
+25	ISAba29 	IS3	IS51 			Acinetobacter baumannii 	1309 	26/27 	3 	105 (51-368)
+320 (308-1270)
+406 (51-1270)
+	
+26	ISAba3 	IS1				Acinetobacter baumannii 	800 	21/24 		244 (61-795)
+	AY665723
+27	ISAba30 	IS200/IS605	IS605 			Acinetobacter baumannii 	1769 			137 (484-71)
+406 (507-1727)
+	
+28	ISAba31 	IS5	IS427 			Acinetobacter baumannii 	858 	15/16 	2 	248 (79-825)
+	LN611376
+29	ISAba32 	ISNCY	IS1202 			Acinetobacter baumannii 	1482 	20/26 	5 	445 (94-1431)
+	
+30	ISAba33 	IS4	IS10 			Acinetobacter baumannii 	1180 	15/16 	9 	185 (72-629)
+182 (614-1162)
+363 (72-1162)
+	KT852972
+31	ISAba34 	IS3	IS51 			Acinetobacter baumannii 	1309 	26 	3 	105 (51-368)
+316 (320-1270)
+406 (51-1270)
+	KU744946
+32	ISAba36 	IS1595	IS1016 			Acinetobacter johnsonii 	712 			219 (34-693)
+	KU667287
+33	ISAba37 	IS5	IS1031 			Acinetobacter baumannii 	872 	18/22 	3 	110 (67-399)
+178 (332-868)
+266 (67-868)
+	KU744946
+34	ISAba4 	IS982				Acinetobacter baumannii 	975 	18/22 		292 (90-968)
+	
+35	ISAba40 	IS5	IS903 			Acinetobacter baumannii 	1039 	16 	9 	310 (55-987)
+	
+36	ISAba42 	IS256		ISAba39		Acinetobacter baumannii 	1320 	24/28 	8 	403 (70-1281)
+	
+37	ISAba43 	ISL3				Acinetobacter baumannii 	2655 	65 	10 	421 (190-1455)
+401 (1448-2653)
+	
+38	ISAba44 	IS630				Acinetobacter baumannii 	882 	17/26 		101 (34-339)
+184 (327-881)
+281 (34-881)
+	
+39	ISAba45 	IS3	IS150 			Acinetobacter baumannii 	1461 	19/26 	3 	183 (56-607)
+307 (511-1434)
+459 (56-1434)
+	CP026125
+40	ISAba46 	IS66				Acinetobacter baumannii 	2512 	16 	8 	127 (87-470)
+129 (413-802)
+534 (877-2481)
+	CP026864
+41	ISAba47 	IS982				Acinetobacter baumannii 	972 	17/20 	7 	279 (83-922)
+	
+42	ISAba48 	IS701	ISAba11 			Acinetobacter baumannii 	1158 	20/25 	4 	346 (84-1124)
+	NZ_CP023035
+43	ISAba49 	IS66				Acinetobacter baumannii 	2554 	16 	8 	127 (87-470)
+129 (413-802)
+548 (877-2523)
+	CP026749
+44	ISAba5 	IS5	IS903 			Acinetobacter baumannii 	1044 	15/16 		291 (120-991)
+	
+45	ISAba50 	IS256				Acinetobacter baumannii 	1314 	21/25 	8 	402 (74-1282)
+	KT852971
+46	ISAba52 	IS6				Acinetobacter baumannii 	820 	17 		234 (64-768)
+	
+47	ISAba53 	IS5	IS903 			Acinetobacter baumannii 	1039 	16/18 		310 (55-987)
+	CP027704
+48	ISAba54 	ISNCY	IS1202 			Acinetobacter baumannii 	1481 	19/24 	5 	440 (105-1427)
+	CP082952
+49	ISAba57 	IS3	IS407 			Acinetobacter baumannii 	1201 	16/20 	4 	93 (72-353)
+296 (272-1162)
+364 (72-1162)
+	CP028560
+50	ISAba58 	IS256				Acinetobacter baumannii 	1379 	21/27 	9 	417 (97-1350)
+	
+51	ISAba59 	IS5	IS903 			Acinetobacter baumannii 	1039 	19/22 		310 (55-987)
+	
+52	ISAba6 	IS982				Acinetobacter baumannii 	1003 	12 	6 	301 (84-988)
+	
+53	ISAba60 	IS5	IS427 			Acinetobacter baumannii 	857 	15/16 	2 	248 (78-824)
+	
+54	ISAba61 	ISL3				Acinetobacter baumannii 	2660 	16/23 	8 	392 (281-1459)
+401 (1452-2657)
+	
+55	ISAba62 	IS5	IS903 			Acinetobacter baumannii 	1039 	15/16 	9 	310 (55-987)
+	CP073061
+56	ISAba63 	IS3	IS51 			Acinetobacter baumannii 	1309 	25/27 		105 (51-368)
+257 (320-1093)
+347 (51-1093)
+	CP073061
+57	ISAba64 	IS256				Acinetobacter baumannii 	1318 	19/28 		402 (76-1284)
+	CP073061
+58	ISAba66 	IS3	IS51 			Acinetobacter baumannii 	1323 	26 	3 	105 (51-368)
+325 (308-1285)
+411 (51-1285)
+	CP042558
+59	ISAba68 	IS5	IS903 			Acinetobacter baumannii 	1039 	16 	9 	310 (55-987)
+	CP041149
+60	ISAba7 	IS5	IS903 			Acinetobacter baumannii 	1039 	22 		270 (55-867)
+	
+61	ISAba8 	IS21				Acinetobacter baumannii 	1867 	27 	4 	339 (89-1108)
+257 (1108-1881)
+	
+62	ISAba825 	IS982				Acinetobacter baumannii 	975 	17 	7 	291 (85-960)
+	AY751532
+63	ISAba9 	IS982				Acinetobacter baumannii 	974 	17 	8 	293 (84-965)
+	
+64	ISAcsp5 	IS3	IS150 			Acinetobacter sp. 	1288 	20/27 	4 	101 (89-394)
+291 (343-1218)
+376 (89-1218)
+	APOK01000044
+65	ISAjo2 	ISNCY	IS1202 			Acinetobacter johnsonii 	1482 	20/24 	6 	441 (108-1433)
+	
+66	ISAjo3 	IS3	IS407 			Acinetobacter johnsonii 	1186 	14/17 		88 (72-338)
+286 (287-1147)
+358 (72-1147)
+	CP010358
+67	ISApi2 	ISNCY	IS1202 			Acinetobacter pittii 	1482 	19/24 	5 	457 (60-1433)
+	CP033536
+68	ISOur1 	IS6		IS1009	IS1008 	Oligella urethralis 	820 	17 		234 (64-768)
+	AY177427

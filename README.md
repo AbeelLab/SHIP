@@ -183,4 +183,11 @@ Plots  the detailed plasmid similarity networks obtained with `build_networks.py
 - `--panplasmidomes`: If set, shows the panplasmidome graphs for each subcluster in the networks.
 - `--types`: If set, plots plasmid networks colored on plasmid types from MOBSuite.
 
+## `length_thresholds`
 
+Uses KDE and MLE to estimate the thresholds for recombination/mutation/IS synteny blocks.
+Length thresholds are defined using maximum likelihood estimation. The probability distributions for synteny block lengths are approximated using Gaussian kernel density
+estimation. The length of mutation regions is modeled using the size of all CDS in the dataset; for integrons/transposons, uses the length of all ESKAPE organisms entries in ISFinder as of Nov 2022; the sizes of recombination blocks are modeled by sampling seven CDS with replacement and uniform probability from the dataset, and adding their lengths. As a result, extensive mutation regions were defined as having less than 915 bp and connected to
+the same node as another gene present only in the other plasmid. Regions shorter than 915 bp that did not fulfill other requirements as outlined in the paper, and those shorter than 2752 bp were considered integrons/transposons.
+
+Not required to run other scripts.

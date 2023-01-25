@@ -1,0 +1,51 @@
+N°	Name	Family	Group	Synomyns	Iso	Origin	Length	IR	DR	ORF	Accession
+Number
+1	IS1181 	ISL3				Staphylococcus aureus 	1513 	17/23 	8 	439 (120-1439)
+	L14544
+2	IS1182 	IS1182				Staphylococcus aureus 	1864 	14/16 		533 (158-1762)
+	L43082
+3	IS256 	IS256		IS256E, IS256L, IS256R		Staphylococcus aureus 	1324 	17/26 	8 	390 (102-1274)
+	M18086
+4	IS257-1 	IS6		IS257/1	IS257R1 	Staphylococcus aureus 	791 	21/26 		224 (57-731)
+	X53952
+5	IS257-2 	IS6		IS257/2	IS257R1 	Staphylococcus aureus 	790 	20/26 		221 (57-722)
+	X53951
+6	IS257-3 	IS6		IS257/3	IS257R1 	Staphylococcus aureus 	789 	23/27 		224 (57-731)
+	X53951
+7	IS257R1 	IS6				Staphylococcus aureus 	790 	18/20 	8 	224 (57-731)
+	X13290
+8	IS257R2 	IS6		IS257L, IS257	IS257R1 	Staphylococcus aureus 	789 	23/27 	8 	224 (57-731)
+	X13290
+9	IS431L 	IS6			IS257R1 	Staphylococcus aureus 	788 	19/22 		224 (57-731)
+	M18437
+10	IS431mec 	IS6		IS431S	IS257R1 	Staphylococcus aureus 	790 	18/20 		224 (57-731)
+	X53818
+11	IS431R 	IS6			IS257R1 	Staphylococcus aureus 	790 	17/20 		224 (57-731)
+	M18437
+12	ISSau1 	IS30				Staphylococcus aureus 	1070 	20/26 	4 	315 (114-1061)
+	NC_002952
+13	ISSau2 	IS3	IS150 			Staphylococcus aureus 	1660 	29/40 	3 	251 (34-789)
+297 (705-1601)
+521 (34-1601)
+	NC_002952
+14	ISSau3 	IS1182				Staphylococcus aureus 	1946 	13/16 		548 (280-1926)
+	NC_002952
+15	ISSau4 	IS3	IS150 			Staphylococcus aureus 	1261 	27/35 		104 (81-395)
+298 (380-1222)
+380 (81-1222)
+	NC_002952
+16	ISSau5 	IS30				Staphylococcus aureus 	1136 	7/12 		163 (104-595)
+175 (597-1124)
+340 (104-1124)
+	NC_002952
+17	ISSau6 	IS6				Staphylococcus aureus 	793 	21/22 		224 (59-733)
+	NC_002952
+18	ISSau8 	ISL3		ISRX		Staphylococcus aureus 	1498 	19/24 	7 	438 (141-1457)
+	NC_007622
+19	ISSau9 	IS21		IS21-558		Staphylococcus aureus 	2446 	21/27 		445 (313-1650)
+250 (1643-2395)
+	AM086211
+20	ISSep2 	IS110				Staphylococcus epidermidis 	1564 			337 (442-1455)
+	NC_004461
+21	ISSep3 	IS200/IS605	IS200 			Staphylococcus epidermidis 	740 			160 (133-615)
+	NC_004461

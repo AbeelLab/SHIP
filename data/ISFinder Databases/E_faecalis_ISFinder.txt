@@ -1,0 +1,36 @@
+N°	Name	Family	Group	Synomyns	Iso	Origin	Length	IR	DR	ORF	Accession
+Number
+1	IS1062 	IS30				Enterococcus faecalis 	1062 	20/27 		319 (94-1053)
+	X96976
+2	IS1216E 	IS6		ISS1Y
+ISEfa14	IS1216 	Enterococcus faecium 	808 	24 		226 (75-755)
+	U49512
+3	IS16 	IS256				Enterococcus faecalis 	1466 	28/42 	8 	395 (109-1296)
+	U35366
+4	IS256 	IS256		IS256E, IS256L, IS256R		Staphylococcus aureus 	1324 	17/26 	8 	390 (102-1274)
+	M18086
+5	IS257R1 	IS6				Staphylococcus aureus 	790 	18/20 	8 	224 (57-731)
+	X13290
+6	IS6770 	IS30		ISEF1		Enterococcus faecalis 	1065 	22/28 		319 (97-1056)
+	L28754
+7	IS946M 	IS6		IS946	ISS1S 	Lactococcus lactis 	800 		8 		
+8	IS946V 	IS6		IS946	ISS1S 	Lactococcus lactis 	808 	18 	8 	226 (74-754)
+	M33868
+9	ISEf1 	IS256				Enterococcus faecalis 	1338 	23/29 	8 	392 (108-1286)
+	NC_004668
+10	ISEnfa110 	IS110				Enterococcus faecalis 	1611 			402 (276-1484)
+	AF173641
+11	ISEnfa2 	IS1182				Enterococcus faecalis 	1536 	12/15 	30 	483 (70-1521)
+	NZ_GG692850
+12	ISEnfa364 	IS30				Enterococcus faecalis 	1056 	21/25 	1 	327 (93-1048)
+	EU250284
+13	ISEnfa5 	IS3	IS150 	ISEnfa6		Enterococcus faecalis 	1686 	26/35 		224 (70-744)
+320 (678-1640)
+523 (70-1640)
+	CP002208
+14	ISLla3 	IS3	IS150 			Lactococcus lactis 	1484 	23/30 	3 	185 (57-614)
+307 (506-1429)
+457 (57-1429)
+	CP003132
+15	ISVlu1 	ISL3				Vagococcus lutrae 	1526 	21/29 	8 	434 (139-1443)
+	CP081833

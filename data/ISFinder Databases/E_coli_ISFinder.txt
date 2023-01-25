@@ -1,0 +1,872 @@
+1	IS102 	IS5	IS903 		IS903 	Escherichia coli 	1057 	18 	9 		J01728
+2	IS103 	IS3	IS150 		IS150 	Escherichia coli 	1443 	22/31 	4 	173 (48-569)
+	X07037
+3	IS1203 	IS3	IS51 		IS3411 	Escherichia coli 	1310 	22/25 		108 (55-381)
+108 (55-381)
+404 (55-1268)
+	U06468
+4	IS1203E 	IS3	IS51 		IS3411 	Escherichia coli 	1032 				X97542
+5	IS1294 	IS91				Escherichia coli 	1688 			389 (352-1517)
+	X82430
+6	IS1397 	IS3	IS150 			Escherichia coli 	1432 	20/25 	4 	173 (52-573)
+311 (465-1400)
+449 (52-1400)
+	X92970
+7	IS1414 	IS256				Escherichia coli 	1314 	22/28 	8 	402 (73-1281)
+	AF143819
+8	IS150 	IS3	IS150 			Escherichia coli 	1443 	22/31 	3 	173 (48-569)
+301 (512-1417)
+456 (48-1417)
+	X07037
+9	IS15DI 	IS6		IS15-DeltaI	IS26 	Salmonella panama 	820 	14 	8 	234 (64-768)
+	M12900
+10	IS15DII 	IS6		IS15-DeltaII, IS15DIII	IS26 	Salmonella panama 	820 	14 		234 (64-768)
+	M12900
+11	IS161 	ISNCY				Escherichia coli 	1700 				
+12	IS186A 	IS4	IS231 		IS186B 	Escherichia coli 	1341 	23 	10 	375 (56-1183)
+	M11300
+13	IS186B 	IS4	IS231 	IS186-357, IS186-409		Escherichia coli 	1338 	23 	8 	424 (56-1330)
+	X03123
+14	IS1A 	IS1		IS1E, IS1K		Escherichia coli 	768 	18/23 	9 	91 (56-331)
+174 (229-753)
+232 (56-753)
+	X52534
+15	IS1B 	IS1		IS1C	IS1A 	Escherichia coli 	768 	18/23 		91 (56-331)
+174 (229-753)
+232 (56-753)
+	X17345
+16	IS1D 	IS1		IS1B	IS1A 	Escherichia coli 	768 	18/23 	9 	91 (56-331)
+174 (229-753)
+232 (56-753)
+	X52536
+17	IS1F 	IS1		IS1T	IS1X1 	Escherichia coli 	768 	20/23 		91 (56-331)
+174 (229-753)
+232 (56-753)
+	X52538
+18	IS1G 	IS1			IS1R 	Escherichia coli 	768 	17/23 	8 	91 (56-331)
+174 (229-753)
+232 (56-753)
+	J01730
+19	IS1H 	IS1				Escherichia coli 	764 	21/23 		90 (58-330)
+154 (288-752)
+230 (58-752)
+	U15127
+20	IS1R 	IS1			IS1A 	Escherichia coli 	768 	18/23 		91 (56-331)
+174 (229-753)
+232 (56-753)
+	J01730
+21	IS2 	IS3	IS2 	IS4521L, IS4521R		Escherichia coli 	1331 	32/41 	5 	121 (92-457)
+307 (397-1320)
+409 (92-1320)
+	M18426
+22	IS200 	IS200/IS605	IS200 			Salmonella typhimurium 	709 			151 (143-598)
+	X56834
+23	IS200C 	IS200/IS605	IS200 	IS200, IS200B		Escherichia coli 	709 			169 (91-600)
+	NC_004431
+24	IS26 	IS6		IS6, IS26L, IS26R, IS46, IS140, IS160, I		Proteus vulgaris 	820 	14 	8 	234 (64-768)
+	X00011
+25	IS3 	IS3	IS3 			Escherichia coli 	1258 	29/40 	3 	99 (66-365)
+305 (311-1228)
+387 (66-1228)
+	X02311
+26	IS30 	IS30		IS121, Tn2700, Tn2702		Escherichia coli 	1221 	23/26 	2 	383 (63-1214)
+	X00792
+27	IS3000 	Tn3				Escherichia coli 	3235 	48/49 		1005 (143-3160)
+	AF174129
+28	IS30D 	IS30		IS30	IS30 	Escherichia coli 	1221 	23/26 	2 	383 (63-1214)
+	X62680
+29	IS3411 	IS3	IS51 	IS3411L, IS3411R	IS629 	Escherichia coli 	1310 	24/27 	3 	108 (55-381)
+108 (55-381)
+390 (55-1226)
+	M19532
+30	IS4 	IS4	IS4 			Escherichia coli 	1426 	16/18 	11 	442 (85-1413)
+	J01733
+31	IS421 	IS4	IS231 	IS186		Escherichia coli 	1342 	23 	11 	371 (115-1230)
+	Y07501
+32	IS4351 	IS30		IS4400, IS4351L, IS4351R		Bacteroides fragilis 	1155 	20/25 	3 	326 (168-1148)
+	M17124
+33	IS5 	IS5	IS5 			Escherichia coli 	1195 	15/16 	4 	326 (69-1049)
+	J01735
+34	IS5075 	IS110	IS1111 		IS4321L 	Escherichia coli 	1327 	12 		334 (68-1072)
+	AF457211
+35	IS50R 	IS4	IS50 	IS50, IS50L		Escherichia coli 	1534 	8/9 	9 	476 (93-1523)
+	U15573
+36	IS5B 	IS5	IS5 			Escherichia coli 	1207 	15/16 	4 	342 (33-1061)
+	U95365
+37	IS5D 	IS5	IS5 	IS5-Delta	IS5 	Escherichia coli 	1283 	15/16 	4 	326 (69-1049)
+	X13668
+38	IS609 	IS200/IS605	IS605 			Escherichia coli 	1748 			143 (44-1192)
+382 (1260-1691)
+	BA000007
+39	IS621 	IS110				Escherichia coli 	1425 			326 (239-1219)
+	NC_009800
+40	IS629 	IS3	IS51 		IS3411 	Shigella sonnei 	1310 	23/25 		108 (55-381)
+301 (363-1268)
+404 (55-1268)
+	X51586
+41	IS630 	IS630		Tn4730, Tn4731, Tn4733		Shigella sonnei 	1153 	21/29 		343 (102-1133)
+	X05955
+42	IS679 	IS66				Escherichia coli 	2704 	17/25 	8 	216 (86-736)
+115 (736-1083)
+523 (1103-2674)
+	NC_002142
+43	IS682 	IS66				Escherichia coli 	2533 	20/24 	8 	141 (87-512)
+116 (509-859)
+537 (890-2503)
+	NC_002695
+44	IS903 	IS5	IS903 	IS903L, IS903R, Tn55, Tn601, IS602, Tn60		Escherichia coli 	1057 	18 	9 	307 (78-1001)
+	J01839
+45	IS903B 	IS5	IS903 	IS903.B
+ISKpn36		Escherichia coli 	1057 	18 	9 	307 (78-1001)
+70 (672-460)
+	X02527
+46	IS91 	IS91				Escherichia coli 	1829 			426 (454-1734)
+	X17114
+47	IS911 	IS3	IS3 	ISSHO1		Shigella dysenteriae 	1250 	25/36 	3 	100 (73-375)
+273 (402-1220)
+382 (73-1220)
+	X17613
+48	IS92L 	IS91			IS91 	Escherichia coli 	3100 				
+49	IS92R 	IS91			IS91 	Escherichia coli 	2150 				
+50	ISCrsa1 	IS3	IS3 			Cronobacter sakazakii 	1613 	20/29 		167 (43-545)
+372 (459-1577)
+511 (43-1577)
+	
+51	ISEc1 	ISAs1		H-rptB, RhsB, H-rptC1, RhsC, H-rptC2, H-
+ISEc3
+ISEc2
+ISEc4
+ISEc6
+ISEc7		Escherichia coli 	1291 	14/18 		378 (145-1281)
+	L02370
+52	ISEc10 	IS21				Escherichia coli 	2410 	34/48 	6 	499 (94-1593)
+251 (1590-2345)
+	NC_004431
+53	ISEc11 	IS110	IS1111 	ISSso1		Escherichia coli 	1443 	13 		339 (151-1170)
+	DQ361537
+54	ISEc12 	IS21				Escherichia coli 	2581 	20/24 	5 	513 (194-1735)
+249 (1747-2496)
+	DQ269483
+55	ISEc13 	IS4	IS50 			Escherichia coli 	1550 	9 		456 (166-1539)
+	DQ388534
+56	ISEc14 	IS3	IS51 			Escherichia coli 	1271 	30/36 		94 (101-385)
+316 (286-1236)
+399 (101-1236)
+	NZ_AAWW01000001
+57	ISEc15 	IS3	IS51 			Escherichia coli 	1230 	29/36 		94 (60-344)
+302 (87-1195)
+378 (60-1195)
+	NC_004998
+58	ISEc16 	IS3	IS3 			Escherichia coli 	1244 	33/41 		99 (64-363)
+301 (309-1214)
+383 (64-1214)
+	NZ_AAJU01000005.1
+59	ISEc17 	IS3	IS3 	IS3E		Escherichia coli 	1258 	30/40 		99 (66-365)
+305 (311-1228)
+387 (66-1228)
+	DQ388534
+60	ISEc18 	IS481				Escherichia coli 	1020 	25/25 	2 	323 (1012-41)
+	AM236323
+61	ISEc19 	IS481				Escherichia coli 	1229 	24/30 		384 (50-1204)
+	NC_000913
+62	ISEc20 	IS110				Escherichia coli 	1459 			398 (232-1428)
+	NZ_AAJU01000001
+63	ISEc21 	IS110		ISCfr5		Escherichia coli 	1374 			358 (282-1358)
+	
+64	ISEc22 	IS66				Escherichia coli 	2454 	15/22 	8 	134 (82-486)
+97 (537-830)
+512 (879-2417)
+	
+65	ISEc23 	IS66				Escherichia coli 	2532 	20/24 	8 	141 (86-511)
+116 (508-858)
+537 (889-2502)
+	
+66	ISEc24 	IS3	IS51 			Escherichia coli 	1230 	20/25 		94 (60-344)
+302 (287-1195)
+378 (60-1195)
+	
+67	ISEc25 	IS3	IS51 			Escherichia coli 	1310 	11/13 		108 (55-381)
+325 (291-1268)
+404 (55-1268)
+	
+68	ISEc26 	ISAs1				Escherichia coli 	1305 	16/17 	5 	390 (116-1288)
+	NC_002655
+69	ISEc27 	IS3	IS2 			Escherichia coli 	1321 	15/22 		136 (42-452)
+307 (392-1315)
+424 (42-1315)
+	AY857617
+70	ISEc28 	IS5	IS903 			Escherichia coli 	897 				FJ187822
+71	ISEc29 	IS4	IS10 			Escherichia coli 	1325 	19/21 		394 (107-1291)
+	FJ187822
+72	ISEc30 	IS1				Escherichia coli 	766 	20/27 		90 (58-330)
+154 (288-752)
+231 (58-752)
+	NC_011603
+73	ISEc31 	IS3	IS3 	ISEc67		Escherichia coli 	1258 	23/33 	3 	115 (37-384)
+349 (201-1250)
+404 (37-1250)
+	NC_011751
+74	ISEc32 	IS110				Escherichia coli 	1180 			323 (172-1143)
+	NC_011747
+75	ISEc33 	IS630				Escherichia coli 	1153 	15/17 	2 	343 (102-1133)
+	JF785549
+76	ISEc35 	IS5	IS903 			Escherichia coli 	1051 	17/18 	9 	305 (78-995)
+	NZ_ADTZ01000456
+77	ISEc36 	IS3	IS2 			Escherichia coli 	1321 	28/37 		136 (42-452)
+307 (392-1315)
+424 (42-1315)
+	JN412066
+78	ISEc37 	IS91				Escherichia coli 	1828 			395 (454-1641)
+	FJ914220
+79	ISEc38 	ISL3				Escherichia coli 	1722 	21/23 		539 (75-1694)
+	AJ303141
+80	ISEc39 	IS256				Escherichia coli 	1315 	22/29 	8 	402 (72-1280)
+	CP001855
+81	ISEc40 	IS630				Escherichia coli 	1097 	14/25 	2 	345 (47-1084)
+	NC_004431
+82	ISEc41 	IS200/IS605	IS605 			Escherichia coli 	1841 			150 (522-70)
+401 (535-1740)
+	NC_004431
+83	ISEc42 	IS200/IS605	IS1341 			Escherichia coli 	1291 			376 (109-1239)
+	NC_004431
+84	ISEc43 	IS66				Escherichia coli 	2541 	14/22 	8 	144 (86-520)
+116 (517-867)
+537 (898-2511)
+	NC_008460
+85	ISEc44 	IS200/IS605	IS605 			Escherichia coli 	1879 			134 (482-78)
+399 (541-1740)
+	NC_010498
+86	ISEc45 	IS110	IS1111 			Escherichia coli 	1447 	10 		377 (62-1195)
+	NC_004431
+87	ISEc46 	IS200/IS605	IS605 			Escherichia coli 	1763 			141 (497-72)
+389 (554-1723)
+	CU928163
+88	ISEc47 	IS66				Escherichia coli 	2541 	15/22 	8 	144 (86-520)
+116 (517-867)
+537 (898-2511)
+	AIFX01000063
+89	ISEc48 	IS3	IS2 			Escherichia coli 	1336 	31/42 	16 	122 (92-460)
+306 (379-1299)
+402 (92-1299)
+	ADUS01000070
+90	ISEc49 	IS66				Escherichia coli 	2766 	19/27 	8 	109 (88-417)
+130 (404-796)
+533 (803-2404)
+	NC_004431
+91	ISEc5 	ISAs1		H-rptE, RhsE	ISEc1 	Escherichia coli 	1291 	14/19 		378 (145-1281)
+	L02372
+92	ISEc52 	IS3	IS3 			Escherichia coli 	1250 	21/27 	3 	100 (73-375)
+300 (318-1220)
+382 (73-1220)
+	HG941718
+93	ISEc53 	ISL3				Escherichia coli 	1885 	19/23 	5 	172 (100-618)
+406 (637-1857)
+	HG941718
+94	ISEc57 	IS21				Escherichia coli 	1960 	23/27 	4 	341 (89-1114)
+257 (1114-1887)
+	KT282968
+95	ISEc58 	IS256				Escherichia coli 	1342 	23/29 	8 	411 (57-1292)
+	DQ517526
+96	ISEc59 	IS6				Escherichia coli 	891 	17/23 		250 (84-836)
+	KX246266
+97	ISEc60 	IS4	IS10 			Escherichia coli 	1294 	18/19 	10 	396 (84-1274)
+	CP011417
+98	ISEc61 	IS5	IS1031 			Escherichia coli 	954 	19/26 		278 (103-939)
+	CP007558
+99	ISEc62 	IS21				Escherichia coli 	2125 	11/12 	4 	390 (102-1274)
+264 (1274-2068)
+	
+100	ISEc63 	Tn3				Escherichia coli 	4473 	45/47 		133 (210-611)
+215 (1358-711)
+1002 (1432-4440)
+	
+101	ISEc66 	IS110	IS1111 			Escherichia coli 	1441 	13 		339 (150-1169)
+	
+102	ISEc68 	IS5	IS5 			Escherichia coli 	1197 	15/17 	4 	326 (69-1049)
+	
+103	ISEc69 	IS1595	IS1016 			Escherichia coli 	714 	16/19 		217 (40-693)
+	LT598652
+104	ISEc70 	IS1595	IS1595 			Escherichia coli 	1018 	20/24 	8 	314 (69-1013)
+	CP015139
+105	ISEc75 	IS1595	IS1016 			Escherichia coli 	717 	17 	8 	218 (41-697)
+	MOKY01000076
+106	ISEc76 	IS110	IS1111 			Escherichia coli 	1368 	12/13 		340 (83-1105)
+	NZ_CP019028
+107	ISEc77 	IS4	IS10 			Escherichia coli 	1318 	1318 		391 (112-1287)
+	
+108	ISEc78 	IS66				Escherichia coli 	2437 	17/22 		127 (84-467)
+115 (464-811)
+511 (861-2396)
+	MF156714
+109	ISEc8 	IS66				Escherichia coli 	2442 	18/22 	8 	133 (72-473)
+115 (470-817)
+512 (867-2405)
+	NC_004431
+110	ISEc81 	IS110	IS1111 			Escherichia coli 	1385 	11 		341 (86-1111)
+	NC_010498
+111	ISEc83 	IS66				Escherichia coli 	2709 	24/34 	8 	224 (83-757)
+115 (754-1101)
+518 (1121-2677)
+	
+112	ISEc84 	IS91				Escherichia coli 	1828 			395 (454-1641)
+	
+113	ISEc86 	IS3	IS150 			Escherichia coli 	1420 	19/25 	2 	168 (48-554)
+307 (470-1393)
+448 (48-1393)
+	CP039405
+114	ISEc88 	IS5	IS903 			Escherichia coli 	1048 	15 	9 	315 (47-994)
+	LC602697
+115	ISEc9 	IS1380		ISEcp1		Escherichia coli 	1656 	13/22 		420 (187-1449)
+	AJ242809
+116	ISEcB1 	IS3	IS150 			Escherichia coli 	1441 	19/24 	4 	173 (52-573)
+304 (495-1409)
+452 (52-1409)
+	NC_012967
+117	ISEcp1 	IS1380		ISEcp1B		Escherichia coli 	1656 	12/14 		420 (187-1449)
+	AJ242809
+118	ISKox3 	ISL3				Klebsiella oxytoca 	1316 	17/22 	8 	406 (68-1288)
+	CP003684
+119	ISKpn19 	ISKra4	ISAzba1 			Klebsiella pneumoniae 	2851 	22/26 		196 (93-683)
+190 (820-1392)
+463 (1423-2820)
+	NC_010886
+120	ISKpn21 	ISNCY	IS1202 	ISKpW		Klebsiella pneumoniae 	2278 	25 	5 	467 (98-1501)
+214 (2174-1530)
+	AP012055
+121	ISKpn34 	IS3	IS407 			Klebsiella pneumoniae 	1221 	33/45 		87 (72-335)
+297 (299-1192)
+373 (72-1192)
+	CP008932
+122	ISKpn37 	IS3	IS3 			Klebsiella pneumoniae 	1253 	23/27 		105 (71-388)
+305 (319-1236)
+388 (71-1236)
+	KU318421
+123	ISKpn40 	IS3	IS150 			Klebsiella pneumoniae 	1213 	12 		104 (54-368)
+326 (206-1186)
+377 (54-1186)
+	
+124	ISKpn53 	IS3	IS407 			Klebsiella pneumoniae 	946 	31/42 		88 (80-346)
+223 (259-930)
+283 (80-930)
+	
+125	ISPa110 	IS3	IS150 			Pseudomonas aeruginosa 	1598 	19/20 		512 (36-1574)
+	
+126	ISPa99 	IS4	IS10 			Pseudomonas aeruginosa 	1325 	18/20 	9 	392 (116-1294)
+	
+127	ISShdy1 	IS110	IS1111 	ISSdy1		Shigella dysenteriae 	1666 	9/10 		338 (104-1120)
+	AIHI01000025
+128	ISSso6 	IS110	IS1111 			Shigella sonnei 	1518 	14 	2 	375 (126-1253)
+	HE616529
+129	ISVsa3 	IS91		ISVs3		Vibrio salmonicida 	977 	14/21 	2 	307 (41-964)
+	AJ289135
+130	MITEEc1 	IS630				Escherichia coli 	123 	18/23 	2 		U00096
+131	MITESen1 	Tn3				Salmonella enterica 	256 	33/39 	5 		MN256104
+132	Tn2 	Tn3				Escherichia coli 	4950 	38 		286 (1008-148)
+185 (1748-1191)
+1001 (1912-4917)
+	KT002541
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+133	TnEc1 	Tn3				Escherichia coli 	3854 	44/48 		213 (688-47)
+994 (837-3821)
+	
+134	TnEc2 	Tn3				Escherichia coli 	4116 	32 	5 	90 (316-44)
+192 (887-309)
+1015 (1037-4084)
+	
+135	TnEc3 	Tn3				Escherichia coli 	3854 	40 	5 	186 (289-849)
+989 (852-3821)
+	
+136	TnEc4 	Tn3				Escherichia coli 	3920 	39 		188 (606-40)
+1002 (777-3785)
+	
