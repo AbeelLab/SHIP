@@ -10,7 +10,7 @@ Delft Bioinformatics Lab, Delft University of Technology, Delft, 2628 XE, Nether
 Requires:
 - AMRFinder+ 3.10.45
 - MOBSuite 3.0.3
-- Biopython 
+- Biopython version 1.79
 - Prokka version 1.12
 - CD-HIT version 4.8.1
 - Pyvis version 0.2.1
@@ -110,5 +110,65 @@ Creates detailed plasmid similarity networks based on the proposed method for th
 
 `python build_networks.py --clusters 0 5 10 16 37`
 
+## `bulk_find_conserved_regions`
+
+Finds conserved regions containing AMR genes on the clusters and networks built using `build_networks.py`. Alternatively, it can use the networks used in the paper. Requires setting search criteria. Creates a table with all found regions.
+
+### Options
+
+- `--paper`: If set, uses the networks computed in the paper.
+- `--min_dist`: Minimum average plasmid distance for region inclusion. Default is 0.1.
+- `--min_len`: Minimum fragment length in CDS. Default is 5.
+- `--max_len`: Minimum fragment length in CDS. Default is 9.
+- `--min_n`: Minimum number of plasmids containing a region for inclusion. Default is 3.
+- `--out`: Output directory. Default is CWD.
+
+### Example
+
+`python bulk_find_conserved_regions.py --min_dist 0.1 --min_len 5 --max_len 9 --min_n 3 --out data/Conserved\ AMR\ Regions`
+
+## `conserved_region_stats`
+
+Gets statistics of the conserved AMR regions found by bulk_find_conserved_regions.py.
+
+### Options
+
+- `--input`: Directory containing the output files from bulk_find_conserved_regions.py.
+
+## `find_conserved_regions`
+
+Allows manual search of conserved regions containing AMR genes. Requires a pre-computed phylogeny.
+
+### Options
+
+- `--paper`: If set, uses the networks computed in the paper.
+- `--cluster`: Jaccard cluster in which to find AMR genes. If not specified, assumes that there is only one cluster.
+
+## `motif_analysis`
+
+Extracts the regions described in the paper (recombination in E. faecalis and complex class 1 integron in _E. coli_ and _K. pneumoniae_) into FASTA files. Performs alignment with Biopython's pairwise2 module and prepares files for BLAST alignment.
+
+### Options
+
+- `--region`: Conserved region to analyse. Either "integron" (default) or "recombination".
+
+## `pangenome_analysis`
+
+Extracts stats about the panplasmidome, including local variability. Uses the networks in data/Plasmid Networks or those used in the paper.
+
+### Options
+
+- `--paper`: If set, uses the networks computed in the paper.
+- `--cluster`: Jaccard cluster to analyze. If not specified, assumes that there is only one cluster.
+
+## `plot_networks`
+
+Plots  the detailed plasmid similarity networks obtained with `build_networks.py`. Shows the estimated frequencies for evolutionary events. Optionally, shows networks colored on plasmid types. MOBSuite must be called first (using `pipeline_mobsuite.sh`) if `--types` is set.
+
+### Options
+
+- `--paper`: If set, uses the networks computed in the paper.
+- `--panplasmidomes`: If set, shows the panplasmidome graphs for each subcluster in the networks.
+- `--types`: If set, plots plasmid networks colored on plasmid types from MOBSuite.
 
 
