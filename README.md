@@ -39,7 +39,10 @@ GenBank files for these plasmids, with features, should be placed in data/Plasmi
 
 `pipeline_mobsuites.py` runs MOBSuite on the plasmid sequences. Required for further network analysis.
 
-To run each script, `bash pipeline_networks.py` or `bash pipeline_clustering.sh`
+To run each script, `bash pipeline_networks.py` or `bash pipeline_clustering.sh`.
+
+
+A conda requirements.txt file is available for the installation of all dependencies needed to run `pipeline_clustering.sh` and `pipeline_networks.py`. However, Prokka, MOBSuite, and AMRFinder+, tools required for plasmid annotation, conflict with the packages required to find conserved AMR regions and it is easier to run these tools in separate environments. The files prokka_requirements.txt, mobsuite_requirements.txt, and amrfinder_requirements.txt can be used to setup conda environments for each.
 
 # Scripts
 

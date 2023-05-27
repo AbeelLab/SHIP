@@ -80,6 +80,9 @@ class GeneMotifs:
             from a Pangenome object.
         '''
         self.__constructed_w_pangenome = False
+        self.pangenome = pangenome
+        self.protein_names = pangenome.protein_names
+        self.protein_names = self.protein_names.apply(lambda x: ' '.join(x.split()[:-1]))
         # Plasmid accession numbers
         ids = [x.id for x in pangenome.genomes]
         # Get GFF3 annotation paths
@@ -113,8 +116,6 @@ class GeneMotifs:
                     gene = protein_clusters[feature.id]
                 except KeyError:
                     gene = feature.id
-                if type(gene) == pd.Series:
-                    gene = gene.iloc[0]
                 if gene not in added_nodes:
                     try:
                         if self.is_amr[gene]:
@@ -141,14 +142,10 @@ class GeneMotifs:
                     e1_ = protein_clusters[e1.id]
                 except KeyError:
                     e1_ = e1.id
-                if type(e1_) == pd.Series:
-                    e1_ = e1_.iloc[0]
                 try:
                     e2_ = protein_clusters[e2.id]
                 except KeyError:
                     e2_ = e2.id
-                if type(e2_) == pd.Series:
-                    e2_ = e2_.iloc[0]
                 edge = np.sort([e1_, e2_])
                 if '-'.join(edge) not in added_edges:
                     added_edges.append('-'.join(edge))
@@ -360,7 +357,6 @@ class GeneMotifs:
         '''
         Returns the gene sequences of the pangenome plasmids as a Pandas Series.
         '''
-
         self.representative_sequences = joblib.load(path_to_representatives).loc[
             [x.id for x in self.pangenome.genomes]
         ]
@@ -390,16 +386,17 @@ class GeneMotifs:
 
         found: bool
         '''
+
+        motif = self.filter_query_for_duplicates(motif) 
         # Start by searching if all genes in the motif are in the query sequence
-        if not all(x in query_sequence for x in motif): return False
+        #if not all(x in query_sequence for x in motif): return False
 
         # Append motif-sized chunks from the end of the query to its start,
         # to get a circular list-like behaviour
-        query = query_sequence[-len(motif)+1:] + query_sequence
-
+        query = query_sequence[-len(motif):] + query_sequence
         reverse_motif = motif[::-1]
         for m in [motif, reverse_motif]:
-            for i in range(len(query)-len(m)+1):
+            for i in range(len(query)-len(m)):
                 if query[i:i+len(m)] == m: return True
 
         return False
@@ -424,7 +421,96 @@ class GeneMotifs:
 
         return self.motif_nx
 
+    def get_representative_w_duplicates_removed(self):
+        return {
+            x.id: [
+                xx 
+                for xx in x.representatives_with_duplicates['Representative'].values
+                if np.sum(x.representatives_with_duplicates['Representative'].values == xx) == 1 and not self.is_amr[xx]
+            ]   
+            for x in self.pangenome.genomes
+        }
 
+    def filter_query_for_duplicates(
+        self,
+        query: Iterable[str]
+    ):
+        all_genes = []
+        for v in self.representative_sequences.values(): all_genes += v
+        
+        return [x for x in query if x in all_genes]
+    
+    def find_regions(
+        self,
+        query_gene: str,
+        max_distance: int,
+        min_distance: int = 5
+    ):
+        self.representative_sequences = {x.id: list(x.representatives_with_duplicates['Representative'].values) for x in self.pangenome.genomes}
+
+        # Break each sequence into chunks of size k
+        chunks_per_plasmid = {id_: [] for id_ in self.representative_sequences.keys()}
+        for k in range(min_distance, max_distance+1):
+            for id_, gene_seq in self.representative_sequences.items():
+                i = 0
+                if query_gene in gene_seq:
+                    extend_gene_seq = gene_seq + gene_seq[:k]
+                    while i < len(extend_gene_seq)-k:
+                        chunk = extend_gene_seq[i:i+k]
+                        if query_gene in chunk: chunks_per_plasmid[id_].append(chunk)
+                        i += 1
+
+        unique_chunks = []
+        for v in chunks_per_plasmid.values(): unique_chunks += v
+        unique_chunks = np.unique(unique_chunks)
+
+        # Chunks present in > 1 plasmid and the ids of plasmids containing each chunk
+        regions_out = []
+        for chunk in unique_chunks:
+            plasmids_w_chunk = []
+            for k, v in chunks_per_plasmid.items():
+                if chunk in v or chunk[::-1] in v:
+                    plasmids_w_chunk.append(k)
+            if len(plasmids_w_chunk) > 1:
+                regions_out.append((chunk, plasmids_w_chunk))
+
+        return regions_out
+    
+    def __call__(
+        self,
+        query_gene: str,
+        distance_matrix_: pd.DataFrame,
+        max_distance: int,
+        min_plasmid_distance: float = 0.0,
+        *,
+        show: bool = True
+    ):
+        # Normalize the distance matrix
+        distance_matrix = deepcopy(distance_matrix_) / np.max(distance_matrix_.values)
+        self.query_graph = nx.MultiGraph()
+        regions = self.find_regions(query_gene, max_distance, 5)
+        self.n_paths = 0
+        self.report = None
+        for path, plasmids_with_motif in regions:
+            avg_distance = np.mean(distance_matrix.loc[plasmids_with_motif][plasmids_with_motif].values)
+            if avg_distance >= min_plasmid_distance:
+                # Add path to the resulting graph, with weight equal to the average distance
+                nx.add_path(self.query_graph, path, value = avg_distance, weight = avg_distance, path_n = self.n_paths)
+                data = [[path, len(path), len(distance_matrix.loc[plasmids_with_motif][plasmids_with_motif]),
+                    avg_distance, plasmids_with_motif,
+                    [self.protein_names.loc[x] for x in path if 'integrase' in self.protein_names.loc[x]],
+                    [self.protein_names.loc[x] for x in path if 'transposase' in self.protein_names.loc[x]]
+                ]]
+                if self.n_paths == 0:
+                    self.report = pd.DataFrame(
+                        data,
+                        columns = ['Genes', 'Length', 'Number of Plasmids', 'Average Distance', 'Plasmids', 'Integrases', 'Transposases'],
+                        index = [self.n_paths]
+                    )
+                else:
+                    self.report = pd.concat([self.report, pd.DataFrame(data, columns = self.report.columns, index = [self.n_paths])])
+                self.n_paths += 1
+    '''
     def __call__(
         self,
         query_gene: str,
@@ -438,7 +524,7 @@ class GeneMotifs:
         # Normalize the distance matrix
         distance_matrix = deepcopy(distance_matrix_) / np.max(distance_matrix_.values)
         self.query_graph = nx.MultiGraph()
-        self.representative_sequences = {x.id: x.get_gene_set() for x in self.pangenome.genomes}
+        self.representative_sequences = self.get_representative_w_duplicates_removed()
         self.motif_nx = self.get_motif_graph_as_nx()
         # Iterate over connected components
         components = nx.connected_components(self.motif_nx)
@@ -525,6 +611,7 @@ class GeneMotifs:
         if show:
             self.report = self.__show_table(self.report)
         return self.query_graph
+    '''
 
     def show_query_graph(
         self,
@@ -821,6 +908,7 @@ class MotifFinder(GeneMotifs):
         data_config_: dict, 
         phylo_config_: dict,
         min_n_edges: int = 5, 
+        salamzade: bool = False,
         *,
         graph_gene_size: float = 60, 
         graph_edge_size: float = 10,
@@ -835,10 +923,12 @@ class MotifFinder(GeneMotifs):
             graph_edge_size = graph_edge_size
         )
         self.graph_max_distance = graph_max_distance
+        self.salamzade = salamzade
 
     def __prepare_pangenome(
         self,
-        ids: Iterable
+        ids: Iterable,
+        salamzade: bool = False
     ):
         
         with warnings.catch_warnings():
@@ -847,7 +937,8 @@ class MotifFinder(GeneMotifs):
                 ids,
                 self.data_config,
                 self.phylo_config,
-                with_duplicates = False
+                with_duplicates = False,
+                salamzade = salamzade
             )
         self.from_pangenome(self.pangenome)
     
@@ -939,7 +1030,7 @@ class MotifFinder(GeneMotifs):
         continue_search = True
 
         self.ids = ids
-        if call_pangenome: self.__prepare_pangenome(ids)
+        if call_pangenome: self.__prepare_pangenome(ids, self.salamzade)
         self.gene = self.__select_motifs()
         self.max_length, self.min_plasmid_distance = self.__select_search_options()
         self.result = self(
@@ -984,7 +1075,8 @@ class BulkMotifFinder:
         data_config: dict,
         phylo_config: dict,
         *,
-        min_n_edges: int = 2
+        min_n_edges: int = 2,
+        salamzade: bool = False
     ):
 
         with warnings.catch_warnings():
@@ -993,8 +1085,9 @@ class BulkMotifFinder:
                 ids,
                 data_config,
                 phylo_config,
-                with_duplicates = False,
-                hidden = True
+                with_duplicates = True, #
+                hidden = True,
+                salamzade=salamzade
             )
         self.ids = ids
         self.phylo = phylo
@@ -1006,12 +1099,12 @@ class BulkMotifFinder:
             self.phylo,
             self.data_config,
             self.phylo_config,
-            self.min_n_edges
+            self.min_n_edges,
+            salamzade
         )
 
-        self.motif_finder.from_pangenome(
-            self.pangenome
-        )
+        #self.motif_finder.from_pangenome(self.pangenome)
+        self.motif_finder.from_ids(self.pangenome)
 
     def search(
         self,
@@ -1024,6 +1117,7 @@ class BulkMotifFinder:
         # Find AMR genes
         self.amr_genes = self.motif_finder.is_amr[self.motif_finder.is_amr].index.to_numpy()
         built = False
+        self.report = None
 
         for n, gene in tqdm(enumerate(self.amr_genes), total = len(self.amr_genes)):
 
@@ -1061,7 +1155,6 @@ class BulkMotifFinder:
                             report
                         ]
                     )
-
         return self.report
 
     def save_report(
@@ -1073,3 +1166,46 @@ class BulkMotifFinder:
             path,
             sep = '\t'
         )
+
+def is_region_in_plasmid(
+    plasmid_gene_seq: Iterable[str],
+    query: Iterable[str]
+) -> bool:
+    '''
+    Searches for an ordered list of genes/homolog groups, referenced by their ID, in 
+    a plasmid gene sequence. Returns True if the query is found. The search is repeated
+    with the query list inverted
+
+    Parameters
+    ----------
+    plasmid_gene_seq: Iterable of str
+        Gene or representative gene IDs in the plasmid, ordered.
+    query: Iterable of str
+        Genes or representative genes IDs to search for.
+
+    Returns
+    -------
+    found: bool
+    '''
+
+    rev_query = query[::-1]
+    query_len = len(query)
+
+    for q in [query, rev_query]:
+
+        ref_cursor_pos = 0
+        query_cursor_pos = 0
+
+        while ref_cursor_pos < len(plasmid_gene_seq):
+
+            if plasmid_gene_seq[ref_cursor_pos] == q[query_cursor_pos]:
+                query_cursor_pos += 1
+            else:
+                # Start from the begining of the query again
+                query_cursor_pos = 0
+            
+            if query_cursor_pos >= query_len: return True
+
+            ref_cursor_pos += 1
+
+    return False

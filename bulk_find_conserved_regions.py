@@ -116,6 +116,7 @@ if __name__ == '__main__':
             data_config['paths']['amr_hits']
         )
         resistant_ids = np.unique(amr_df[amr_df['Gene symbol']!= 'Susceptible'].index)
+
         bmf = BulkMotifFinder(
             resistant_ids,
             phylo,
@@ -128,21 +129,21 @@ if __name__ == '__main__':
             motif_config['max-length'],
             motif_config['min-n-plasmids']
         )
-
-        bmf.save_report(
-            os.path.join(
-                motif_config['motif-finder-output-dir'],
-                f'Motif_Finder_Results_Cluster_{cluster}.tsv'
+        if result is not None:
+            bmf.save_report(
+                os.path.join(
+                    motif_config['motif-finder-output-dir'],
+                    f'Motif_Finder_Results_Cluster_{cluster}.tsv'
+                )
             )
-        )
-        joblib.dump(
-            result,
-            os.path.join(
-                motif_config['motif-finder-output-dir'],
-                f'Motif_Finder_Results_Cluster_{cluster}.pkl'
-            ),
-            compress = 3
-        )
+            joblib.dump(
+                result,
+                os.path.join(
+                    motif_config['motif-finder-output-dir'],
+                    f'Motif_Finder_Results_Cluster_{cluster}.pkl'
+                ),
+                compress = 3
+            )
     # Concatenate data for all clusters
     results = pd.concat(
         [
@@ -153,8 +154,13 @@ if __name__ == '__main__':
                 )
             )
             for cluster in phylos.keys()
+            if os.path.exists(os.path.join(
+                    motif_config['motif-finder-output-dir'],
+                    f'Motif_Finder_Results_Cluster_{cluster}.pkl'
+                ))
         ]
     )
+    
     results.to_csv(
         os.path.join(
             motif_config['motif-finder-output-dir'],
@@ -202,6 +208,21 @@ if __name__ == '__main__':
     idx_keep = results['Genes'].astype('str').drop_duplicates(keep='first').index
     results = results.loc[idx_keep]
 
+    # Filter duplicates
+
+    to_drop=[]
+    results.reset_index(drop=True, inplace=True)
+    for idx in results.index:
+
+        search_ = results.drop(idx)[['Genes', 'Plasmids']]
+        for x in search_.index:
+            if x not in to_drop and set(results.loc[idx]['Genes']).issubset(results.loc[x]['Genes']) and (set(results.loc[idx]['Plasmids']) == set(results.loc[x]['Plasmids'])):
+                to_drop.append(idx)
+                break
+
+    results.drop(to_drop, inplace=True)
+    results.reset_index(inplace = True, drop=True)
+
     results.to_csv(
         os.path.join(
             motif_config['motif-finder-output-dir'],
@@ -217,6 +238,7 @@ if __name__ == '__main__':
         ),
         compress = 3
     )
+    
 
     def boxplot_column(
         results: pd.DataFrame,
@@ -298,6 +320,7 @@ if __name__ == '__main__':
             plt.show()
 
     boxplot_column(results, 'Number of Plasmids')
+    #
     colors = [
                 '#2176DD',
                 '#DB840B',
