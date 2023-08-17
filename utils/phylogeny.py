@@ -23,7 +23,7 @@ import pymc as pm
 import arviz as az
 import networkx as nx
 
-class SimpleDendogram:
+class PlasmidDistance:
 
     def __init__(
         self,
