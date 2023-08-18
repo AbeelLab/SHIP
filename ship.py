@@ -23,19 +23,19 @@ that can be used for further analysis.
 '''
 )
 parser.add_argument(
-    '--annotations', '-a', nargs = 1, required = True, const = True,
+    '--annotations', '-a', nargs = 1, required = True,
     help = 'Directory containing the output from Prokka.'
 )
 parser.add_argument(
-    '--out', '-o', nargs = 1, required = True, const = True,
+    '--out', '-o', nargs = 1, required = True,
     help = 'Output directory.'
 )
 parser.add_argument(
-    '--cdhit', '-c', nargs = 1, required = True, const = True,
+    '--cdhit', '-c', nargs = 1, required = True,
     help = 'Path to the .clstr file resulting from CD-HIT. Must contain information about all annotated plasmids.'
 )
 parser.add_argument(
-    '--amr', '-r', nargs = 1, required = True, const = True,
+    '--amr', '-r', nargs = 1, required = True,
     help = 'Path to the directory containing the AMRFinder+ output files. All .txt files in this directory will be considered as the main AMRFinder+ output files.'
 )
 parser.add_argument(

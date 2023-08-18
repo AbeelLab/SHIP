@@ -15,7 +15,7 @@ from utils.phylogeny import Pangenome
 import joblib
 from tqdm import tqdm
 from utils.plasmid_typing import LabeledNetwork
-from utils.phylogeny import Pangenome, plot_pangenome, SimpleDendogram
+from utils.phylogeny import Pangenome, plot_pangenome, PlasmidDistance
 import matplotlib.cm as cm
 from utils.files import find_annotation_paths
 from BCBio.GFF import parse
@@ -27,7 +27,7 @@ class GeneMotifs:
 
     def __init__(
         self,
-        phylo: SimpleDendogram,
+        phylo: PlasmidDistance,
         tmp_path: str,
         annotations_path: str,
         *,
@@ -900,7 +900,7 @@ class MotifFinder(GeneMotifs):
     '''
     def __init__(
         self, 
-        phylo: SimpleDendogram, 
+        phylo: PlasmidDistance, 
         tmp_path: str,
         annotations_path: str,
         min_n_edges: int = 5, 
@@ -1058,7 +1058,7 @@ class BulkMotifFinder:
     def __init__(
         self,
         ids: Iterable,
-        phylo: SimpleDendogram,
+        phylo: PlasmidDistance,
         tmp_path: str,
         annotations_path: str,
         *,
