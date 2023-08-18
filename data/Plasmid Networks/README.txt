@@ -1,1 +1,0 @@
-This folder should contain the output from build_networks.py.

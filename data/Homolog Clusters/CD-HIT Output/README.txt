@@ -1,1 +1,0 @@
-Contains the output from CD-HIT.
