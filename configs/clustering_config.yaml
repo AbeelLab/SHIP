@@ -4,6 +4,7 @@ paths:
   membership: data/Homolog Clusters/Protein Family Membership
   plasmids: data/Homolog Clusters/Representative Proteins
   plots: data/Jaccard Clusters/Figures
+  # All files in tmp/original_file_name.xyz
 
 method: markov
 similarity: jaccard #jaccard

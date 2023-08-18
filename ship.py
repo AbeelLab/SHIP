@@ -6,6 +6,8 @@ from utils.motifs import BulkMotifFinder
 from utils.files import get_amr
 from utils.genome import FastBreakDistance
 from utils.phylogeny import PlasmidDistance
+from utils.amrfinder import make_amrfinder_df
+from utils.cdhit import process_cdhit
 import matplotlib.pyplot as plt
 import os
 from utils.clustering import AdaptativeAgglomerativeClustering
@@ -28,12 +30,12 @@ parser.add_argument(
     help = 'Output directory.'
 )
 parser.add_argument(
-    '--cdhit-clusters', '-c', nargs = 1, required = True, const = True,
-    help = 'Path to the TSV file containing the homolog cluster assigned to each protein by CD-HIT. Can be obtained with replace_with_homologs.py.'
+    '--cdhit', '-c', nargs = 1, required = True, const = True,
+    help = 'Path to the .clstr file resulting from CD-HIT. Must contain information about all annotated plasmids.'
 )
 parser.add_argument(
     '--amr', '-r', nargs = 1, required = True, const = True,
-    help = 'Path to the AMRFinder+ output as a TSV file. This file can be obtained from the original AMRFinder+ output with make_amrfinder_df.py.'
+    help = 'Path to the directory containing the AMRFinder+ output files. All .txt files in this directory will be considered as the main AMRFinder+ output files.'
 )
 parser.add_argument(
     '--plot-dendrogram', '-d', action='store_true',
@@ -80,6 +82,23 @@ if __name__ == '__main__':
     timestamp = datetime.datetime.now().strftime('%d-%b-%Y__%H-%M-%S')
 
     #########################################
+    #            Prepare inputs             #
+    #########################################
+
+    tmp_path = os.path.join(args.out, 'tmp')
+    logging.debug(f'Creating tmp directory at {tmp_path}.')
+    if not os.path.exists(tmp_path): os.mkdir(tmp_path)
+
+    # Parse AMRFinder+ output
+    logging.info('Processing the AMRFinder+ output files.')
+    path_to_amr_tsv = os.path.join(tmp_path, 'amrfinder_output.tsv')
+    make_amrfinder_df(args.amr, path_to_amr_tsv)
+
+    # Parse CD-HIT output
+    logging.info('Processing the CD-HIT output file.')
+    process_cdhit(args.cdhit, args.annotations, tmp_path)
+
+    #########################################
     #  Build a plasmid dissimilarity matrix #
     #########################################
 
@@ -106,8 +125,8 @@ if __name__ == '__main__':
 
     # Get plasmid phylogeny
     logging.debug('Computing plasmid distances.')
-    phylo = PlasmidDistance(plasmid_names, args.annotations, args.cdhit_clusters,
-        args.amr, clustering_method = clustering_method, learn_weights = phylo_config['learn-weights'],
+    phylo = PlasmidDistance(plasmid_names, args.annotations, os.path.join(tmp_path, 'protein_cluster_membership.tsv'),
+        path_to_amr_tsv, clustering_method = clustering_method, learn_weights = phylo_config['learn-weights'],
         learning_method = phylo_config['learning-method'], weights = phylo_config['weights'])
 
     clusters = phylo.fit_predict(distance_function)
@@ -131,18 +150,16 @@ if __name__ == '__main__':
 
     # Convert args to kwargs-like dict
     regions_config = {'min-distance': float(args.min_dist[0]), 'min-length': int(args.min_len[0]), 
-        'max-length': int(args.max_len[0]), 'min-n-plasmids': int(args.min_n[0]), 
-        'motif-finder-output-dir': args.out}
+        'max-length': int(args.max_len[0]), 'min-n-plasmids': int(args.min_n[0])}
 
     # Load information about AMR genes
     logging.debug('Building AMR DataFrame with AMRFinder+ output.')
-    amr_df = get_amr(plasmid_names, args.amr)
+    amr_df = get_amr(plasmid_names, path_to_amr_tsv)
     logging.debug('Getting the IDs of resistant plasmids.')
     resistant_ids = np.unique(amr_df[amr_df['Gene symbol']!= 'Susceptible'].index)
 
-    #TODO: Check the files BMF is using through the paths in the configs
     logging.debug('Instanciating a BulkMotifFinder object.')
-    bmf = BulkMotifFinder(resistant_ids, phylo, data_config, phylo_config)
+    bmf = BulkMotifFinder(resistant_ids, phylo, tmp_path, args.annotations)
     logging.info('Searching for AMR regions with evidence for HGT.')
     result = bmf.search(regions_config['min-distance'], regions_config['min-length'],
         regions_config['max-length'], regions_config['min-n-plasmids'])

@@ -28,8 +28,8 @@ class GeneMotifs:
     def __init__(
         self,
         phylo: SimpleDendogram,
-        data_config_: dict,
-        phylo_config_: dict,
+        tmp_path: str,
+        annotations_path: str,
         *,
         min_n_edges: int = 5,
         graph_gene_size: float = 60.0,
@@ -39,8 +39,8 @@ class GeneMotifs:
         self.min_n_edges = min_n_edges
         self.graph_gene_size = graph_gene_size
         self.graph_edge_size = graph_edge_size
-        self.data_config = data_config_
-        self.phylo_config = phylo_config_
+        self.tmp_path = tmp_path
+        self.annotations_path = annotations_path
         self.phylo = phylo
 
     def from_ids(
@@ -101,7 +101,7 @@ class GeneMotifs:
         self.is_amr = self.is_amr[self.is_amr.index.duplicated(keep = 'first')]
 
         protein_clusters = pd.read_csv(
-            self.phylo_config['paths']['representative-proteins'], 
+            os.path.join(self.tmp_path, 'protein_cluster_membership.tsv'), 
             sep='\t', 
             index_col = 0
         )['Representative']
@@ -721,11 +721,7 @@ class GeneMotifs:
     ) -> list:
 
         
-        self.result_graph = plot_pangenome(
-            self.report.loc[path_number]['Plasmids'],
-            self.data_config,
-            self.phylo_config
-        )
+        self.result_graph = plot_pangenome(self.report.loc[path_number]['Plasmids'], self.tmp_path, self.annotations_path)
 
         return self.report.loc[path_number]['Plasmids']
 
@@ -825,7 +821,7 @@ class GeneMotifs:
         )
 
         protein_clusters = pd.read_csv(
-            self.phylo_config['paths']['representative-proteins'], 
+            os.path.join(self.tmp_path, 'protein_cluster_membership.tsv'), 
             sep='\t', 
             index_col = 0
         )
@@ -833,7 +829,7 @@ class GeneMotifs:
         added_nodes = []
         for plasmid, color in zip(ids, colors):
             # Get sequence information from GFF3 files
-            gff_path = find_annotation_paths([plasmid], self.data_config['paths']['annotations'], format='.gff')[0]
+            gff_path = find_annotation_paths([plasmid], self.annotations_path, format='.gff')[0]
             with open(gff_path, 'r') as file:
                 features = next(parse(file)).features
             original_sequence = [x.id for x in features]
@@ -905,10 +901,9 @@ class MotifFinder(GeneMotifs):
     def __init__(
         self, 
         phylo: SimpleDendogram, 
-        data_config_: dict, 
-        phylo_config_: dict,
+        tmp_path: str,
+        annotations_path: str,
         min_n_edges: int = 5, 
-        salamzade: bool = False,
         *,
         graph_gene_size: float = 60, 
         graph_edge_size: float = 10,
@@ -916,30 +911,22 @@ class MotifFinder(GeneMotifs):
     ):
         super().__init__(
             phylo, 
-            data_config_, 
-            phylo_config_,
+            tmp_path, 
+            annotations_path,
             min_n_edges = min_n_edges,
             graph_gene_size = graph_gene_size,
             graph_edge_size = graph_edge_size
         )
         self.graph_max_distance = graph_max_distance
-        self.salamzade = salamzade
 
     def __prepare_pangenome(
         self,
-        ids: Iterable,
-        salamzade: bool = False
+        ids: Iterable
     ):
         
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
-            self.pangenome = plot_pangenome(
-                ids,
-                self.data_config,
-                self.phylo_config,
-                with_duplicates = False,
-                salamzade = salamzade
-            )
+            self.pangenome = plot_pangenome(ids, self.tmp_path, self.annotations_path, with_duplicates = False)
         self.from_pangenome(self.pangenome)
     
     def __select_motifs(
@@ -1030,7 +1017,7 @@ class MotifFinder(GeneMotifs):
         continue_search = True
 
         self.ids = ids
-        if call_pangenome: self.__prepare_pangenome(ids, self.salamzade)
+        if call_pangenome: self.__prepare_pangenome(ids)
         self.gene = self.__select_motifs()
         self.max_length, self.min_plasmid_distance = self.__select_search_options()
         self.result = self(
@@ -1072,36 +1059,27 @@ class BulkMotifFinder:
         self,
         ids: Iterable,
         phylo: SimpleDendogram,
-        data_config: dict,
-        phylo_config: dict,
+        tmp_path: str,
+        annotations_path: str,
         *,
         min_n_edges: int = 2,
-        salamzade: bool = False
     ):
 
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
-            self.pangenome = plot_pangenome(
-                ids,
-                data_config,
-                phylo_config,
-                with_duplicates = True, #
-                hidden = True,
-                salamzade=salamzade
-            )
+            self.pangenome = plot_pangenome(ids, tmp_path, annotations_path, with_duplicates = True,
+                hidden = True)
         self.ids = ids
         self.phylo = phylo
-        self.data_config = data_config
-        self.phylo_config = phylo_config
         self.min_n_edges = min_n_edges
+        self.tmp_path = tmp_path
+        self.annotations_path = annotations_path
 
         self.motif_finder = MotifFinder(
             self.phylo,
-            self.data_config,
-            self.phylo_config,
-            self.min_n_edges,
-            salamzade
-        )
+            self.tmp_path,
+            self.annotations_path,
+            self.min_n_edges)
 
         #self.motif_finder.from_pangenome(self.pangenome)
         self.motif_finder.from_ids(self.pangenome)

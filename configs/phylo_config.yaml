@@ -1,6 +1,6 @@
 paths:
   plasmid-clusters: data/Jaccard Clusters/Clusters.pkl
-  representative-proteins: data/Homolog Clusters/Protein Family Membership/protein_cluster_membership_s0.9_k5.tsv
+  representative-proteins: data/Homolog Clusters/Protein Family Membership/protein_cluster_membership_s0.9_k5.tsv # os.path.join(tmp_path, 'protein_cluster_membership.tsv')
   protein-names: data/Homolog Clusters/Protein Family Membership/Protein Clusters.tsv
   sequences: data/Homolog Clusters/Representative Proteins/Plasmids with Clustered Proteins.pkl
 

@@ -21,13 +21,11 @@ class GraphGenome:
         path_to_annotations: str,
         path_to_representatives: str,
         path_to_amr: str,
-        salamzade: bool = False
     ):
         self.id = id
         self.path_to_annotations = path_to_annotations
         self.path_to_representatives = path_to_representatives
         self.path_to_amr = path_to_amr
-        self.salamzade = salamzade
         self.build()
 
     def __len__(self):
@@ -38,7 +36,7 @@ class GraphGenome:
     ) -> pd.DataFrame:
         '''
         Builds a Pandas DataFrame containing the representative protein of all proteins in the
-        dataset, according to CH-Hit clustering.
+        dataset, according to CD-Hit clustering.
         '''
 
         self.representatives = pd.read_csv(
@@ -138,22 +136,11 @@ class GraphGenome:
         ).drop(['Cluster'], axis = 'columns').loc[
             [x for x in self.strands.index if x in common_idx]
         ]
-
-        # For the Salamzade dataset, AMRFinder annotations differ from those
-        # in the original annotations, for the same genes. Compare the positions
-        # of the AMR hits with the ORFs to detect resistant genes. Allows for
-        # a 200 bp mismatch in either side
-        if self.salamzade:
-            if type(self.amr) == pd.Series:
-                self.amr = self.amr.to_frame().transpose()
-            is_amr = self.representatives['Representative'].apply(
-                self.amr_func
-            )
-        else:
-            is_amr = self.representatives['Product'].apply(
-                lambda x: x in self.__amr_names
-            )
         
+        is_amr = self.representatives['Product'].apply(
+            lambda x: x in self.__amr_names
+        )
+    
         is_amr.name = 'Is AMR'
 
         self.representatives = pd.concat(
