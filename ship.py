@@ -1,4 +1,5 @@
 #%%
+import shutil
 import joblib
 import numpy as np
 import yaml
@@ -53,6 +54,8 @@ parser.add_argument('--max_len', '-L', default = 9, nargs = 1,
 parser.add_argument('--min_n', '-n', default = 3, nargs = 1,
     help = 'Minimum number of plasmids containing a region with evidence for HGT for it to be included. Default is 3'
 )
+parser.add_argument('--keep-intermediate', '-i', action='store_true',
+    help = 'If set, keeps all intermediate files in path_to_SHIP_output/tmp.')
 
 def get_gff_filenames(annotations_dir: str):
     '''
@@ -69,10 +72,6 @@ if __name__ == '__main__':
     logging.basicConfig(filename=os.path.join(args.out, 'ship.log'), filemode='w', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logging.info(f'Starting SHIP.')
     logging.info(f'Output directory: {args.out}\nReading annotations from {args.annotations}\nUsing CH-HIT clusters at {args.cdhit_clusters}')
-    with open('configs/clustering_config.yaml', 'r') as config_file:
-        clustering_config = yaml.load(config_file, Loader=yaml.Loader)
-    with open('configs/data_config.yaml', 'r') as config_file:
-        data_config = yaml.load(config_file, Loader=yaml.Loader)
     with open('configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
     logging.info(f"Phylo config file (at configs/phylo_config):") 
@@ -168,5 +167,9 @@ if __name__ == '__main__':
         logging.info('Saving the search results.')
         bmf.save_report(os.path.join(args.out, 'HGT_AMR_regions.tsv'))
         joblib.dump(bmf, os.path.join(args.out, 'HGT_AMR_finder.pkl'), compress = 3)
+
+    if not args.keep_intermediate: 
+        logging.info('Removing temporary files.')
+        shutil.rmtree(tmp_path)
 
     logging.info('Done!')

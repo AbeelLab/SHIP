@@ -137,8 +137,13 @@ class GraphGenome:
             [x for x in self.strands.index if x in common_idx]
         ]
         
-        is_amr = self.representatives['Product'].apply(
-            lambda x: x in self.__amr_names
+        # AMRFinder annotations may differ from those in Prokka, for the same genes. 
+        # Compare the positions of the AMR hits with the ORFs to detect resistant genes. 
+        # Allows for a 200 bp mismatch in either side
+        if type(self.amr) == pd.Series:
+            self.amr = self.amr.to_frame().transpose()
+        is_amr = self.representatives['Representative'].apply(
+            self.amr_func
         )
     
         is_amr.name = 'Is AMR'
