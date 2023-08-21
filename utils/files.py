@@ -7,6 +7,7 @@ from typing import Iterable
 import numpy as np
 import warnings
 import pandas as pd
+from utils.amrfinder import filenames_from_contig_ids
 
 def find_annotation_paths(
     accessions: Iterable,
@@ -17,7 +18,7 @@ def find_annotation_paths(
     Returns the paths to the annotations of plasmids with accession number 
     specified in the parameter "accessions", in the format given by "format".
     Looks for files in "annotations_dir", a folder containing the Prokka
-    output files, divided by species.
+    output files.
 
     Parameters
     ---------
@@ -38,40 +39,16 @@ def find_annotation_paths(
         List of paths to each plasmid annotation.
     
     '''
-    walk = list(os.walk(annotations_dir))
-    folders = [
-        os.path.join(
-            annotations_dir,
-            folder
-        )
-        for folder in walk[0][1]
-    ]
-    subfolders = [
-        list(
-            os.walk(folder)
-        )[0][1]
-        for folder in folders
-    ]
+    folders = list(os.walk(annotations_dir))[0][1]
+    
     paths = []
     for accession in accessions:
-        found = False
-        for folder, isubfolders in zip(
-            folders,
-            subfolders
-        ):
-            if accession in isubfolders:
-                for file in list(os.walk(os.path.join(folder, accession)))[0][2]:
-                    if file.endswith(format) and file.startswith('PROKKA'):
-                        paths.append(
-                            os.path.join(
-                                folder,
-                                accession,
-                                file
-                            )
-                        )
-                        found = True
-                        break
-        if not found:
+        if accession in folders:
+            for file in list(os.walk(os.path.join(annotations_dir, accession)))[0][2]:
+                if file.endswith(format) and file.startswith('PROKKA'):
+                    paths.append(os.path.join(annotations_dir, accession, file))
+                    break
+        else:
             warnings.warn(f'Could not find {format} annotation file for accession {accession}. Skipping this plasmid...')
 
     return paths
@@ -121,6 +98,7 @@ def annotation_qc(
 def get_amr(
     accessions: Iterable,
     path_to_amr: str,
+    annotations_path: str,
     no_amr_key: str = 'Susceptible'
 ) -> pd.DataFrame:
     '''
@@ -132,12 +110,10 @@ def get_amr(
     it is not in the index of the AMRFinder table.
     '''
 
-    amr_df = pd.read_csv(
-        path_to_amr,
-        sep = '\t',
-        index_col = 0
-    )
-    amr_df.index = [x.split('.')[0] for x in amr_df.index]
+    amr_df = pd.read_csv(path_to_amr, sep = '\t', index_col = 0)
+    contig_ids = filenames_from_contig_ids(annotations_path)
+    amr_df.index = [contig_ids[x] for x in amr_df.index]
+
 
     plasmids_in_amr_df = amr_df.index.to_numpy()
     common_plasmids = np.array(

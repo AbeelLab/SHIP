@@ -18,8 +18,7 @@ import logging
 
 parser = argparse.ArgumentParser(
     description = '''
-Creates plasmid similarity networks based on the proposed method. Stores a SimpleDendrogram object
-that can be used for further analysis.
+SHIP
 '''
 )
 parser.add_argument(
@@ -67,11 +66,15 @@ def get_gff_filenames(annotations_dir: str):
 if __name__ == '__main__':
 
     args = parser.parse_args()
+    args.out = args.out[0]
+    args.cdhit = args.cdhit[0]
+    args.amr = args.amr[0]
+    args.annotations = args.annotations[0]
 
     # Prepare logger
-    logging.basicConfig(filename=os.path.join(args.out, 'ship.log'), filemode='w', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename=os.path.join(args.out, 'ship.log'), filemode='w', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=50)
     logging.info(f'Starting SHIP.')
-    logging.info(f'Output directory: {args.out}\nReading annotations from {args.annotations}\nUsing CH-HIT clusters at {args.cdhit_clusters}')
+    logging.info(f'Output directory: {args.out}\nReading annotations from {args.annotations}\nUsing CH-HIT clusters at {args.cdhit}')
     with open('configs/phylo_config.yaml', 'r') as config_file:
         phylo_config = yaml.load(config_file, Loader=yaml.Loader)
     logging.info(f"Phylo config file (at configs/phylo_config):") 
@@ -153,7 +156,7 @@ if __name__ == '__main__':
 
     # Load information about AMR genes
     logging.debug('Building AMR DataFrame with AMRFinder+ output.')
-    amr_df = get_amr(plasmid_names, path_to_amr_tsv)
+    amr_df = get_amr(plasmid_names, path_to_amr_tsv, args.annotations)
     logging.debug('Getting the IDs of resistant plasmids.')
     resistant_ids = np.unique(amr_df[amr_df['Gene symbol']!= 'Susceptible'].index)
 

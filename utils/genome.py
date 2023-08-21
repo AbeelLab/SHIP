@@ -6,6 +6,7 @@ pairwise distance of plasmids.
 from copy import deepcopy
 import pandas as pd
 import numpy as np
+from utils.amrfinder import filenames_from_contig_ids
 from utils.files import find_annotation_paths
 from BCBio.GFF import parse
 from typing import Iterable, Tuple, Union
@@ -86,7 +87,8 @@ class GraphGenome:
             sep = '\t',
             index_col = 0
         )
-        self.amr.index = [x.split('.')[0] for x in self.amr.index]
+        contig_ids = filenames_from_contig_ids(self.path_to_annotations)
+        self.amr.index = [contig_ids[x] for x in self.amr.index]
         try:
             self.amr = self.amr.loc[self.id]
             if type(self.amr['Sequence name'])==pd.Series:

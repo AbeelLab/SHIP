@@ -242,10 +242,7 @@ class ProteinClusters:
         self,
         path: str
     ):
-        with open(
-            self.path_clstr.split('.')[0],
-            'r'
-        ) as instream:
+        with open(self.path_clstr[:-6], 'r') as instream:
             reference_protein_file = instream.read()
         
         protein_ids = [

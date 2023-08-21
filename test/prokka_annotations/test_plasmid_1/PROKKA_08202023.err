@@ -1,0 +1,1397 @@
+Discrepancy Report Results
+
+Summary
+FATAL: MISSING_PROTEIN_ID:265 proteins have invalid IDs.
+DISC_SOURCE_QUALS_ASNDISC:strain (all present, all unique)
+DISC_SOURCE_QUALS_ASNDISC:taxname (all present, all unique)
+DISC_FEATURE_COUNT:CDS: 265 present
+DISC_COUNT_NUCLEOTIDES:1 nucleotide Bioseqs are present
+FEATURE_LOCATION_CONFLICT:265 features have inconsistent gene locations.
+OVERLAPPING_CDS:2 coding regions overlap another coding region with a similar or identical name.
+DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
+ONCALLER_COMMENT_PRESENT:1 comment descriptors were found (all same)
+SHORT_PROT_SEQUENCES:6 protein sequences are shorter than 50 aa.
+MISSING_GENOMEASSEMBLY_COMMENTS:1 bioseqs are missing GenomeAssembly structured comments
+MOLTYPE_NOT_MRNA:1 molecule types are not set as mRNA.
+TECHNIQUE_NOT_TSA:1 technique are not set as TSA
+MISSING_STRUCTURED_COMMENT:1 sequences do not include structured comments.
+MISSING_PROJECT:266 sequences do not include project.
+DISC_INCONSISTENT_MOLINFO_TECH:Molinfo Technique Report (some missing, all same)
+
+
+Detailed Report
+
+FATAL: DiscRep_ALL:MISSING_PROTEIN_ID::265 proteins have invalid IDs.
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_1 (length 291)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_2 (length 66)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_3 (length 117)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_4 (length 86)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_5 (length 262)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_6 (length 423)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_7 (length 153)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_8 (length 451)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_9 (length 160)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_10 (length 285)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_11 (length 316)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_12 (length 893)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_13 (length 48)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_14 (length 73)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_15 (length 417)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_16 (length 334)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_17 (length 129)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_18 (length 173)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_19 (length 278)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_20 (length 315)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_21 (length 345)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_22 (length 212)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_23 (length 150)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_24 (length 141)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_25 (length 193)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_26 (length 1434)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_27 (length 170)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_28 (length 503)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_29 (length 44)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_30 (length 351)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_31 (length 1062)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_32 (length 290)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_33 (length 594)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_34 (length 290)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_35 (length 125)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_36 (length 325)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_37 (length 352)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_38 (length 57)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_39 (length 375)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_40 (length 670)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_41 (length 73)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_42 (length 410)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_43 (length 173)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_44 (length 292)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_45 (length 311)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_46 (length 306)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_47 (length 312)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_48 (length 318)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_49 (length 91)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_50 (length 196)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_51 (length 85)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_52 (length 178)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_53 (length 148)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_54 (length 320)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_55 (length 301)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_56 (length 109)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_57 (length 386)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_58 (length 70)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_59 (length 360)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_60 (length 517)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_61 (length 545)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_62 (length 346)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_63 (length 212)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_64 (length 213)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_65 (length 212)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_66 (length 155)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_67 (length 402)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_68 (length 318)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_69 (length 359)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_70 (length 257)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_71 (length 380)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_72 (length 352)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_73 (length 193)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_74 (length 385)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_75 (length 151)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_76 (length 346)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_77 (length 192)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_78 (length 191)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_79 (length 413)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_80 (length 43)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_81 (length 93)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_82 (length 63)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_83 (length 123)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_84 (length 130)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_85 (length 98)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_86 (length 441)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_87 (length 68)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_88 (length 45)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_89 (length 80)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_90 (length 271)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_91 (length 141)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_92 (length 58)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_93 (length 99)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_94 (length 95)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_95 (length 679)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_96 (length 328)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_97 (length 102)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_98 (length 285)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_99 (length 67)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_100 (length 73)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_101 (length 134)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_102 (length 78)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_103 (length 151)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_104 (length 125)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_105 (length 684)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_106 (length 273)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_107 (length 194)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_108 (length 412)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_109 (length 301)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_110 (length 201)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_111 (length 529)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_112 (length 80)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_113 (length 225)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_114 (length 399)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_115 (length 294)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_116 (length 598)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_117 (length 108)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_118 (length 76)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_119 (length 280)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_120 (length 707)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_121 (length 482)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_122 (length 518)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_123 (length 308)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_124 (length 99)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_125 (length 608)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_126 (length 116)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_127 (length 182)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_128 (length 493)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_129 (length 226)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_130 (length 461)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_131 (length 117)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_132 (length 430)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_133 (length 1048)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_134 (length 146)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_135 (length 815)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_136 (length 65)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_137 (length 245)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_138 (length 149)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_139 (length 605)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_140 (length 298)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_141 (length 126)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_142 (length 309)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_143 (length 226)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_144 (length 466)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_145 (length 144)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_146 (length 272)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_147 (length 401)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_148 (length 67)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_149 (length 439)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_150 (length 55)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_151 (length 475)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_152 (length 171)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_153 (length 317)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_154 (length 135)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_155 (length 84)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_156 (length 95)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_157 (length 76)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_158 (length 92)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_159 (length 135)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_160 (length 175)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_161 (length 126)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_162 (length 988)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_163 (length 234)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_164 (length 218)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_165 (length 90)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_166 (length 291)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_167 (length 326)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_168 (length 420)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_169 (length 69)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_170 (length 140)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_171 (length 130)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_172 (length 249)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_173 (length 179)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_174 (length 172)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_175 (length 429)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_176 (length 1316)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_177 (length 471)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_178 (length 348)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_179 (length 170)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_180 (length 266)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_181 (length 50)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_182 (length 161)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_183 (length 245)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_184 (length 1048)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_185 (length 694)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_186 (length 369)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_187 (length 220)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_188 (length 393)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_189 (length 243)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_190 (length 117)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_191 (length 94)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_192 (length 101)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_193 (length 122)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_194 (length 178)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_195 (length 145)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_196 (length 98)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_197 (length 92)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_198 (length 93)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_199 (length 394)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_200 (length 58)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_201 (length 314)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_202 (length 199)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_203 (length 116)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_204 (length 67)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_205 (length 71)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_206 (length 283)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_207 (length 173)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_208 (length 201)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_209 (length 93)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_210 (length 58)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_211 (length 103)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_212 (length 66)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_213 (length 74)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_214 (length 67)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_215 (length 97)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_216 (length 163)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_217 (length 103)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_218 (length 106)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_219 (length 75)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_220 (length 202)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_221 (length 177)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_222 (length 62)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_223 (length 103)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_224 (length 79)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_225 (length 794)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_226 (length 149)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_227 (length 263)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_228 (length 85)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_229 (length 108)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_230 (length 48)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_231 (length 416)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_232 (length 202)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_233 (length 51)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_234 (length 85)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_235 (length 142)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_236 (length 125)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_237 (length 393)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_238 (length 98)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_239 (length 156)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_240 (length 796)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_241 (length 83)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_242 (length 62)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_243 (length 85)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_244 (length 145)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_245 (length 174)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_246 (length 254)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_247 (length 253)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_248 (length 87)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_249 (length 203)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_250 (length 43)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_251 (length 806)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_252 (length 218)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_253 (length 362)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_254 (length 818)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_255 (length 208)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_256 (length 93)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_257 (length 153)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_258 (length 58)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_259 (length 563)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_260 (length 387)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_261 (length 270)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_262 (length 284)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_263 (length 238)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_264 (length 66)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_265 (length 351)
+
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::strain (all present, all unique)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::1 sources have unique values for strain
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::taxname (all present, all unique)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::1 sources have unique values for taxname
+DiscRep_ALL:DISC_FEATURE_COUNT::CDS: 265 present
+DiscRep_ALL:DISC_COUNT_NUCLEOTIDES::1 nucleotide Bioseqs are present
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1 (length 247187)
+
+DiscRep_ALL:FEATURE_LOCATION_CONFLICT::265 features have inconsistent gene locations.
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	plasmid replication initiator TrfA	NZ_CP073982.1:1-876	GKOJODBC_00001
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:1302-1502	GKOJODBC_00002
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	pili assembly chaperone	NZ_CP073982.1:2025-2378	GKOJODBC_00003
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	plasmid transfer protein	NZ_CP073982.1:2486-2746	GKOJODBC_00004
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	pilus assembly protein	NZ_CP073982.1:2758-3546	GKOJODBC_00005
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	type-F conjugative transfer system secretin TraK	NZ_CP073982.1:3546-4817	GKOJODBC_00006
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:4819-5280	GKOJODBC_00007
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IncHI-type conjugal transfer protein TrhB	NZ_CP073982.1:5270-6625	GKOJODBC_00008
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	membrane protein	NZ_CP073982.1:6633-7115	GKOJODBC_00009
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	protein-disulfide isomerase HtdT	NZ_CP073982.1:7129-7986	GKOJODBC_00010
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IncHI-type conjugal transfer lipoprotein TrhV	NZ_CP073982.1:7996-8946	GKOJODBC_00011
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	TraC family protein	NZ_CP073982.1:8955-11636	GKOJODBC_00012
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:12992-13138	GKOJODBC_00013
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:14126-14347	GKOJODBC_00014
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	ParA family protein	NZ_CP073982.1:15472-16725	GKOJODBC_00015
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:16722-17726	GKOJODBC_00016
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	trhZ	NZ_CP073982.1:c18177-17788	GKOJODBC_00017
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	lipoprotein	NZ_CP073982.1:c18695-18174	GKOJODBC_00018
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c19524-18688	GKOJODBC_00019
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	metallophosphoesterase	NZ_CP073982.1:c20468-19521	GKOJODBC_00020
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	plasmid segregation protein ParM	NZ_CP073982.1:20832-21869	GKOJODBC_00021
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:21881-22519	GKOJODBC_00022
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	transfer repressor	NZ_CP073982.1:22924-23376	GKOJODBC_00023
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	plasmid transfer protein	NZ_CP073982.1:23366-23791	GKOJODBC_00024
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	plasmid transfer protein	NZ_CP073982.1:23773-24354	GKOJODBC_00025
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IncHI-type conjugal transfer protein RSP	NZ_CP073982.1:24474-28778	GKOJODBC_00026
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IncHI-type conjugal transfer protein TrhF	NZ_CP073982.1:29056-29568	GKOJODBC_00027
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	TrbC family F-type conjugative pilus assembly protein	NZ_CP073982.1:29555-31066	GKOJODBC_00028
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:31068-31202	GKOJODBC_00029
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IncHI-type conjugal transfer protein TrhU	NZ_CP073982.1:31211-32266	GKOJODBC_00030
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IncHI-type conjugal transfer protein TrhN	NZ_CP073982.1:32285-35473	GKOJODBC_00031
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	lipoprotein	NZ_CP073982.1:c36374-35502	GKOJODBC_00032
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IncHI-type conjugal transfer helicase TrhI	NZ_CP073982.1:36554-38338	GKOJODBC_00033
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:38733-39605	GKOJODBC_00034
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:39663-40040	GKOJODBC_00035
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:40101-41078	GKOJODBC_00036
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	AAA family ATPase	NZ_CP073982.1:41136-42194	GKOJODBC_00037
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:42326-42499	GKOJODBC_00038
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:42563-43690	GKOJODBC_00039
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	VWA domain-containing protein	NZ_CP073982.1:43768-45780	GKOJODBC_00040
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:45852-46073	GKOJODBC_00041
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	toprim domain-containing protein	NZ_CP073982.1:46187-47419	GKOJODBC_00042
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:47690-48211	GKOJODBC_00043
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:48290-49168	GKOJODBC_00044
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:49239-50174	GKOJODBC_00045
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:50243-51163	GKOJODBC_00046
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:51230-52168	GKOJODBC_00047
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:52340-53296	GKOJODBC_00048
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:53560-53835	GKOJODBC_00049
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:53880-54470	GKOJODBC_00050
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:54478-54735	GKOJODBC_00051
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:54809-55345	GKOJODBC_00052
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:55362-55808	GKOJODBC_00053
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	DNA replication protein	NZ_CP073982.1:55899-56861	GKOJODBC_00054
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:56871-57776	GKOJODBC_00055
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:57727-58056	GKOJODBC_00056
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	tyrosine-type recombinase/integrase	NZ_CP073982.1:c59238-58078	GKOJODBC_00057
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	transcriptional regulator	NZ_CP073982.1:59424-59636	GKOJODBC_00058
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:59995-61077	GKOJODBC_00059
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	kinase	NZ_CP073982.1:c62797-61244	GKOJODBC_00060
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	protein phosphatase 2C domain-containing protein	NZ_CP073982.1:c64406-62769	GKOJODBC_00061
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	VWA domain-containing protein	NZ_CP073982.1:c65446-64406	GKOJODBC_00062
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	VWA domain-containing protein	NZ_CP073982.1:c66170-65532	GKOJODBC_00063
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	TerD family protein	NZ_CP073982.1:c66811-66170	GKOJODBC_00064
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	VWA domain-containing protein	NZ_CP073982.1:c67472-66834	GKOJODBC_00065
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	tellurium resistance protein TerW	NZ_CP073982.1:c68403-67936	GKOJODBC_00066
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c69629-68421	GKOJODBC_00067
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	HpcH/HpaI aldolase/citrate lyase family protein	NZ_CP073982.1:c70596-69640	GKOJODBC_00068
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	cysteine protease StiP family protein	NZ_CP073982.1:c71675-70596	GKOJODBC_00069
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	trehalose phosphatase	NZ_CP073982.1:c72450-71677	GKOJODBC_00070
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	phosphoribosyltransferase domain-containing protein	NZ_CP073982.1:c73585-72443	GKOJODBC_00071
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	ATP-grasp domain-containing protein	NZ_CP073982.1:c74653-73595	GKOJODBC_00072
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	tellurium resistance TerZ family protein	NZ_CP073982.1:74977-75558	GKOJODBC_00073
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	TerD family protein	NZ_CP073982.1:75558-76715	GKOJODBC_00074
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	tellurite resistance TerB family protein	NZ_CP073982.1:76738-77193	GKOJODBC_00075
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	tellurium resistance membrane protein TerC	NZ_CP073982.1:77216-78256	GKOJODBC_00076
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	tellurium resistance membrane protein TerD	NZ_CP073982.1:78305-78883	GKOJODBC_00077
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	TerD family protein	NZ_CP073982.1:78951-79526	GKOJODBC_00078
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	VWA domain-containing protein	NZ_CP073982.1:79955-81196	GKOJODBC_00079
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:81287-81418	GKOJODBC_00080
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c82040-81759	GKOJODBC_00081
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c82281-82090	GKOJODBC_00082
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c82744-82373	GKOJODBC_00083
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:83087-83479	GKOJODBC_00084
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	helix-turn-helix transcriptional regulator	NZ_CP073982.1:84080-84376	GKOJODBC_00085
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	type II toxin-antitoxin system HipA family toxin	NZ_CP073982.1:84381-85706	GKOJODBC_00086
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:85767-85973	GKOJODBC_00087
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:86075-86212	GKOJODBC_00088
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:86224-86466	GKOJODBC_00089
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	HNH endonuclease	NZ_CP073982.1:86479-87294	GKOJODBC_00090
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:87548-87973	GKOJODBC_00091
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	type I restriction-modification system subunit M	NZ_CP073982.1:88427-88603	GKOJODBC_00092
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:88719-89018	GKOJODBC_00093
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:89096-89383	GKOJODBC_00094
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	ATP-dependent helicase	NZ_CP073982.1:c91370-89331	GKOJODBC_00095
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c92353-91367	GKOJODBC_00096
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:92917-93225	GKOJODBC_00097
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	HNH endonuclease	NZ_CP073982.1:93241-94098	GKOJODBC_00098
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:94160-94363	GKOJODBC_00099
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c94671-94450	GKOJODBC_00100
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	H-NS histone family protein	NZ_CP073982.1:c95109-94705	GKOJODBC_00101
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c95843-95607	GKOJODBC_00102
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c96340-95885	GKOJODBC_00103
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c96777-96400	GKOJODBC_00104
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	methyl-accepting chemotaxis protein	NZ_CP073982.1:c99109-97055	GKOJODBC_00105
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c100510-99689	GKOJODBC_00106
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	macrolide-binding transcriptional repressor MphR(A)	NZ_CP073982.1:c101605-101021	GKOJODBC_00107
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	macrolide resistance MFS transporter Mrx(A)	NZ_CP073982.1:c102843-101605	GKOJODBC_00108
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Mph(A) family macrolide 2'-phosphotransferase	NZ_CP073982.1:c103745-102840	GKOJODBC_00109
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IS6 family transposase	NZ_CP073982.1:c104472-103867	GKOJODBC_00110
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Tn3-like element TnAs1 family transposase	NZ_CP073982.1:104562-106151	GKOJODBC_00111
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	transposase	NZ_CP073982.1:106209-106451	GKOJODBC_00112
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	tetracycline resistance transcriptional repressor TetR(A)	NZ_CP073982.1:c107160-106483	GKOJODBC_00113
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	tetracycline efflux MFS transporter Tet(A)	NZ_CP073982.1:107239-108438	GKOJODBC_00114
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	EamA family transporter	NZ_CP073982.1:c109354-108470	GKOJODBC_00115
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Tn3-like element TnAs1 family transposase	NZ_CP073982.1:109843-111639	GKOJODBC_00116
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c111877-111551	GKOJODBC_00117
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c112190-111960	GKOJODBC_00118
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:112942-113784	GKOJODBC_00119
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	transposase	NZ_CP073982.1:113771-115894	GKOJODBC_00120
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	ATP-binding protein	NZ_CP073982.1:115894-117342	GKOJODBC_00121
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	TnsD family Tn7-like transposition protein	NZ_CP073982.1:117383-118939	GKOJODBC_00122
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:118951-119877	GKOJODBC_00123
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	helix-turn-helix transcriptional regulator	NZ_CP073982.1:120230-120529	GKOJODBC_00124
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	AAA family ATPase	NZ_CP073982.1:121093-122919	GKOJODBC_00125
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c123438-123088	GKOJODBC_00126
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	silver-binding protein SilE	NZ_CP073982.1:c124134-123586	GKOJODBC_00127
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	copper/silver sensor histidine kinase SilS	NZ_CP073982.1:c125743-124262	GKOJODBC_00128
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	copper/silver response regulator transcription factor SilR	NZ_CP073982.1:c126416-125736	GKOJODBC_00129
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Cu(+)/Ag(+) efflux RND transporter outer membrane channel SilC	NZ_CP073982.1:126606-127991	GKOJODBC_00130
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	cation efflux system protein CusF	NZ_CP073982.1:128019-128372	GKOJODBC_00131
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Cu(+)/Ag(+) efflux RND transporter periplasmic adaptor subunit SilB	NZ_CP073982.1:128486-129778	GKOJODBC_00132
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Cu(+)/Ag(+) efflux RND transporter permease subunit SilA	NZ_CP073982.1:129789-132935	GKOJODBC_00133
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:133022-133462	GKOJODBC_00134
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Ag(+)-translocating P-type ATPase SilP	NZ_CP073982.1:133589-136036	GKOJODBC_00135
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:136077-136274	GKOJODBC_00136
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	peptidoglycan DD-metalloendopeptidase family protein	NZ_CP073982.1:c137045-136308	GKOJODBC_00137
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	copper resistance protein	NZ_CP073982.1:c137783-137334	GKOJODBC_00138
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	multicopper oxidase PcoA	NZ_CP073982.1:138018-139835	GKOJODBC_00139
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	copper resistance outer membrane transporter PcoB	NZ_CP073982.1:139835-140731	GKOJODBC_00140
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	copper resistance system metallochaperone PcoC	NZ_CP073982.1:140771-141151	GKOJODBC_00141
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	copper resistance inner membrane protein PcoD	NZ_CP073982.1:141156-142085	GKOJODBC_00142
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	copper response regulator transcription factor PcoR	NZ_CP073982.1:142140-142820	GKOJODBC_00143
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	copper resistance membrane spanning protein PcoS	NZ_CP073982.1:142817-144217	GKOJODBC_00144
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	copper-binding protein	NZ_CP073982.1:144435-144869	GKOJODBC_00145
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:145247-146065	GKOJODBC_00146
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Chromosome partition protein Smc	NZ_CP073982.1:146062-147267	GKOJODBC_00147
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c147534-147331	GKOJODBC_00148
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c148866-147547	GKOJODBC_00149
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c149056-148889	GKOJODBC_00150
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	DNA cytosine methyltransferase	NZ_CP073982.1:c150544-149117	GKOJODBC_00151
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	thermonuclease family protein	NZ_CP073982.1:150759-151274	GKOJODBC_00152
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:151220-152173	GKOJODBC_00153
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:152221-152628	GKOJODBC_00154
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:152674-152928	GKOJODBC_00155
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:152966-153253	GKOJODBC_00156
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:153290-153520	GKOJODBC_00157
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:154040-154318	GKOJODBC_00158
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:154348-154755	GKOJODBC_00159
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c155333-154806	GKOJODBC_00160
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c155880-155500	GKOJODBC_00161
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Tn3-like element TnAs1 family transposase	NZ_CP073982.1:c158926-155960	GKOJODBC_00162
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IS6-like element IS26 family transposase	NZ_CP073982.1:159012-159716	GKOJODBC_00163
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	type II site-specific deoxyribonuclease	NZ_CP073982.1:159756-160412	GKOJODBC_00164
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	WbuC family cupin fold metalloprotein	NZ_CP073982.1:160396-160668	GKOJODBC_00165
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	extended-spectrum class A beta-lactamase CTX-M-32	NZ_CP073982.1:c161590-160715	GKOJODBC_00166
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IS5 family transposase	NZ_CP073982.1:161891-162871	GKOJODBC_00167
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IS1380-like element ISEcp1 family transposase	NZ_CP073982.1:c164340-163078	GKOJODBC_00168
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	lipoprotein	NZ_CP073982.1:164576-164785	GKOJODBC_00169
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c165267-164845	GKOJODBC_00170
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c165693-165301	GKOJODBC_00171
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	thioredoxin fold domain-containing protein	NZ_CP073982.1:c166467-165718	GKOJODBC_00172
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	lytic transglycosylase domain-containing protein	NZ_CP073982.1:166615-167154	GKOJODBC_00173
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	HAD domain-containing protein	NZ_CP073982.1:167285-167803	GKOJODBC_00174
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	HNH endonuclease	NZ_CP073982.1:c169200-167911	GKOJODBC_00175
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c173331-169381	GKOJODBC_00176
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IncHI-type conjugal transfer protein TrhH	NZ_CP073982.1:c174755-173340	GKOJODBC_00177
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	thioredoxin family protein	NZ_CP073982.1:c175791-174745	GKOJODBC_00178
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c176896-176384	GKOJODBC_00179
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c177698-176898	GKOJODBC_00180
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:178282-178434	GKOJODBC_00181
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	plasmid transfer protein	NZ_CP073982.1:178457-178942	GKOJODBC_00182
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:178939-179676	GKOJODBC_00183
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	TraI domain-containing protein	NZ_CP073982.1:179686-182832	GKOJODBC_00184
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	conjugative transfer system coupling protein TraD	NZ_CP073982.1:182832-184916	GKOJODBC_00185
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:184916-186025	GKOJODBC_00186
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:186012-186674	GKOJODBC_00187
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	S49 family peptidase	NZ_CP073982.1:186685-187866	GKOJODBC_00188
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	NERD domain-containing protein	NZ_CP073982.1:187868-188599	GKOJODBC_00189
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c189239-188886	GKOJODBC_00190
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c189589-189305	GKOJODBC_00191
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c190251-189946	GKOJODBC_00192
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c191052-190684	GKOJODBC_00193
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c191753-191217	GKOJODBC_00194
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c192258-191821	GKOJODBC_00195
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c192599-192303	GKOJODBC_00196
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c192998-192720	GKOJODBC_00197
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c193464-193183	GKOJODBC_00198
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	DNA-binding protein	NZ_CP073982.1:c194714-193530	GKOJODBC_00199
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c195306-195130	GKOJODBC_00200
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:195816-196760	GKOJODBC_00201
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:196860-197459	GKOJODBC_00202
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:197519-197869	GKOJODBC_00203
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:197915-198118	GKOJODBC_00204
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	type I toxin-antitoxin system Hok family toxin	NZ_CP073982.1:c198752-198537	GKOJODBC_00205
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IS3-like element IS150 family transposase	NZ_CP073982.1:c199645-198794	GKOJODBC_00206
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IS3 family transposase	NZ_CP073982.1:c200163-199642	GKOJODBC_00207
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c201101-200496	GKOJODBC_00208
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c201598-201317	GKOJODBC_00209
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c201919-201743	GKOJODBC_00210
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c202284-201973	GKOJODBC_00211
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c202707-202507	GKOJODBC_00212
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c202971-202747	GKOJODBC_00213
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c203229-203026	GKOJODBC_00214
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c203702-203409	GKOJODBC_00215
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c204273-203782	GKOJODBC_00216
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c204589-204278	GKOJODBC_00217
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c205425-205105	GKOJODBC_00218
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c205832-205605	GKOJODBC_00219
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c206668-206060	GKOJODBC_00220
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	HNH endonuclease	NZ_CP073982.1:c207316-206783	GKOJODBC_00221
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c207565-207377	GKOJODBC_00222
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c207873-207562	GKOJODBC_00223
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c208175-207936	GKOJODBC_00224
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	phosphoadenosine phosphosulfate reductase family protein	NZ_CP073982.1:c210809-208425	GKOJODBC_00225
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c211431-210982	GKOJODBC_00226
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c212274-211483	GKOJODBC_00227
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c212758-212501	GKOJODBC_00228
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c213150-212824	GKOJODBC_00229
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c213712-213566	GKOJODBC_00230
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	DNA methyltransferase	NZ_CP073982.1:c215243-213993	GKOJODBC_00231
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c216020-215412	GKOJODBC_00232
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c216204-216049	GKOJODBC_00233
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c216433-216176	GKOJODBC_00234
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c216926-216498	GKOJODBC_00235
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c217398-217021	GKOJODBC_00236
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	flavin reductase	NZ_CP073982.1:c218987-217806	GKOJODBC_00237
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	type II toxin-antitoxin system RelE/ParE family toxin	NZ_CP073982.1:c219292-218996	GKOJODBC_00238
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	YuiA family protein	NZ_CP073982.1:c219812-219342	GKOJODBC_00239
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Ig-like domain-containing protein	NZ_CP073982.1:c222637-220247	GKOJODBC_00240
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c223292-223041	GKOJODBC_00241
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c223513-223325	GKOJODBC_00242
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c223757-223500	GKOJODBC_00243
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c224181-223744	GKOJODBC_00244
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c224809-224285	GKOJODBC_00245
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:225130-225894	GKOJODBC_00246
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	methyltransferase	NZ_CP073982.1:225975-226736	GKOJODBC_00247
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:226830-227093	GKOJODBC_00248
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:227114-227725	GKOJODBC_00249
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c227885-227754	GKOJODBC_00250
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Ig-like domain-containing protein	NZ_CP073982.1:228190-230610	GKOJODBC_00251
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c232292-231636	GKOJODBC_00252
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	IncHI-type plasmid replication initiator protein RepHI2	NZ_CP073982.1:c233777-232689	GKOJODBC_00253
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Ig-like domain-containing protein	NZ_CP073982.1:c237341-234885	GKOJODBC_00254
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:237714-238340	GKOJODBC_00255
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c238679-238398	GKOJODBC_00256
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c239121-238660	GKOJODBC_00257
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c239346-239170	GKOJODBC_00258
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c241034-239343	GKOJODBC_00259
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	DNA-binding protein	NZ_CP073982.1:c242445-241282	GKOJODBC_00260
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	Dam family site-specific DNA-(adenine-N6)-methyltransferase	NZ_CP073982.1:242815-243627	GKOJODBC_00261
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c244490-243636	GKOJODBC_00262
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	zinc finger-like domain-containing protein	NZ_CP073982.1:c245441-244725	GKOJODBC_00263
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	hypothetical protein	NZ_CP073982.1:c245638-245438	GKOJODBC_00264
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	DNA-binding protein	NZ_CP073982.1:c246711-245656	GKOJODBC_00265
+
+DiscRep_ALL:OVERLAPPING_CDS::2 coding regions overlap another coding region with a similar or identical name.
+DiscRep_SUB:OVERLAPPING_CDS::2 coding regions overlap another coding region with a similar or identical name that do not have the appropriate note text
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	plasmid transfer protein	NZ_CP073982.1:23366-23791	GKOJODBC_00024
+prokka_annotations/test_plasmid_1/PROKKA_08202023:CDS	plasmid transfer protein	NZ_CP073982.1:23773-24354	GKOJODBC_00025
+
+DiscRep_ALL:DISC_QUALITY_SCORES::Quality scores are missing on all sequences.
+
+DiscRep_ALL:ONCALLER_COMMENT_PRESENT::1 comment descriptors were found (all same)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1:Annotated using prokka 1.12 from https://github.com/tseemann/prokka
+
+DiscRep_ALL:SHORT_PROT_SEQUENCES::6 protein sequences are shorter than 50 aa.
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_13 (length 48)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_29 (length 44)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_80 (length 43)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_88 (length 45)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_230 (length 48)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_250 (length 43)
+
+DiscRep_ALL:MISSING_GENOMEASSEMBLY_COMMENTS::1 bioseqs are missing GenomeAssembly structured comments
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1 (length 247187)
+
+DiscRep_ALL:MOLTYPE_NOT_MRNA::1 molecule types are not set as mRNA.
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1 (length 247187)
+
+DiscRep_ALL:TECHNIQUE_NOT_TSA::1 technique are not set as TSA
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1 (length 247187)
+
+DiscRep_ALL:MISSING_STRUCTURED_COMMENT::1 sequences do not include structured comments.
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1 (length 247187)
+
+DiscRep_ALL:MISSING_PROJECT::266 sequences do not include project.
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1 (length 247187)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_1 (length 291)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_2 (length 66)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_3 (length 117)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_4 (length 86)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_5 (length 262)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_6 (length 423)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_7 (length 153)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_8 (length 451)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_9 (length 160)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_10 (length 285)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_11 (length 316)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_12 (length 893)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_13 (length 48)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_14 (length 73)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_15 (length 417)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_16 (length 334)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_17 (length 129)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_18 (length 173)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_19 (length 278)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_20 (length 315)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_21 (length 345)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_22 (length 212)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_23 (length 150)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_24 (length 141)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_25 (length 193)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_26 (length 1434)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_27 (length 170)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_28 (length 503)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_29 (length 44)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_30 (length 351)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_31 (length 1062)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_32 (length 290)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_33 (length 594)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_34 (length 290)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_35 (length 125)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_36 (length 325)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_37 (length 352)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_38 (length 57)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_39 (length 375)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_40 (length 670)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_41 (length 73)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_42 (length 410)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_43 (length 173)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_44 (length 292)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_45 (length 311)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_46 (length 306)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_47 (length 312)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_48 (length 318)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_49 (length 91)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_50 (length 196)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_51 (length 85)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_52 (length 178)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_53 (length 148)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_54 (length 320)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_55 (length 301)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_56 (length 109)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_57 (length 386)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_58 (length 70)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_59 (length 360)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_60 (length 517)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_61 (length 545)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_62 (length 346)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_63 (length 212)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_64 (length 213)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_65 (length 212)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_66 (length 155)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_67 (length 402)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_68 (length 318)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_69 (length 359)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_70 (length 257)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_71 (length 380)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_72 (length 352)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_73 (length 193)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_74 (length 385)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_75 (length 151)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_76 (length 346)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_77 (length 192)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_78 (length 191)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_79 (length 413)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_80 (length 43)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_81 (length 93)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_82 (length 63)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_83 (length 123)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_84 (length 130)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_85 (length 98)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_86 (length 441)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_87 (length 68)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_88 (length 45)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_89 (length 80)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_90 (length 271)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_91 (length 141)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_92 (length 58)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_93 (length 99)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_94 (length 95)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_95 (length 679)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_96 (length 328)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_97 (length 102)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_98 (length 285)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_99 (length 67)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_100 (length 73)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_101 (length 134)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_102 (length 78)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_103 (length 151)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_104 (length 125)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_105 (length 684)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_106 (length 273)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_107 (length 194)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_108 (length 412)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_109 (length 301)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_110 (length 201)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_111 (length 529)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_112 (length 80)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_113 (length 225)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_114 (length 399)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_115 (length 294)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_116 (length 598)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_117 (length 108)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_118 (length 76)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_119 (length 280)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_120 (length 707)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_121 (length 482)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_122 (length 518)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_123 (length 308)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_124 (length 99)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_125 (length 608)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_126 (length 116)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_127 (length 182)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_128 (length 493)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_129 (length 226)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_130 (length 461)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_131 (length 117)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_132 (length 430)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_133 (length 1048)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_134 (length 146)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_135 (length 815)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_136 (length 65)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_137 (length 245)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_138 (length 149)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_139 (length 605)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_140 (length 298)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_141 (length 126)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_142 (length 309)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_143 (length 226)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_144 (length 466)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_145 (length 144)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_146 (length 272)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_147 (length 401)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_148 (length 67)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_149 (length 439)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_150 (length 55)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_151 (length 475)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_152 (length 171)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_153 (length 317)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_154 (length 135)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_155 (length 84)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_156 (length 95)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_157 (length 76)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_158 (length 92)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_159 (length 135)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_160 (length 175)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_161 (length 126)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_162 (length 988)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_163 (length 234)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_164 (length 218)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_165 (length 90)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_166 (length 291)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_167 (length 326)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_168 (length 420)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_169 (length 69)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_170 (length 140)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_171 (length 130)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_172 (length 249)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_173 (length 179)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_174 (length 172)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_175 (length 429)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_176 (length 1316)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_177 (length 471)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_178 (length 348)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_179 (length 170)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_180 (length 266)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_181 (length 50)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_182 (length 161)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_183 (length 245)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_184 (length 1048)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_185 (length 694)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_186 (length 369)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_187 (length 220)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_188 (length 393)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_189 (length 243)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_190 (length 117)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_191 (length 94)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_192 (length 101)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_193 (length 122)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_194 (length 178)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_195 (length 145)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_196 (length 98)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_197 (length 92)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_198 (length 93)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_199 (length 394)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_200 (length 58)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_201 (length 314)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_202 (length 199)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_203 (length 116)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_204 (length 67)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_205 (length 71)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_206 (length 283)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_207 (length 173)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_208 (length 201)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_209 (length 93)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_210 (length 58)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_211 (length 103)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_212 (length 66)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_213 (length 74)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_214 (length 67)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_215 (length 97)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_216 (length 163)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_217 (length 103)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_218 (length 106)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_219 (length 75)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_220 (length 202)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_221 (length 177)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_222 (length 62)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_223 (length 103)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_224 (length 79)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_225 (length 794)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_226 (length 149)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_227 (length 263)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_228 (length 85)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_229 (length 108)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_230 (length 48)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_231 (length 416)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_232 (length 202)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_233 (length 51)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_234 (length 85)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_235 (length 142)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_236 (length 125)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_237 (length 393)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_238 (length 98)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_239 (length 156)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_240 (length 796)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_241 (length 83)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_242 (length 62)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_243 (length 85)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_244 (length 145)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_245 (length 174)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_246 (length 254)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_247 (length 253)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_248 (length 87)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_249 (length 203)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_250 (length 43)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_251 (length 806)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_252 (length 218)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_253 (length 362)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_254 (length 818)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_255 (length 208)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_256 (length 93)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_257 (length 153)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_258 (length 58)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_259 (length 563)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_260 (length 387)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_261 (length 270)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_262 (length 284)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_263 (length 238)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_264 (length 66)
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1_265 (length 351)
+
+DiscRep_ALL:DISC_INCONSISTENT_MOLINFO_TECH::Molinfo Technique Report (some missing, all same)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::technique (all missing)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::1 Molinfos are missing field technique
+prokka_annotations/test_plasmid_1/PROKKA_08202023:NZ_CP073982.1 (length 247187)
+

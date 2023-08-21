@@ -105,6 +105,7 @@ class GeneMotifs:
             sep='\t', 
             index_col = 0
         )['Representative']
+        protein_clusters = protein_clusters[~protein_clusters.index.duplicated()]
 
         graph_dict = {'nodes': {}, 'edges': {}}
         added_nodes, added_edges = [], []
@@ -118,7 +119,7 @@ class GeneMotifs:
                     gene = feature.id
                 if gene not in added_nodes:
                     try:
-                        if self.is_amr[gene]:
+                        if np.any(self.is_amr[gene]):
                             color_ = 'green'
                         else:
                             color_ = 'gray'
