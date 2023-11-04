@@ -12,13 +12,13 @@ a large average pairwise distance.
 
 ## Installation
 
-SHIP is available in PyPI, and its latest version can be installed by running:
+~~SHIP is available in PyPI, and its latest version can be installed by running:~~
 
-```pip install ship-plasmid```
+~~```pip install ship-plasmid```~~
 
-Alternatively, you can install SHIP through conda:
+~~Alternatively, you can install SHIP through conda:~~
 
-```pip install -c bioconda ship-plasmid```
+~~```pip install -c bioconda ship-plasmid```~~
 
 ## Dependencies
 
