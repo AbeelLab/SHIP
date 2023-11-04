@@ -30,3 +30,5 @@ dependencies = [
 Home = "https://github.com/AbeelLab/plasmidHGT"
 Source = "https://github.com/AbeelLab/plasmidHGT"
 
+[project.scripts]
+ship = "ship:main"
