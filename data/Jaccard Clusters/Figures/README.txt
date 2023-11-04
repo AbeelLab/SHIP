@@ -1,1 +1,0 @@
-This folder should contain plots regarding plasmid clusters.

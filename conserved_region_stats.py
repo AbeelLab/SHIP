@@ -363,7 +363,7 @@ if __name__ == '__main__':
                 ' '.join(
                     [
                         'Number of plasmids with\nregion -',
-                        name_, 
+                        name_,
                         'regions'
                     ]
                 ),

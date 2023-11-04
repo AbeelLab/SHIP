@@ -1,2 +1,0 @@
-This folder should contain a GenBank feature with all features in the dataset. This file should be used with makeblastdb to create
-a databased used as reference for Prokka. The FASTA file from makeblastdb should also be stored in this folder.

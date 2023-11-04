@@ -1,0 +1,251 @@
+locus_tag	ftype	gene	EC_number	product
+ACKNMMCH_00001	CDS	replication initiation protein
+ACKNMMCH_00002	CDS	hypothetical protein
+ACKNMMCH_00003	CDS	IS5 family transposase
+ACKNMMCH_00004	CDS	hypothetical protein
+ACKNMMCH_00005	CDS	hypothetical protein
+ACKNMMCH_00006	CDS	hypothetical protein
+ACKNMMCH_00007	CDS	hypothetical protein
+ACKNMMCH_00008	CDS	hypothetical protein
+ACKNMMCH_00009	CDS	hypothetical protein
+ACKNMMCH_00010	CDS	hypothetical protein
+ACKNMMCH_00011	CDS	hypothetical protein
+ACKNMMCH_00012	CDS	hypothetical protein
+ACKNMMCH_00013	CDS	hypothetical protein
+ACKNMMCH_00014	CDS	hypothetical protein
+ACKNMMCH_00015	CDS	hypothetical protein
+ACKNMMCH_00016	CDS	IS6-like element IS26 family transposase
+ACKNMMCH_00017	CDS	hypothetical protein
+ACKNMMCH_00018	CDS	ead/Ea22-like family protein
+ACKNMMCH_00019	CDS	hypothetical protein
+ACKNMMCH_00020	CDS	hypothetical protein
+ACKNMMCH_00021	CDS	hypothetical protein
+ACKNMMCH_00022	CDS	hypothetical protein
+ACKNMMCH_00023	CDS	IS1 family transposase
+ACKNMMCH_00024	CDS	hypothetical protein
+ACKNMMCH_00025	CDS	hypothetical protein
+ACKNMMCH_00026	CDS	hypothetical protein
+ACKNMMCH_00027	CDS	hypothetical protein
+ACKNMMCH_00028	CDS	hypothetical protein
+ACKNMMCH_00029	CDS	hypothetical protein
+ACKNMMCH_00030	CDS	speE	2.5.1.16	Polyamine aminopropyltransferase
+ACKNMMCH_00031	CDS	hypothetical protein
+ACKNMMCH_00032	CDS	hypothetical protein
+ACKNMMCH_00033	CDS	DNA-binding protein
+ACKNMMCH_00034	CDS	hypothetical protein
+ACKNMMCH_00035	CDS	hypothetical protein
+ACKNMMCH_00036	CDS	hypothetical protein
+ACKNMMCH_00037	CDS	hypothetical protein
+ACKNMMCH_00038	CDS	NB-ARC domain protein
+ACKNMMCH_00039	CDS	NB-ARC domain protein
+ACKNMMCH_00040	CDS	hypothetical protein
+ACKNMMCH_00041	CDS	type I-E CRISPR-associated protein Cas6/Cse3/CasE
+ACKNMMCH_00042	CDS	DEAD/DEAH box helicase
+ACKNMMCH_00043	CDS	hypothetical protein
+ACKNMMCH_00044	CDS	CRISPR-associated protein Csf2
+ACKNMMCH_00045	CDS	hypothetical protein
+ACKNMMCH_00046	CDS	tnpA_1	IS200/IS605 family transposase
+ACKNMMCH_00047	CDS	RNA-guided endonuclease TnpB family protein
+ACKNMMCH_00048	CDS	ISL3-like element ISKox3 family transposase
+ACKNMMCH_00049	CDS	ltrA_1	2.7.7.49	group II intron reverse transcriptase/maturase
+ACKNMMCH_00050	CDS	umuD	2.7.7.7	translesion error-prone DNA polymerase V autoproteolytic subunit
+ACKNMMCH_00051	CDS	umuC	2.7.7.7	translesion error-prone DNA polymerase V subunit UmuC
+ACKNMMCH_00052	CDS	hypothetical protein
+ACKNMMCH_00053	CDS	RES family NAD+ phosphorylase
+ACKNMMCH_00054	CDS	hypothetical protein
+ACKNMMCH_00055	CDS	IS481 family transposase
+ACKNMMCH_00056	CDS	IS3-like element ISKpn38 family transposase
+ACKNMMCH_00057	CDS	ISNCY family transposase
+ACKNMMCH_00058	CDS	IS110 family transposase
+ACKNMMCH_00059	CDS	hypothetical protein
+ACKNMMCH_00060	CDS	cytochrome b/b6 domain-containing protein
+ACKNMMCH_00061	CDS	cation diffusion facilitator family transporter
+ACKNMMCH_00062	CDS	relB	type II toxin-antitoxin system antitoxin RelB
+ACKNMMCH_00063	CDS	relE	3.1.26.-	type II toxin-antitoxin system mRNA interferase RelE
+ACKNMMCH_00064	CDS	hypothetical protein
+ACKNMMCH_00065	CDS	IS6 family transposase
+ACKNMMCH_00066	CDS	recombinase family protein
+ACKNMMCH_00067	CDS	Tn3 family transposase
+ACKNMMCH_00068	CDS	mercuric transport protein MerT
+ACKNMMCH_00069	CDS	merR_1	Hg(II)-responsive transcriptional regulator
+ACKNMMCH_00070	CDS	S-4TM family putative pore-forming effector
+ACKNMMCH_00071	CDS	nucleotidyltransferase
+ACKNMMCH_00072	CDS	hypothetical protein
+ACKNMMCH_00073	CDS	H-NS histone family protein
+ACKNMMCH_00074	CDS	phospholipase D family protein
+ACKNMMCH_00075	CDS	thermonuclease family protein
+ACKNMMCH_00076	CDS	hypothetical protein
+ACKNMMCH_00077	CDS	hypothetical protein
+ACKNMMCH_00078	CDS	plasmid SOS inhibition protein A
+ACKNMMCH_00079	CDS	hypothetical protein
+ACKNMMCH_00080	CDS	hypothetical protein
+ACKNMMCH_00081	CDS	HAD-IB family hydrolase
+ACKNMMCH_00082	CDS	VWA domain-containing protein
+ACKNMMCH_00083	CDS	terE	tellurium resistance cAMP binding protein TerE
+ACKNMMCH_00084	CDS	terD	tellurium resistance membrane protein TerD
+ACKNMMCH_00085	CDS	terC	tellurium resistance membrane protein TerC
+ACKNMMCH_00086	CDS	terB	tellurium resistance membrane protein TerB
+ACKNMMCH_00087	CDS	terA	tellurium resistance system protein TerA
+ACKNMMCH_00088	CDS	tellurium resistance TerZ family protein
+ACKNMMCH_00089	CDS	ATP-grasp domain-containing protein
+ACKNMMCH_00090	CDS	phosphoribosyltransferase domain-containing protein
+ACKNMMCH_00091	CDS	trehalose phosphatase
+ACKNMMCH_00092	CDS	cysteine protease StiP family protein
+ACKNMMCH_00093	CDS	HpcH/HpaI aldolase/citrate lyase family protein
+ACKNMMCH_00094	CDS	hypothetical protein
+ACKNMMCH_00095	CDS	ribbon-helix-helix protein, CopG family
+ACKNMMCH_00096	CDS	IS5 family transposase
+ACKNMMCH_00097	CDS	VWA domain-containing protein
+ACKNMMCH_00098	CDS	TerD family protein
+ACKNMMCH_00099	CDS	VWA domain-containing protein
+ACKNMMCH_00100	CDS	VWA domain-containing protein
+ACKNMMCH_00101	CDS	protein phosphatase 2C domain-containing protein
+ACKNMMCH_00102	CDS	kinase
+ACKNMMCH_00103	CDS	EcsC family protein
+ACKNMMCH_00104	CDS	hypothetical protein
+ACKNMMCH_00105	CDS	hypothetical protein
+ACKNMMCH_00106	CDS	hypothetical protein
+ACKNMMCH_00107	CDS	YrzE family protein
+ACKNMMCH_00108	CDS	GNAT family N-acetyltransferase
+ACKNMMCH_00109	CDS	hypothetical protein
+ACKNMMCH_00110	CDS	hypothetical protein
+ACKNMMCH_00111	CDS	hypothetical protein
+ACKNMMCH_00112	CDS	cytoplasmic protein
+ACKNMMCH_00113	CDS	hypothetical protein
+ACKNMMCH_00114	CDS	merR_2	Hg(II)-responsive transcriptional regulator
+ACKNMMCH_00115	CDS	merT	mercuric ion transporter MerT
+ACKNMMCH_00116	CDS	merP	mercury resistance system periplasmic binding protein MerP
+ACKNMMCH_00117	CDS	merC	organomercurial transporter MerC
+ACKNMMCH_00118	CDS	merA	1.16.1.1	mercury(II) reductase
+ACKNMMCH_00119	CDS	merD	mercury resistance co-regulator MerD
+ACKNMMCH_00120	CDS	merE	broad-spectrum mercury transporter MerE
+ACKNMMCH_00121	CDS	hypothetical protein
+ACKNMMCH_00122	CDS	IS6 family transposase
+ACKNMMCH_00123	CDS	ltrA_2	2.7.7.49	group II intron reverse transcriptase/maturase
+ACKNMMCH_00124	CDS	hypothetical protein
+ACKNMMCH_00125	CDS	mphR(A)	macrolide-binding transcriptional repressor MphR(A)
+ACKNMMCH_00126	CDS	mrx(A)	macrolide resistance MFS transporter Mrx(A)
+ACKNMMCH_00127	CDS	Mph(A) family macrolide 2'-phosphotransferase
+ACKNMMCH_00128	CDS	IS6 family transposase
+ACKNMMCH_00129	CDS	repM	replication initiation protein RepM
+ACKNMMCH_00130	CDS	plasmid replication DNA-binding protein
+ACKNMMCH_00131	CDS	Mph(E) family macrolide 2'-phosphotransferase
+ACKNMMCH_00132	CDS	msr(E)	ABC-F type ribosomal protection protein Msr(E)
+ACKNMMCH_00133	CDS	IS4-like element ISEc29 family transposase
+ACKNMMCH_00134	CDS	hypothetical protein
+ACKNMMCH_00135	CDS	armA	2.1.1.179	16S rRNA (guanine(1405)-N(7))-methyltransferase ArmA
+ACKNMMCH_00136	CDS	hypothetical protein
+ACKNMMCH_00137	CDS	IS5 family transposase
+ACKNMMCH_00138	CDS	IS91-like element ISCR1 family transposase
+ACKNMMCH_00139	CDS	sul1	sulfonamide-resistant dihydropteroate synthase Sul1
+ACKNMMCH_00140	CDS	quaternary ammonium compound efflux SMR transporter QacE delta 1
+ACKNMMCH_00141	CDS	AadA family aminoglycoside 3''-O-nucleotidyltransferase
+ACKNMMCH_00142	CDS	dfrA12	trimethoprim-resistant dihydrofolate reductase DfrA12
+ACKNMMCH_00143	CDS	intI1	class 1 integron integrase IntI1
+ACKNMMCH_00144	CDS	recombinase family protein
+ACKNMMCH_00145	CDS	Tn3 family transposase
+ACKNMMCH_00146	CDS	RepB family plasmid replication initiator protein
+ACKNMMCH_00147	CDS	hypothetical protein
+ACKNMMCH_00148	CDS	hypothetical protein
+ACKNMMCH_00149	CDS	IS4 family transposase
+ACKNMMCH_00150	CDS	IS5 family transposase
+ACKNMMCH_00151	CDS	ltrA_3	2.7.7.49	group II intron reverse transcriptase/maturase
+ACKNMMCH_00152	CDS	tyrosine-type recombinase/integrase
+ACKNMMCH_00153	CDS	hypothetical protein
+ACKNMMCH_00154	CDS	hypothetical protein
+ACKNMMCH_00155	CDS	hypothetical protein
+ACKNMMCH_00156	CDS	DNA replication protein
+ACKNMMCH_00157	CDS	hypothetical protein
+ACKNMMCH_00158	CDS	hypothetical protein
+ACKNMMCH_00159	CDS	hypothetical protein
+ACKNMMCH_00160	CDS	hypothetical protein
+ACKNMMCH_00161	CDS	hypothetical protein
+ACKNMMCH_00162	CDS	hypothetical protein
+ACKNMMCH_00163	CDS	toprim domain-containing protein
+ACKNMMCH_00164	CDS	hypothetical protein
+ACKNMMCH_00165	CDS	VWA domain-containing protein
+ACKNMMCH_00166	CDS	hypothetical protein
+ACKNMMCH_00167	CDS	AAA family ATPase
+ACKNMMCH_00168	CDS	hypothetical protein
+ACKNMMCH_00169	CDS	hypothetical protein
+ACKNMMCH_00170	CDS	hypothetical protein
+ACKNMMCH_00171	CDS	ATP-dependent helicase
+ACKNMMCH_00172	CDS	type II toxin-antitoxin system Phd/YefM family antitoxin
+ACKNMMCH_00173	CDS	type II toxin-antitoxin system RelE/ParE family toxin
+ACKNMMCH_00174	CDS	RNA-guided endonuclease TnpB family protein
+ACKNMMCH_00175	CDS	tnpA_2	IS200/IS605 family transposase
+ACKNMMCH_00176	CDS	RNA-guided endonuclease TnpB family protein
+ACKNMMCH_00177	CDS	hypothetical protein
+ACKNMMCH_00178	CDS	hypothetical protein
+ACKNMMCH_00179	CDS	lipoprotein
+ACKNMMCH_00180	CDS	traN	conjugal transfer protein TraN
+ACKNMMCH_00181	CDS	trhU	IncHI-type conjugal transfer protein TrhU
+ACKNMMCH_00182	CDS	TrbC family F-type conjugative pilus assembly protein
+ACKNMMCH_00183	CDS	TrbC family F-type conjugative pilus assembly protein
+ACKNMMCH_00184	CDS	lepB	3.4.21.89	signal peptidase I
+ACKNMMCH_00185	CDS	Ig-like domain-containing protein
+ACKNMMCH_00186	CDS	plasmid transfer protein
+ACKNMMCH_00187	CDS	hypothetical protein
+ACKNMMCH_00188	CDS	transfer repressor
+ACKNMMCH_00189	CDS	metallophosphoesterase
+ACKNMMCH_00190	CDS	hypothetical protein
+ACKNMMCH_00191	CDS	lipoprotein
+ACKNMMCH_00192	CDS	trhZ
+ACKNMMCH_00193	CDS	IS4-like element ISVsa5 family transposase
+ACKNMMCH_00194	CDS	DsbC family protein
+ACKNMMCH_00195	CDS	hypothetical protein
+ACKNMMCH_00196	CDS	TraC family protein
+ACKNMMCH_00197	CDS	traV	type IV conjugative transfer system lipoprotein TraV
+ACKNMMCH_00198	CDS	disulfide isomerase
+ACKNMMCH_00199	CDS	IS4-like element ISVsa5 family transposase
+ACKNMMCH_00200	CDS	DsbC family protein
+ACKNMMCH_00201	CDS	membrane protein
+ACKNMMCH_00202	CDS	TraB/VirB10 family protein
+ACKNMMCH_00203	CDS	hypothetical protein
+ACKNMMCH_00204	CDS	type-F conjugative transfer system secretin TraK
+ACKNMMCH_00205	CDS	traE family protein
+ACKNMMCH_00206	CDS	plasmid transfer protein
+ACKNMMCH_00207	CDS	pili assembly chaperone
+ACKNMMCH_00208	CDS	hypothetical protein
+ACKNMMCH_00209	CDS	hypothetical protein
+ACKNMMCH_00210	CDS	hypothetical protein
+ACKNMMCH_00211	CDS	DNA-binding protein
+ACKNMMCH_00212	CDS	hypothetical protein
+ACKNMMCH_00213	CDS	YuiA family protein
+ACKNMMCH_00214	CDS	Ig-like domain-containing protein
+ACKNMMCH_00215	CDS	hypothetical protein
+ACKNMMCH_00216	CDS	hypothetical protein
+ACKNMMCH_00217	CDS	hypothetical protein
+ACKNMMCH_00218	CDS	hypothetical protein
+ACKNMMCH_00219	CDS	hypothetical protein
+ACKNMMCH_00220	CDS	ParA family protein
+ACKNMMCH_00221	CDS	peptide transporter
+ACKNMMCH_00222	CDS	hypothetical protein
+ACKNMMCH_00223	CDS	Ig-like domain-containing protein
+ACKNMMCH_00224	CDS	IS5 family transposase
+ACKNMMCH_00225	CDS	Ig-like domain repeat protein
+ACKNMMCH_00226	CDS	Ig-like domain-containing protein
+ACKNMMCH_00227	CDS	IS4-like element ISVsa5 family transposase
+ACKNMMCH_00228	CDS	Ig-like domain repeat protein
+ACKNMMCH_00229	CDS	Ig-like domain-containing protein
+ACKNMMCH_00230	CDS	IS5 family transposase
+ACKNMMCH_00231	CDS	hypothetical protein
+ACKNMMCH_00232	CDS	hypothetical protein
+ACKNMMCH_00233	CDS	hypothetical protein
+ACKNMMCH_00234	CDS	hypothetical protein
+ACKNMMCH_00235	CDS	hypothetical protein
+ACKNMMCH_00236	CDS	hypothetical protein
+ACKNMMCH_00237	CDS	hypothetical protein
+ACKNMMCH_00238	CDS	hypothetical protein
+ACKNMMCH_00239	CDS	Eac protein
+ACKNMMCH_00240	CDS	hypothetical protein
+ACKNMMCH_00241	CDS	yfaE	class I ribonucleotide reductase maintenance protein YfaE
+ACKNMMCH_00242	CDS	type II toxin-antitoxin system RelE/ParE family toxin
+ACKNMMCH_00243	CDS	hypothetical protein
+ACKNMMCH_00244	CDS	hypothetical protein
+ACKNMMCH_00245	CDS	helix-turn-helix domain-containing protein
+ACKNMMCH_00246	CDS	site-specific DNA-methyltransferase
+ACKNMMCH_00247	CDS	hypothetical protein
+ACKNMMCH_00248	CDS	IS5 family transposase
+ACKNMMCH_00249	CDS	acyltransferase
+ACKNMMCH_00250	CDS	NgrC

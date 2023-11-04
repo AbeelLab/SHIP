@@ -15,19 +15,11 @@ class ProteinClusters:
 
     def __init__(
         self,
-        similarity: float,
-        word_length: int,
         path_clustering: str
     ):
 
-        self.similarity = similarity
-        self.word_length = word_length
-        self.path_clstr = os.path.join(
-            path_clustering,
-            f'protein-clustering-s{int(np.round(self.similarity*10))}-k{self.word_length}.clstr'
-        )
-        with open(self.path_clstr, 'r') as stream:
-            self.__cluster_txt = stream.read()
+        self.path_clstr = path_clustering
+        with open(self.path_clstr, 'r') as stream: self.__cluster_txt = stream.read()
 
         self.clusters = self.__parse_clstr_file(self.__cluster_txt)
 
@@ -137,7 +129,7 @@ class ProteinClusters:
         Writes the clusters DataFrame into a tsv file.
         '''
         self.clusters.to_csv(
-            path+f'_s{self.similarity}_k{self.word_length}.tsv',
+            path+'.tsv',
             sep = '\t'
         )
 
@@ -250,10 +242,7 @@ class ProteinClusters:
         self,
         path: str
     ):
-        with open(
-            self.path_clstr.split('.')[0],
-            'r'
-        ) as instream:
+        with open(self.path_clstr[:-6], 'r') as instream:
             reference_protein_file = instream.read()
         
         protein_ids = [

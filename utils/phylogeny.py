@@ -23,7 +23,7 @@ import pymc as pm
 import arviz as az
 import networkx as nx
 
-class SimpleDendogram:
+class PlasmidDistance:
 
     def __init__(
         self,
@@ -844,24 +844,18 @@ class Pangenome:
 
 def plot_pangenome(
     ids: Iterable,
-    data_config_,
-    phylo_config_,
+    tmp_path: str,
+    annotations_path: str,
     with_duplicates = True,
-    salamzade = False,
     hidden = False
 ) -> Pangenome:
     pangenome = Pangenome(
         [
-            GraphGenome(
-                x,
-                data_config_['paths']['annotations'],
-                phylo_config_['paths']['representative-proteins'],
-                data_config_['paths']['amr_hits'],
-                salamzade
-            )
+            GraphGenome(x, annotations_path, os.path.join(tmp_path, 'protein_cluster_membership.tsv'),
+                os.path.join(tmp_path, 'amrfinder_output.tsv'))
             for x in ids
         ],
-        path_to_protein_names = phylo_config_['paths']['protein-names'],
+        path_to_protein_names = os.path.join(tmp_path, 'Protein Clusters.tsv'),
         path = None
     )
     pangenome.show(with_duplicates=with_duplicates, hidden = hidden)
