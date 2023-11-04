@@ -8,14 +8,16 @@ reflect divergence times between the query plasmids, by considering the number o
 from the input data. Then, SHIP searches for regions containing AMR genes present in plasmids with
 a large average pairwise distance.
 
-*Note:* currently, SHIP only looks for regions containing AMR genes and complete plasmid assemblies.
+**Note:** currently, SHIP only looks for regions containing AMR genes and complete plasmid assemblies.
 
 ## Installation
 
 SHIP is available in PyPI, and its latest version can be installed by running:
+
 ```pip install ship-plasmid```
 
 Alternatively, you can install SHIP through conda:
+
 ```pip install -c bioconda ship-plasmid```
 
 ## Dependencies
@@ -31,6 +33,7 @@ uses as input files created by other bioinformatics tools, namely:
 ### Inputs
 
 For basic usage, SHIP can be executed with the command
+
 ```ship -a path/to/annotations/ -c path/to/orthogroups/ -r path/to/amr/```
 
 SHIP requires gene annotations from Prokka or Bakta. However, product prediction is not required to run SHIP
@@ -54,10 +57,15 @@ should be provided as the ```--amr``` or ```-r``` argument.
 #### Optional arguments
 
 ```--plot-dendogram```, ```-d```: If set, plots a dendrogram of the plasmid phylogeny as estimated by SHIP.
+
 ```--min_dist```, ```-m```:  Minimum average plasmid distance between plasmids containing a region for it to be considered as having evidence for HGT. Default is 0.1.
+
 ```--min_len```, ```-l```:  Minimum number of CDS in a fragment with evidence for HGT for it to be included. Default is 5.
+
 ```--max_len```, ```-L```:  Maximum searched number of CDS in fragments. Longer fragments with evidence for HGT will be split in fragments of ```--max_len```. Default is 9.
+
 ```--min_n```, ```-n```:  Minimum number of plasmids containing a region with evidence for HGT for it to be included in the output. Default is 3.
+
 ```--keep-intermediate```, ```-i```: If set, keeps all intermediate files in path_to_SHIP_output/tmp.
 
 ## Citation
