@@ -1,196 +1,66 @@
-# plasmidHGT
+# SHIP
+## Synteny-aware HGT Identification in Plasmids
 
-Code developed for _Identifying Antimicrobial Resistance Gene Transfer Between Plasmids_. 
+SHIP is a tool to find antimicrobial resistant (AMR) DNA regions with evidence of lateral transfer between plasmids. To do this,
+SHIP starts by computing pairwise distances between all plasmids provided as input. These distances
+reflect divergence times between the query plasmids, by considering the number of structural variants
+(SV) needed to obtain one plasmid sequence from another. SHIP also infers the frequencies of SVs
+from the input data. Then, SHIP searches for regions containing AMR genes present in plasmids with
+a large average pairwise distance.
 
-By Marco Teixeira, Stephanie Pillay, Aysun Urhan and Thomas Abeel,
-Delft Bioinformatics Lab, Delft University of Technology, Delft, 2628 XE, Netherlands
+*Note:* currently, SHIP only looks for regions containing AMR genes and complete plasmid assemblies.
+
+## Installation
+
+SHIP is available in PyPI, and its latest version can be installed by running:
+```pip install ship-plasmid```
+
+Alternatively, you can install SHIP through conda:
+```pip install -c bioconda ship-plasmid```
 
 ## Dependencies
 
-Requires:
-- Python 3.8
-- AMRFinder+ version 3.10.45
-- MOBSuite version 3.0.3
-- Biopython version 1.79
-- Prokka version 1.12
-- CD-HIT version 4.8.1
-- Pyvis version 0.2.1
-- NetworkX version 2.8.6
-- markov-clustering 0.0.6
-- pyMC 4.2.2
-- Numpy
-- Pandas
-- Joblib
-- Matplotlib
-- Pyyaml
-- Scipy
-- scikit-learn
-
-Developed for Ubuntu 20.04.
-
-# Running
-
-The FASTA files for the plasmids to analyze should be in data/Plasmid FASTA. The
-GenBank files for these plasmids, with features, should be placed in data/Plasmid_Features. The subdirectory data/Concatenated_Plasmid_FASTA should contain the plasmid sequence FASTA files concatenated per group. In both directories, plasmids should be placed inside one or multiple folders, corresponding to groups (e.g. host species).
-
-`pipeline_clustering.sh` implements an initial Jaccard-based clustering of the plasmids in data/Plasmid FASTA and creates all necessary input files for `pipeline_networks.sh`.
-
-`pipeline_networks.sh` builds and analyzes detailed plasmid networks for some of the clusters found with `pipeline_clustering.sh`. Alternatively, the data used in the manuscript can be loaded.
-
-`pipeline_mobsuites.sh` runs MOBSuite on the plasmid sequences. Required for further network analysis.
-
-To run each script, `bash pipeline_networks.sh` or `bash pipeline_clustering.sh`.
-
-
-A conda requirements.txt file is available for the installation of all dependencies needed to run `pipeline_clustering.sh` and `pipeline_networks.sh`. However, Prokka, MOBSuite, and AMRFinder+, tools required for plasmid annotation, conflict with the packages required to find conserved AMR regions and it is easier to run these tools in separate environments. The files prokka_requirements.txt, mobsuite_requirements.txt, and amrfinder_requirements.txt can be used to setup conda environments for each.
-
-# Scripts
-
-## `annotate`
-
-Requires Prokka version 1.12
-
-Runs Prokka on plasmid FASTA files to transfer the original annotations. Outputs the annotations to an Annotations folder. Requires a FASTA file with all products concatenated per group (FASTA folder) in data/Plasmid_Features.
-
-If run for the first time, --build should be set.
-
-### Options
-
-- `--build`: Builds a protein FASTA database with all plasmid features. Must be set at least once.
-
-## `make_plasmid_info_df`
-
-Writes plasmid information into a TSV file. This information includes host species, strain and BioSample ID.
-
-## `find_amr`
-
-Requires AMRFinder+ 3.10.45
-
-Calls AMRFinder+ to find AMR genes in all plasmids. Uses the concatenated FASTA files in data/Concatenated_Plasmid_FASTA. AMRFinder+ sometimes fails when using individual FASTA files. Creates one AMRFinder file per group.
-
-## `make_amrfinder_df`
-
-Processes the output files from AMRFinder+ and concatenates it into a single TSV file.
-
-## `homolog_clustering`
-
-Requires CD-HIT version 4.8.1
-
-Defines homolog gene clusters with 90% amino acid similarity using CD-HIT.
-
-## `replace_with_homologs`
-
-Processes the CD-HIT output to replace the CDS annotations in the plasmid sequences with the representative CDS.
-
-## `cluster_plasmids`
-
-Clusters plasmids according to the Jaccard similarity on gene content. Plots the panplasmidome of the plasmids in each cluster. The computed clusters are saved in data/Jaccard Clusters.
-
-### Options
-
-- `--load`: Loads pre-computed clusters and plots stats and the panplasmidome graphs.
-
-## `cluster_analysis`
-
-Provides statistics for the clusters computed by `cluster_plasmids.py`. Can use either the clusters more recently obtained with `cluster_plasmids.py` or those used in the paper.
-
-### Options
-
-- `--paper`: If set, uses the clusters computed and described in the paper, instead of those lastly obtained with `cluster_plasmids.py`.
-
-## `prepare_mobsuite_input`
-
-Copies the plasmid sequence FASTA files into one folder, to act as input for MOBSuite. Uses the files in data/Plasmid Networks or the clusters defined in the paper. Includes all plasmids in the Jaccard-Subclusters.tsv file.
-
-*Note:* if `--paper` is not set, `build_networks.py` must be executed before calling `prepare_mobsuite_input`.
-
-### Options
-
-- `--paper`: If set, uses the clusters computed and described in the paper.
-
-## `make_mobsuite_db`
-
-Concatenates the MOBSuite outputs and creates one table per plasmid typing scheme.
-
-## `build_networks`
-
-Creates detailed plasmid similarity networks based on the proposed method for the specified clusters. Stores a SimpleDendrogram object that can be used for further analysis. Can use the Jaccard-based clusters used in the paper.
-
-### Options
-
-- `--paper`: If set, uses the Jaccard-based clusters computed and described in the paper.
-- `--clusters`: One or more clusters for which to build the more detailed networks. Must be integers corresponding to Jaccard-based cluster numbers. Redundant and not required if `--paper` is set.
-
-### Example
-
-`python build_networks.py --clusters 0 5 10 16 37`
-
-## `bulk_find_conserved_regions`
-
-Finds conserved regions containing AMR genes on the clusters and networks built using `build_networks.py`. Alternatively, it can use the networks used in the paper. Requires setting search criteria. Creates a table with all found regions.
-
-### Options
-
-- `--paper`: If set, uses the networks computed in the paper.
-- `--min_dist`: Minimum average plasmid distance for region inclusion. Default is 0.1.
-- `--min_len`: Minimum fragment length in CDS. Default is 5.
-- `--max_len`: Minimum fragment length in CDS. Default is 9.
-- `--min_n`: Minimum number of plasmids containing a region for inclusion. Default is 3.
-- `--out`: Output directory. Default is CWD.
-
-### Example
-
-`python bulk_find_conserved_regions.py --min_dist 0.1 --min_len 5 --max_len 9 --min_n 3 --out data/Conserved\ AMR\ Regions`
-
-## `conserved_region_stats`
-
-Gets statistics of the conserved AMR regions found by bulk_find_conserved_regions.py.
-
-### Options
-
-- `--input`: Directory containing the output files from bulk_find_conserved_regions.py.
-
-## `find_conserved_regions`
-
-Allows manual search of conserved regions containing AMR genes. Requires a pre-computed phylogeny.
-
-### Options
-
-- `--paper`: If set, uses the networks computed in the paper.
-- `--cluster`: Jaccard cluster in which to find AMR genes. If not specified, assumes that there is only one cluster.
-
-## `motif_analysis`
-
-Extracts the regions described in the paper (recombination in E. faecalis and complex class 1 integron in _E. coli_ and _K. pneumoniae_) into FASTA files. Performs alignment with Biopython's pairwise2 module and prepares files for BLAST alignment.
-
-### Options
-
-- `--region`: Conserved region to analyse. Either "integron" (default) or "recombination".
-
-## `pangenome_analysis`
-
-Extracts stats about the panplasmidome, including local variability. Uses the networks in data/Plasmid Networks or those used in the paper.
-
-### Options
-
-- `--paper`: If set, uses the networks computed in the paper.
-- `--cluster`: Jaccard cluster to analyze. If not specified, assumes that there is only one cluster.
-
-## `plot_networks`
-
-Plots  the detailed plasmid similarity networks obtained with `build_networks.py`. Shows the estimated frequencies for evolutionary events. Optionally, shows networks colored on plasmid types. MOBSuite must be called first (using `pipeline_mobsuite.sh`) if `--types` is set.
-
-### Options
-
-- `--paper`: If set, uses the networks computed in the paper.
-- `--panplasmidomes`: If set, shows the panplasmidome graphs for each subcluster in the networks.
-- `--types`: If set, plots plasmid networks colored on plasmid types from MOBSuite.
-
-## `length_thresholds`
-
-Uses KDE and MLE to estimate the thresholds for recombination/mutation/IS synteny blocks.
-Length thresholds are defined using maximum likelihood estimation. The probability distributions for synteny block lengths are approximated using Gaussian kernel density
-estimation. The length of mutation regions is modeled using the size of all CDS in the dataset; for integrons/transposons, uses the length of all ESKAPE organisms entries in ISFinder as of Nov 2022; the sizes of recombination blocks are modeled by sampling seven CDS with replacement and uniform probability from the dataset, and adding their lengths. As a result, extensive mutation regions were defined as having less than 915 bp and connected to
-the same node as another gene present only in the other plasmid. Regions shorter than 915 bp that did not fulfill other requirements as outlined in the paper, and those shorter than 2752 bp were considered integrons/transposons.
-
-Not required to run other scripts.
+Installing SHIP through pip or conda should also install all required dependencies. However, SHIP
+uses as input files created by other bioinformatics tools, namely:
+- Prokka or Bakta
+- CD-HIT
+- AMRFinderPlus
+
+## Usage
+
+### Inputs
+
+For basic usage, SHIP can be executed with the command
+```ship -a path/to/annotations/ -c path/to/orthogroups/ -r path/to/amr/```
+
+SHIP requires gene annotations from Prokka or Bakta. However, product prediction is not required to run SHIP
+(altough it may make results more dificult to analyze), so feel free to set the ```--noanno``` flag when
+running Prokka/Bakta to speed computation. Furthermore, note that the standard Prokka databases are not
+adequate for plasmid annotation, so consider creating your own if you need functional annotations.
+The directory containing the output from Prokka/Bakta should be provided to SHIP using the ```--annotations``` or
+```-a``` argument. SHIP assumes that the plasmid assemblies are complete, and it may fail if provided draft 
+assemblies. SHIP will take all plasmid annotations inside this directory as the set of plasmids in which to
+find AMR regions with evidence of HGT.
+
+After predicting ORF in your plasmid sequences with Prokka/Bakta, you should cluster them into ortholog groups
+with CD-HIT. SHIP uses SVs to estimate plasmid distances, and disregards SNVs. When developing SHIP, and in the
+experiments outlined in its publication, a value of 90% amino acid similarity was used when finding ortholog groups.
+The directory containing the output from CD-HIT should be provided to SHIP in the ```--cdhit``` or ```-o``` argument.
+
+Finally, you should provide SHIP with the report from AMRFinderPlus, inside a directory. All text files inside this
+directory will be considered as main AMRFinderPlus report files. The directory containing the AMRFinderPlus outputs
+should be provided as the ```--amr``` or ```-r``` argument.
+
+#### Optional arguments
+
+```--plot-dendogram```, ```-d```: If set, plots a dendrogram of the plasmid phylogeny as estimated by SHIP.
+```--min_dist```, ```-m```:  Minimum average plasmid distance between plasmids containing a region for it to be considered as having evidence for HGT. Default is 0.1.
+```--min_len```, ```-l```:  Minimum number of CDS in a fragment with evidence for HGT for it to be included. Default is 5.
+```--max_len```, ```-L```:  Maximum searched number of CDS in fragments. Longer fragments with evidence for HGT will be split in fragments of ```--max_len```. Default is 9.
+```--min_n```, ```-n```:  Minimum number of plasmids containing a region with evidence for HGT for it to be included in the output. Default is 3.
+```--keep-intermediate```, ```-i```: If set, keeps all intermediate files in path_to_SHIP_output/tmp.
+
+## Citation
+
+Marco Teixeira, Stephanie Pillay, Aysun Urhan, Thomas Abeel, SHIP: identifying antimicrobial resistance gene transfer between plasmids, 
+Bioinformatics, Volume 39, Issue 10, October 2023, btad612, https://doi.org/10.1093/bioinformatics/btad612
