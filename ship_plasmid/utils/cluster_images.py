@@ -18,8 +18,8 @@ from matplotlib.colors import Normalize
 import joblib
 from scipy.cluster.hierarchy import dendrogram
 from matplotlib.patches import Rectangle
-from utils.phylogeny import SimpleDendogram
-from utils.jaccard import jaccard
+from ship_plasmid.utils.phylogeny import SimpleDendogram
+from ship_plasmid.utils.jaccard import jaccard
 from scipy.stats import pearsonr
 
 class GraphPlot:

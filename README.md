@@ -30,11 +30,11 @@ uses as input files created by other bioinformatics tools, namely:
 
 ## Usage
 
-### Inputs
-
 For basic usage, SHIP can be executed with the command
 
-```ship -a path/to/annotations/ -c path/to/orthogroups/ -r path/to/amr/```
+```ship -a path/to/annotations/ -c path/to/orthogroups/ -r path/to/amr/ -o path/to/output/```
+
+### Inputs
 
 SHIP requires gene annotations from Prokka or Bakta. However, product prediction is not required to run SHIP
 (altough it may make results more dificult to analyze), so feel free to set the ```--noanno``` flag when
@@ -48,7 +48,7 @@ find AMR regions with evidence of HGT.
 After predicting ORF in your plasmid sequences with Prokka/Bakta, you should cluster them into ortholog groups
 with CD-HIT. SHIP uses SVs to estimate plasmid distances, and disregards SNVs. When developing SHIP, and in the
 experiments outlined in its publication, a value of 90% amino acid similarity was used when finding ortholog groups.
-The directory containing the output from CD-HIT should be provided to SHIP in the ```--cdhit``` or ```-o``` argument.
+The directory containing the output from CD-HIT should be provided to SHIP in the ```--cdhit``` or ```-c``` argument.
 
 Finally, you should provide SHIP with the report from AMRFinderPlus, inside a directory. All text files inside this
 directory will be considered as main AMRFinderPlus report files. The directory containing the AMRFinderPlus outputs
@@ -66,7 +66,15 @@ should be provided as the ```--amr``` or ```-r``` argument.
 
 ```--min_n```, ```-n```:  Minimum number of plasmids containing a region with evidence for HGT for it to be included in the output. Default is 3.
 
-```--keep-intermediate```, ```-i```: If set, keeps all intermediate files in path_to_SHIP_output/tmp.
+```--keep-intermediate```, ```-i```: If set, keeps all intermediate files in path/to/SHIP/output/tmp.
+
+### Output files
+
+SHIP outputs a report table (HGT_AMR_regions.tsv) in TSV format, in which each row represents a region with evidence of HGT
+between plasmids. This table contains the representative ID of the ortholog groups present in the region, the IDs of the
+plasmid sequences containing it, the average plasmid distance, and the transposases and integrases present, if gene annotations are provided.
+
+SHIP also creates two pickle files - one holds the network of plasmid distances (plasmid_dissimilarity.pkl), while another is the RegionFinder object used by SHIP to search for the plasmid regions with evidence of HGT.
 
 ## Citation
 

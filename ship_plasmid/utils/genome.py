@@ -6,8 +6,8 @@ pairwise distance of plasmids.
 from copy import deepcopy
 import pandas as pd
 import numpy as np
-from utils.amrfinder import filenames_from_contig_ids
-from utils.files import find_annotation_paths
+from ship_plasmid.utils.amrfinder import filenames_from_contig_ids
+from ship_plasmid.utils.files import find_annotation_paths
 from BCBio.GFF import parse
 from typing import Iterable, Tuple, Union
 import warnings

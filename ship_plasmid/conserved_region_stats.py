@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import yaml
-from utils.files import get_amr
+from ship_plasmid.utils.files import get_amr
 from matplotlib import pyplot as plt
 import os
 from copy import deepcopy

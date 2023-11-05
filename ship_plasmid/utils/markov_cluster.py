@@ -4,12 +4,11 @@ Implements Markov Clustering for Jaccard-based plasmid similarity networks.
 
 from argparse import ArgumentError, ArgumentTypeError
 from turtle import distance
-
 from sklearn.datasets import make_multilabel_classification
-from utils.base_cluster import Clustering
+from ship_plasmid.utils.base_cluster import Clustering
 from numpy import array
 from markov_clustering import run_mcl, get_clusters, draw_graph, modularity
-from utils.jaccard import jaccard
+from ship_plasmid.utils.jaccard import jaccard
 import pandas as pd
 import numpy as np
 from copy import deepcopy

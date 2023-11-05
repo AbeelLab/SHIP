@@ -4,13 +4,13 @@ for evolutionary events. Optionally, shows networks colored on plasmid types.
 '''
 
 from sklearn.cluster import AgglomerativeClustering
-from utils.phylogeny import Pangenome
-from utils.genome import GraphGenome
-from utils.plasmid_typing import LabeledNetwork
+from ship_plasmid.utils.phylogeny import Pangenome
+from ship_plasmid.utils.genome import GraphGenome
+from ship_plasmid.utils.plasmid_typing import LabeledNetwork
 import yaml
 import pandas as pd
 import numpy as np
-from utils.cluster_images import PlasmidNetwork, SubClusterImages
+from ship_plasmid.utils.cluster_images import PlasmidNetwork, SubClusterImages
 import joblib
 import os
 import warnings

@@ -9,7 +9,7 @@ from typing import Tuple, Union, Iterable
 import numpy as np
 import pandas as pd
 from markov_clustering import run_mcl, get_clusters, modularity
-from utils.jaccard import jaccard
+from ship_plasmid.utils.jaccard import jaccard
 import numpy.typing as npt
 from copy import deepcopy
 import os

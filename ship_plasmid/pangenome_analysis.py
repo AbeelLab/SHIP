@@ -9,12 +9,12 @@ import os
 import yaml
 import pandas as pd
 import numpy as np
-from utils.phylogeny import plot_pangenome
-from utils.motifs import GeneMotifs
-from utils.pangenome import PangenomeAnalysis
+from ship_plasmid.utils.phylogeny import plot_pangenome
+from ship_plasmid.utils.motifs import GeneMotifs
+from ship_plasmid.utils.pangenome import PangenomeAnalysis
 import joblib
 from scipy.stats import mannwhitneyu
-from utils.interpretation import get_protein_function, linebreak
+from ship_plasmid.utils.interpretation import get_protein_function, linebreak
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from scipy.stats import linregress, logser, geom, poisson, zipf, chisquare, norm

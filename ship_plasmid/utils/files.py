@@ -7,7 +7,7 @@ from typing import Iterable
 import numpy as np
 import warnings
 import pandas as pd
-from utils.amrfinder import filenames_from_contig_ids
+from ship_plasmid.utils.amrfinder import filenames_from_contig_ids
 
 def find_annotation_paths(
     accessions: Iterable,

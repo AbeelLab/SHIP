@@ -40,7 +40,7 @@ mkdir $cdhit_dir
 cd ..
 mkdir "$test_dir/SHIP_results"
 echo "Finding HGT events with SHIP."
-python ship.py -a "$test_dir/$annotations_dir" -o "$test_dir/SHIP_results" \
+ship -a "$test_dir/$annotations_dir" -o "$test_dir/SHIP_results" \
     -c "$test_dir/$cdhit_dir/cdhit_output.clstr" -r "$test_dir/$amrfinder_dir" -m 0.1 -l 5 -L 9 -n 3 -i
 
 rmtree "$test_dir/$tmp_dir"

@@ -6,7 +6,7 @@ Obtains the plasmid gene sequence with homolog cluster representatives.
 import os
 import pandas as pd
 import yaml
-from utils.proteins import ProteinClusters
+from ship_plasmid.utils.proteins import ProteinClusters
 import joblib
 
 def process_cdhit(

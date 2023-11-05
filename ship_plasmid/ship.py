@@ -3,15 +3,15 @@ import shutil
 import joblib
 import numpy as np
 import yaml
-from utils.motifs import BulkMotifFinder
-from utils.files import get_amr
-from utils.genome import FastBreakDistance
-from utils.phylogeny import PlasmidDistance
-from utils.amrfinder import make_amrfinder_df
-from utils.cdhit import process_cdhit
+from ship_plasmid.utils.motifs import BulkMotifFinder
+from ship_plasmid.utils.files import get_amr
+from ship_plasmid.utils.genome import FastBreakDistance
+from ship_plasmid.utils.phylogeny import PlasmidDistance
+from ship_plasmid.utils.amrfinder import make_amrfinder_df
+from ship_plasmid.utils.cdhit import process_cdhit
 import matplotlib.pyplot as plt
 import os
-from utils.clustering import AdaptativeAgglomerativeClustering
+from ship_plasmid.utils.clustering import AdaptativeAgglomerativeClustering
 import datetime
 import argparse
 import logging

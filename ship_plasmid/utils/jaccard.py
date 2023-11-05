@@ -3,7 +3,7 @@ Implements Jaccard distance and similarity.
 '''
 from typing import Iterable
 import warnings
-from utils.base_cluster import check_type_set
+from ship_plasmid.utils.base_cluster import check_type_set
 
 def jaccard(
     a: Iterable,

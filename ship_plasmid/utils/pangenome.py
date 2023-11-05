@@ -15,7 +15,7 @@ from matplotlib.colors import Normalize
 from pyvis.network import Network
 from typing import Iterable
 from copy import deepcopy
-from utils.interpretation import get_protein_function
+from ship_plasmid.utils.interpretation import get_protein_function
 
 @dataclass
 class PangenomeAnalysis:

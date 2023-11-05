@@ -9,12 +9,11 @@ import joblib
 import pandas as pd
 import os
 import numpy as np
-from utils.jaccard import jaccard_distance
-from utils.genome import GraphGenome
+from ship_plasmid.utils.jaccard import jaccard_distance
+from ship_plasmid.utils.genome import GraphGenome
 from sklearn.cluster import AgglomerativeClustering
 from scipy.cluster.hierarchy import dendrogram
 import matplotlib.pyplot as plt
-from numba import jit
 import matplotlib.cm as cm
 from pyvis.network import Network
 import webbrowser

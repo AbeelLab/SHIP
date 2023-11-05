@@ -11,17 +11,17 @@ import networkx as nx
 from pyvis.network import Network
 from copy import deepcopy
 from typing import Iterable, Union
-from utils.phylogeny import Pangenome
+from ship_plasmid.utils.phylogeny import Pangenome
 import joblib
 from tqdm import tqdm
-from utils.plasmid_typing import LabeledNetwork
-from utils.phylogeny import Pangenome, plot_pangenome, PlasmidDistance
+from ship_plasmid.utils.plasmid_typing import LabeledNetwork
+from ship_plasmid.utils.phylogeny import Pangenome, plot_pangenome, PlasmidDistance
 import matplotlib.cm as cm
-from utils.files import find_annotation_paths
+from ship_plasmid.utils.files import find_annotation_paths
 from BCBio.GFF import parse
 from scipy.stats import kruskal
 from matplotlib.colors import Normalize
-from utils.interpretation import get_protein_function
+from ship_plasmid.utils.interpretation import get_protein_function
 
 class GeneMotifs:
 

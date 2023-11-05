@@ -10,9 +10,10 @@ classifiers = ["License :: OSI Approved :: GNU General Public License v3 or late
 dynamic = ["version", "description"]
 requires-python = ">=3.8"
 dependencies = [
+    "bcbio-gff == 0.6.9",
     "biopython == 1.79",
     "joblib == 1.2.0",
-    "markov-clustering == 0.0.6",
+    "markov_clustering == 0.0.6.dev0",
     "matplotlib == 3.6.1",
     "networkx == 2.8.6",
     "numpy == 1.23.3",
@@ -30,4 +31,4 @@ Home = "https://github.com/AbeelLab/plasmidHGT"
 Source = "https://github.com/AbeelLab/plasmidHGT"
 
 [project.scripts]
-ship = "ship:main"
+ship = "ship_plasmid.ship:main"
