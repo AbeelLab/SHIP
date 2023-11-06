@@ -1,7 +1,4 @@
 #!/bin/bash
-test_dir=test
-cd $test_dir
-
 tmp_dir="tmp"
 mkdir $tmp_dir
 
@@ -38,11 +35,11 @@ mkdir $cdhit_dir
 
 # Run SHIP
 cd ..
-mkdir "$test_dir/SHIP_results"
+mkdir "SHIP_results"
 echo "Finding HGT events with SHIP."
-ship -a "$test_dir/$annotations_dir" -o "$test_dir/SHIP_results" \
-    -c "$test_dir/$cdhit_dir/cdhit_output.clstr" -r "$test_dir/$amrfinder_dir" -m 0.1 -l 5 -L 9 -n 3 -i
+ship -a "$annotations_dir" -o "SHIP_results" \
+    -c "$cdhit_dir/cdhit_output.clstr" -r "$amrfinder_dir" -m 0.1 -l 5 -L 9 -n 3 -i
 
-rmtree "$test_dir/$tmp_dir"
+rmtree "$tmp_dir"
 
 echo "Done!"
