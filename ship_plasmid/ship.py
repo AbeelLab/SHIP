@@ -9,6 +9,7 @@ from ship_plasmid.utils.genome import FastBreakDistance
 from ship_plasmid.utils.phylogeny import PlasmidDistance
 from ship_plasmid.utils.amrfinder import make_amrfinder_df
 from ship_plasmid.utils.cdhit import process_cdhit
+from ship_plasmid.configs.phylo_config import PHYLO_CONFIG
 import matplotlib.pyplot as plt
 import os
 from ship_plasmid.utils.clustering import AdaptativeAgglomerativeClustering
@@ -46,16 +47,16 @@ def main():
         '--plot-dendrogram', '-d', action='store_true',
         help = 'If set, plots a dendrogram of the plasmid phylogeny as estimated by SHIP.'
     )
-    parser.add_argument('--min_dist', '-m', default = 0.1, nargs = 1,
+    parser.add_argument('--min_dist', '-m', default = 0.1,
         help = 'Minimum average plasmid distance between plasmids containing a region for it to be considered as having evidence for HGT. Default is 0.1.'
     )
-    parser.add_argument('--min_len', '-l', default = 5, nargs = 1,
+    parser.add_argument('--min_len', '-l', default = 5,
         help = 'Minimum number of CDS in a fragment with evidence for HGT for it to be included. Default is 5.'
     )
-    parser.add_argument('--max_len', '-L', default = 9, nargs = 1,
+    parser.add_argument('--max_len', '-L', default = 9,
         help = 'Maximum searched number of CDS in fragments. Longer fragments with evidence for HGT will be split in fragments of --max_len. Default is 9.'
     )
-    parser.add_argument('--min_n', '-n', default = 3, nargs = 1,
+    parser.add_argument('--min_n', '-n', default = 3,
         help = 'Minimum number of plasmids containing a region with evidence for HGT for it to be included. Default is 3'
     )
     parser.add_argument('--keep-intermediate', '-i', action='store_true',
@@ -63,16 +64,17 @@ def main():
 
     args = parser.parse_args()
     args.out = args.out[0]
+    print(args.out)
     args.cdhit = args.cdhit[0]
     args.amr = args.amr[0]
     args.annotations = args.annotations[0]
 
     # Prepare logger
-    logging.basicConfig(filename=os.path.join(args.out, 'ship.log'), filemode='w', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=50)
+    if not os.path.exists(args.out): os.mkdir(args.out)
+    logging.basicConfig(filename=os.path.join(args.out, 'ship.log'), format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=50)
     logging.info(f'Starting SHIP.')
     logging.info(f'Output directory: {args.out}\nReading annotations from {args.annotations}\nUsing CH-HIT clusters at {args.cdhit}')
-    with open('configs/phylo_config.yaml', 'r') as config_file:
-        phylo_config = yaml.load(config_file, Loader=yaml.Loader)
+    phylo_config = PHYLO_CONFIG
     logging.info(f"Phylo config file (at configs/phylo_config):") 
     logging.info('\n'.join([k+': '+str(v) for k, v in phylo_config.items()]))
 

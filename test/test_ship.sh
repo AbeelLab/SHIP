@@ -34,12 +34,12 @@ mkdir $cdhit_dir
 #cdhit -i $tmp_dir"/concat_cds.faa" -c 0.9 -n 5 -o $cdhit_dir"/cdhit_output"
 
 # Run SHIP
-cd ..
+workdir=$(pwd)
 mkdir "SHIP_results"
-echo "Finding HGT events with SHIP."
-ship -a "$annotations_dir" -o "SHIP_results" \
-    -c "$cdhit_dir/cdhit_output.clstr" -r "$amrfinder_dir" -m 0.1 -l 5 -L 9 -n 3 -i
+ship -a "$workdir/$annotations_dir" -o "$workdir/SHIP_results" \
+    -c "$workdir/$cdhit_dir/cdhit_output.clstr" -r "$workdir/$amrfinder_dir" \
+    -m 0.1 -l 5 -L 9 -n 3 -i
 
-rmtree "$tmp_dir"
+rmtree "$workdir/$tmp_dir"
 
 echo "Done!"

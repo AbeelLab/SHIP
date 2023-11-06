@@ -12,6 +12,8 @@ def make_amrfinder_df(
     '''
     Builds a DataFrame containing the AMRFinder+ gene hits.
     '''
+    print(amrfinder_out)
+    print(list(os.walk(amrfinder_out)))
 
     files = list(os.walk(amrfinder_out))[0][2]
 

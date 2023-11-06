@@ -12,13 +12,13 @@ a large average pairwise distance.
 
 ## Installation
 
-~~SHIP is available in PyPI, and its latest version can be installed by running:~~
+SHIP is available in PyPI, and its latest version can be installed by running:
 
-~~```pip install ship-plasmid```~~
+```pip install ship-plasmid```
 
 ~~Alternatively, you can install SHIP through conda:~~
 
-~~```pip install -c bioconda ship-plasmid```~~
+~~```conda install -c bioconda ship-plasmid```~~
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ uses as input files created by other bioinformatics tools, namely:
 
 For basic usage, SHIP can be executed with the command
 
-```ship -a path/to/annotations/ -c path/to/orthogroups/ -r path/to/amr/ -o path/to/output/```
+```ship -a path/to/annotations/ -c path/to/orthogroups/clusters.clstr -r path/to/amr/ -o path/to/output/```
 
 ### Inputs
 
@@ -48,7 +48,7 @@ find AMR regions with evidence of HGT.
 After predicting ORF in your plasmid sequences with Prokka/Bakta, you should cluster them into ortholog groups
 with CD-HIT. SHIP uses SVs to estimate plasmid distances, and disregards SNVs. When developing SHIP, and in the
 experiments outlined in its publication, a value of 90% amino acid similarity was used when finding ortholog groups.
-The directory containing the output from CD-HIT should be provided to SHIP in the ```--cdhit``` or ```-c``` argument.
+The .clstr output file from CD-HIT should be provided to SHIP in the ```--cdhit``` or ```-c``` argument.
 
 Finally, you should provide SHIP with the report from AMRFinderPlus, inside a directory. All text files inside this
 directory will be considered as main AMRFinderPlus report files. The directory containing the AMRFinderPlus outputs
