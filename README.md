@@ -14,7 +14,7 @@ a large average pairwise distance.
 
 SHIP is available in PyPI, and its latest version can be installed by running:
 
-```pip install ship-plasmid```
+```pip install ship_plasmid```
 
 ~~Alternatively, you can install SHIP through conda:~~
 
