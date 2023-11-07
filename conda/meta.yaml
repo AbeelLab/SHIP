@@ -1,0 +1,9 @@
+package:
+  name: "ship_plasmid"
+  version: "0.2.1"
+about:
+  summary: "A a tool to find antimicrobial resistant (AMR) DNA regions with evidence of lateral transfer between plasmids."
+source:
+  path: ".."
+build:
+  script: python setup.py install
