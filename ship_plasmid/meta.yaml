@@ -1,0 +1,61 @@
+{% set name = "ship_plasmid" %}
+{% set version = "0.2.2" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ship_plasmid-{{ version }}.tar.gz
+  sha256: 0e24e422c313876c4714a1970899ba794c0b5c21f071c3c7a744cc6212c39a18
+
+build:
+  skip: true  # [py<38]
+  entry_points:
+    - ship = ship_plasmid.ship:main
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
+
+requirements:
+  host:
+    - python >=3.8
+    - flit-core >=3.2,<4
+    - pip
+  run:
+    - python >=3.8
+    - bcbio-gff ==0.6.9
+    - biopython ==1.79
+    - joblib ==1.2.0
+    - markov_clustering ==0.0.6.dev0
+    - matplotlib-base ==3.6.1
+    - networkx ==2.8.6
+    - numpy ==1.23.3
+    - pandas ==1.4.4
+    - pymc ==4.2.2
+    - pyvis ==0.2.1
+    - pyyaml ==6.0
+    - scikit-learn ==1.1.2
+    - scipy ==1.9.1
+    - tqdm ==4.64.1
+
+test:
+  imports:
+    - ship_plasmid
+  commands:
+    - pip check
+    - ship --help
+  requires:
+    - pip
+
+about:
+  summary: Finds regions with evidence of HGT between plasmids and groups plasmids according to evolutionary dynamics.
+  dev_url: https://github.com/AbeelLab/plasmidHGT
+  license: GPL-3.0
+  license_file:
+    - LICENSE
+    - ship_plasmid/LICENSE
+
+extra:
+  recipe-maintainers:
+    - AddYourGitHubIdHere

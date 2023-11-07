@@ -16,10 +16,6 @@ SHIP is available in PyPI, and its latest version can be installed by running:
 
 ```pip install ship_plasmid```
 
-~~Alternatively, you can install SHIP through conda:~~
-
-~~```conda install -c bioconda ship-plasmid```~~
-
 ## Dependencies
 
 Installing SHIP through pip or conda should also install all required dependencies. However, SHIP
