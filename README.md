@@ -28,7 +28,7 @@ uses as input files created by other bioinformatics tools, namely:
 
 For basic usage, SHIP can be executed with the command
 
-```ship -a path/to/annotations/ -c path/to/orthogroups/clusters.clstr -r path/to/amr/ -o path/to/output/```
+```ship -a path/to/annotations/ -c path/to/orthogroups/clusters.clstr -r path/to/amr.tsv -o path/to/output/```
 
 ### Inputs
 
@@ -46,9 +46,7 @@ with CD-HIT. SHIP uses SVs to estimate plasmid distances, and disregards SNVs. W
 experiments outlined in its publication, a value of 90% amino acid similarity was used when finding ortholog groups.
 The .clstr output file from CD-HIT should be provided to SHIP in the ```--cdhit``` or ```-c``` argument.
 
-Finally, you should provide SHIP with the report from AMRFinderPlus, inside a directory. All text files inside this
-directory will be considered as main AMRFinderPlus report files. The directory containing the AMRFinderPlus outputs
-should be provided as the ```--amr``` or ```-r``` argument.
+Finally, you should provide SHIP with the report from AMRFinderPlus through the ```--amr``` or ```-r``` argument.
 
 #### Optional arguments
 

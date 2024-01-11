@@ -45,7 +45,7 @@ def find_annotation_paths(
     for accession in accessions:
         if accession in folders:
             for file in list(os.walk(os.path.join(annotations_dir, accession)))[0][2]:
-                if file.endswith(format) and file.startswith('PROKKA'):
+                if file.endswith(format):
                     paths.append(os.path.join(annotations_dir, accession, file))
                     break
         else:

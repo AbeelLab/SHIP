@@ -29,7 +29,7 @@ def main():
     parser = argparse.ArgumentParser(description = 'SHIP')
     parser.add_argument(
         '--annotations', '-a', nargs = 1, required = True,
-        help = 'Directory containing the output from Prokka.'
+        help = 'Directory containing the output from Prokka/Bakta.'
     )
     parser.add_argument(
         '--out', '-o', nargs = 1, required = True,
@@ -41,7 +41,7 @@ def main():
     )
     parser.add_argument(
         '--amr', '-r', nargs = 1, required = True,
-        help = 'Path to the directory containing the AMRFinder+ output files. All .txt files in this directory will be considered as the main AMRFinder+ output files.'
+        help = 'Input AMRFinderPlus output file. Must contain the AMRFinderPlus results for all annotated plasmids.'
     )
     parser.add_argument(
         '--plot-dendrogram', '-d', action='store_true',
@@ -71,7 +71,7 @@ def main():
 
     # Prepare logger
     if not os.path.exists(args.out): os.mkdir(args.out)
-    logging.basicConfig(filename=os.path.join(args.out, 'ship.log'), format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=50)
+    logging.basicConfig(filename=os.path.join(args.out, 'ship.log'), format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=0)
     logging.info(f'Starting SHIP.')
     logging.info(f'Output directory: {args.out}\nReading annotations from {args.annotations}\nUsing CH-HIT clusters at {args.cdhit}')
     phylo_config = PHYLO_CONFIG
