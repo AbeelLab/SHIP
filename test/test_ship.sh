@@ -4,7 +4,7 @@ mkdir $tmp_dir
 
 # Run Prokka. Disable annotations or use a curated database of relevant plasmid products
 # as Prokka annotations are likely bogus with the default databases
-annotations_dir="prokka_annotations"
+annotations_dir="bakta_annotations" #"prokka_annotations"
 mkdir $annotations_dir
 
 #echo "Annotating plasmids in $annotations_dir."
@@ -36,7 +36,7 @@ mkdir $cdhit_dir
 # Run SHIP
 workdir=$(pwd)
 mkdir "SHIP_results"
-python ../ship_plasmid/ship.py -a "$workdir/$annotations_dir" -o "$workdir/SHIP_results" \
+ship -a "$workdir/$annotations_dir" -o "$workdir/SHIP_results" \
     -c "$workdir/$cdhit_dir/cdhit_output.clstr" -r "$workdir/$amrfinder_dir/amrfinder_out.txt" \
     -m 0.1 -l 5 -L 9 -n 3 -i
 

@@ -1,8 +1,9 @@
 from setuptools import setup
+from ship_plasmid.__init__ import __version__
 
 setup(
    name='ship_plasmid',
-   version='0.2.2',
+   version=__version__,
    description='A a tool to find antimicrobial resistant (AMR) DNA regions with evidence of lateral transfer between plasmids.',
    author='Marco Teixeira',
    author_email='mcarvalh@broadinstitute.org',

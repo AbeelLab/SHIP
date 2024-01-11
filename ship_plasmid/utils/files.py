@@ -3,7 +3,7 @@ Useful classes for file manipulation and navigating the folder structure.
 '''
 
 import os
-from typing import Iterable
+from typing import Iterable, Union
 import numpy as np
 import warnings
 import pandas as pd
@@ -12,7 +12,7 @@ from ship_plasmid.utils.amrfinder import filenames_from_contig_ids
 def find_annotation_paths(
     accessions: Iterable,
     annotations_dir: str,
-    format: str = '.fa',
+    format: Union[list, str] = '.fa',
 ):
     '''
     Returns the paths to the annotations of plasmids with accession number 
@@ -29,8 +29,8 @@ def find_annotation_paths(
     annotations_dir: str
         Path to the folder containing the Prokka annotations.
     
-    format: str. Default is .fa
-        File extension of the files to retrieve.
+    format: str or list. Default is .fa
+        File extensions of the files to retrieve.
 
     Returns
     -------
@@ -45,7 +45,11 @@ def find_annotation_paths(
     for accession in accessions:
         if accession in folders:
             for file in list(os.walk(os.path.join(annotations_dir, accession)))[0][2]:
-                if file.endswith(format):
+                file_fmt = file.split(".")[-1]
+                if isinstance(format, str): matched = ("."+file_fmt == format)
+                elif isinstance(format, list): matched = ("."+file_fmt in format)
+                else: raise ValueError(f"format must be either a string or a list. Got {type(format)}.")
+                if matched:
                     paths.append(os.path.join(annotations_dir, accession, file))
                     break
         else:

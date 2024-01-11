@@ -31,4 +31,4 @@ Home = "https://github.com/AbeelLab/plasmidHGT"
 Source = "https://github.com/AbeelLab/plasmidHGT"
 
 [project.scripts]
-ship = "ship_plasmid.ship:main"
+ship = "ship_plasmid:main"

@@ -61,7 +61,7 @@ class GraphGenome:
         self.path_to_gff = find_annotation_paths(
             accessions = [self.id],
             annotations_dir = self.path_to_annotations,
-            format = '.gff'
+            format = ['.gff', '.gff3']
         )[0]
 
         with open(self.path_to_gff, 'r') as file:
@@ -75,18 +75,12 @@ class GraphGenome:
 
         return self.strands
 
-    def get_amr_gene_names(
-        self
-    ) -> list:
+    def get_amr_gene_names(self) -> list:
         '''
         Returns the gene annotations for all AMR genes in the plasmid.
         '''
 
-        self.amr = pd.read_csv(
-            self.path_to_amr,
-            sep = '\t',
-            index_col = 0
-        )
+        self.amr = pd.read_csv(self.path_to_amr, sep = '\t', index_col = 0)
         contig_ids = filenames_from_contig_ids(self.path_to_annotations)
         self.amr.index = [contig_ids[x] for x in self.amr.index]
         try:
