@@ -4,6 +4,7 @@ import pandas as pd
 import os
 from typing import Iterable
 import glob
+import logging
 
 def make_amrfinder_df(
     amrfinder_out: str,
@@ -12,26 +13,16 @@ def make_amrfinder_df(
     '''
     Builds a DataFrame containing the AMRFinder+ gene hits.
     '''
-    print(amrfinder_out)
-    print(list(os.walk(amrfinder_out)))
+    logging.info(f"Reading AMRFinderPlus output in {amrfinder_out}")
 
-    files = list(os.walk(amrfinder_out))[0][2]
-
-    individual_df = []
-    for filename in files:
-        if filename.endswith('.txt'):
-            try:
-                individual_df.append(pd.read_csv(os.path.join(amrfinder_out, filename), sep = '\t'))
-            except pd.errors.EmptyDataError: 
-                # No AMR genes found
-                pass  
-    amr_df = pd.concat(individual_df).drop(['Protein identifier', 'HMM id', 'HMM description'], axis = 1).set_index(
-        ['Contig id', 'Gene symbol'])
+    amrfinder_df = pd.read_table(amrfinder_out)
+    amrfinder_df = amrfinder_df.drop(['Protein identifier', 'HMM id', 'HMM description'], axis=1).set_index(['Contig id', 'Gene symbol'])
 
     # Save to tsv
-    amr_df.to_csv(out, sep = '\t')
+    logging.debug(f"Saving a CSV of AMRFinderPlus results in {out}")
+    amrfinder_df.to_csv(out, sep = '\t')
 
-    return amr_df
+    return amrfinder_df
 
 def filenames_from_contig_ids(
     annotations_path: str

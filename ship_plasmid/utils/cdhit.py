@@ -25,8 +25,7 @@ def process_cdhit(
     accessions = []
     for x in list(os.walk(annotations_path))[1:]:
         for subfile in x[-1]:
-            if subfile.endswith('.faa') and subfile.startswith('PROKKA'):
-                accessions.append(os.path.join(x[0], subfile))
+            if subfile.endswith('.faa'): accessions.append(os.path.join(x[0], subfile))
 
     raw_proteins = prot_clust.get_raw_proteins(accessions)
     clustered_plasmids = prot_clust.replace_with_cluster(raw_proteins)

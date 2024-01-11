@@ -9,7 +9,7 @@ setup(
    license='GNU General Public License v3 (GPLv3)',
    packages=['ship_plasmid'],
    install_requires=[
-        "python==3.8"
+        "python==3.8",
         "bcbio-gff==0.6.9",
         "biopython==1.79",
         "joblib==1.2.0",
@@ -32,6 +32,6 @@ setup(
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Science/Research',
         'GNU General Public License v3 (GPLv3)',  
-        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.8',
     ]
 )

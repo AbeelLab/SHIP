@@ -36,10 +36,10 @@ mkdir $cdhit_dir
 # Run SHIP
 workdir=$(pwd)
 mkdir "SHIP_results"
-ship -a "$workdir/$annotations_dir" -o "$workdir/SHIP_results" \
-    -c "$workdir/$cdhit_dir/cdhit_output.clstr" -r "$workdir/$amrfinder_dir" \
+python ../ship_plasmid/ship.py -a "$workdir/$annotations_dir" -o "$workdir/SHIP_results" \
+    -c "$workdir/$cdhit_dir/cdhit_output.clstr" -r "$workdir/$amrfinder_dir/amrfinder_out.txt" \
     -m 0.1 -l 5 -L 9 -n 3 -i
 
-rmtree "$workdir/$tmp_dir"
+rm -r $tmp_dir
 
 echo "Done!"
