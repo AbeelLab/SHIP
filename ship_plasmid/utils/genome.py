@@ -32,9 +32,7 @@ class GraphGenome:
     def __len__(self):
         return len(self.get_gene_set())
 
-    def get_representatives(
-        self
-    ) -> pd.DataFrame:
+    def get_representatives(self) -> pd.DataFrame:
         '''
         Builds a Pandas DataFrame containing the representative protein of all proteins in the
         dataset, according to CD-Hit clustering.
@@ -51,9 +49,7 @@ class GraphGenome:
 
         return self.representatives
 
-    def get_annotations(
-        self
-    ) -> pd.DataFrame:
+    def get_annotations(self) -> pd.DataFrame:
         '''
         Returns a Pandas DataFrame with the gene annotations for the plasmid, as well as strand
         information about each gene.
@@ -64,12 +60,17 @@ class GraphGenome:
             format = ['.gff', '.gff3']
         )[0]
 
-        with open(self.path_to_gff, 'r') as file:
+        # Check if input is from bakta or prokka
+        is_bakta = self.path_to_gff.endswith(".gff3")
+        if is_bakta: product_colname = "NAME"
+        else: product_colname = "product"
+
+        with open(self.path_to_gff, 'r') as file: 
             contents = next(parse(file)).features
         
         self.strands = pd.DataFrame(
-            [[x.strand, x.qualifiers['product'][0]] for x in contents],
-            index = [x.id for x in contents],
+            [[x.strand, x.qualifiers[product_colname][0]] for x in contents if x.type=="CDS"],
+            index = [x.id for x in contents if x.type=="CDS"],
             columns = ['Strands', 'Product']
         )
 
@@ -87,10 +88,8 @@ class GraphGenome:
             self.amr = self.amr.loc[self.id]
             if type(self.amr['Sequence name'])==pd.Series:
                 self.__amr_names = self.amr['Sequence name'].values
-            else:
-                self.__amr_names = [self.amr['Sequence name']]
-        except KeyError:
-            self.__amr_names = []
+            else: self.__amr_names = [self.amr['Sequence name']]
+        except KeyError: self.__amr_names = []
 
         return self.__amr_names
 
@@ -121,14 +120,8 @@ class GraphGenome:
         # The list common_index is not sorted according to genome synteny. Thus, 
         # using it to sort the DataFrame would yield incorrect results
         self.representatives = pd.concat(
-            [
-                self.representatives.loc[
-                    common_idx
-                ],
-                self.strands
-            ],
-            join = 'inner',
-            axis = 'columns'
+            [self.representatives.loc[common_idx], self.strands],
+            join = 'inner', axis = 'columns'
         ).drop(['Cluster'], axis = 'columns').loc[
             [x for x in self.strands.index if x in common_idx]
         ]
