@@ -1470,3 +1470,933 @@ ACKNMMCH_00099"
 ACKNMMCH_00170
 "hypothetical protein
 ACKNMMCH_00170"
+BPLPFO_00010
+"Phosphohydrolase
+BPLPFO_00010"
+BPLPFO_00020
+"DNA-damage-inducible protein
+BPLPFO_00020"
+BPLPFO_00045
+"Mobilization protein
+BPLPFO_00045"
+BPLPFO_00050
+"Nicking enzyme TraA protein
+BPLPFO_00050"
+BPLPFO_00060
+"hypothetical protein
+BPLPFO_00060"
+BPLPFO_00065
+"Mutator family transposase
+BPLPFO_00065"
+BPLPFO_00075
+"ABC transporter, ATP-binding protein
+BPLPFO_00075"
+BPLPFO_00080
+"Membrane permease
+BPLPFO_00080"
+BPLPFO_00085
+"Putative transcriptional regulator
+BPLPFO_00085"
+BPLPFO_00090
+"DUF3021 domain-containing protein
+BPLPFO_00090"
+BPLPFO_00095
+"IS256 family transposase
+BPLPFO_00095"
+BPLPFO_00105
+"hypothetical protein
+BPLPFO_00105"
+BPLPFO_00110
+"DUF1521 domain-containing protein
+BPLPFO_00110"
+BPLPFO_00120
+"hypothetical protein
+BPLPFO_00120"
+BPLPFO_00130
+"GRAM-POS-ANCHORING domain-containing protein
+BPLPFO_00130"
+BPLPFO_00135
+"ECF transporter S component
+BPLPFO_00135"
+BPLPFO_00140
+"Cobalt transport protein CbiQ
+BPLPFO_00140"
+BPLPFO_00145
+"Cobalt import ATP-binding protein cbiO 2
+BPLPFO_00145"
+BPLPFO_00150
+"ABC transporter domain-containing protein
+BPLPFO_00150"
+BPLPFO_00155
+"HTH-38 domain-containing protein
+BPLPFO_00155"
+BPLPFO_00160
+"MFS transporter
+BPLPFO_00160"
+BPLPFO_00165
+"Periplasmic glycine betaine/choline-binding (lipo)protein of an ABC-type transport system (osmoprotectant binding protein)
+BPLPFO_00165"
+BPLPFO_00170
+"ABC-type proline/glycine betaine transport system, ATPase component
+BPLPFO_00170"
+BPLPFO_00175
+"Glutathione reductase
+BPLPFO_00175"
+BPLPFO_00180
+"Site-specific DNA recombinase SpoIVCA/DNA invertase PinE
+BPLPFO_00180"
+BPLPFO_00185
+"hypothetical protein
+BPLPFO_00185"
+BPLPFO_00190
+"hypothetical protein
+BPLPFO_00190"
+BPLPFO_00195
+"hypothetical protein
+BPLPFO_00195"
+BPLPFO_00205
+"Multidrug resistance protein Stp
+BPLPFO_00205"
+BPLPFO_00210
+"HTH-type transcriptional regulator EthR
+BPLPFO_00210"
+BPLPFO_00215
+"hypothetical protein
+BPLPFO_00215"
+BPLPFO_00220
+"Uncharacterized protein yueJ
+BPLPFO_00220"
+BPLPFO_00225
+"nicotinate phosphoribosyltransferase
+BPLPFO_00225"
+BPLPFO_00230
+"Nudix hydrolase domain-containing protein
+BPLPFO_00230"
+BPLPFO_00235
+"HNH endonuclease
+BPLPFO_00235"
+BPLPFO_00240
+"SMI1-KNR4 domain-containing protein
+BPLPFO_00240"
+BPLPFO_00260
+"Antitoxin
+BPLPFO_00260"
+BPLPFO_00265
+"Toxin of toxin-antitoxin stability system
+BPLPFO_00265"
+BPLPFO_00275
+"RHH-1 domain-containing protein
+BPLPFO_00275"
+KALMMD_00005
+"hypothetical protein
+KALMMD_00005"
+KALMMD_00010
+"hypothetical protein
+KALMMD_00010"
+KALMMD_00020
+"Putative holin-like toxin
+KALMMD_00020"
+KALMMD_00030
+"hypothetical protein
+KALMMD_00030"
+KALMMD_00035
+"hypothetical protein
+KALMMD_00035"
+KALMMD_00040
+"Transcriptional regulator
+KALMMD_00040"
+KALMMD_00045
+"DNA-binding ferritin-like protein (oxidative damage protectant)
+KALMMD_00045"
+KALMMD_00050
+"IS30 family transposase
+KALMMD_00050"
+KALMMD_00055
+"IS982 family transposase
+KALMMD_00055"
+KALMMD_00060
+"SnoaL-like domain-containing protein
+KALMMD_00060"
+KALMMD_00070
+"hypothetical protein
+KALMMD_00070"
+KALMMD_00080
+"hypothetical protein
+KALMMD_00080"
+KALMMD_00100
+"hypothetical protein
+KALMMD_00100"
+KALMMD_00110
+"hypothetical protein
+KALMMD_00110"
+KALMMD_00130
+"putative ABC-type ATPase or kinase
+KALMMD_00130"
+KALMMD_00145
+"Filamentation induced by cAMP protein fic
+KALMMD_00145"
+KALMMD_00210
+"IS30 family transposase
+KALMMD_00210"
+KALMMD_00215
+"MBL fold metallo-hydrolase
+KALMMD_00215"
+KALMMD_00225
+"Aldo-ket-red domain-containing protein
+KALMMD_00225"
+KALMMD_00235
+"SnoaL-like domain-containing protein
+KALMMD_00235"
+KALMMD_00240
+"Inner membrane protein
+KALMMD_00240"
+GFCGBH_00005
+"type II toxin-antitoxin system YafQ family toxin
+GFCGBH_00005"
+GFCGBH_00010
+"Addiction module toxin RelE
+GFCGBH_00010"
+GFCGBH_00015
+"Damage-inducible protein J
+GFCGBH_00015"
+GFCGBH_00020
+"Plasmid partition protein
+GFCGBH_00020"
+GFCGBH_00025
+"CopG family transcriptional regulator
+GFCGBH_00025"
+GFCGBH_00070
+"Nicking enzyme TraA protein
+GFCGBH_00070"
+GFCGBH_00080
+"IS3 family IS153 transposase ORF A
+GFCGBH_00080"
+GFCGBH_00085
+"IS3 family transposase
+GFCGBH_00085"
+GFCGBH_00090
+"IS5 family transposase
+GFCGBH_00090"
+GFCGBH_00095
+"Transposase
+GFCGBH_00095"
+GFCGBH_00100
+"CopY/TcrY family copper transport repressor
+GFCGBH_00100"
+GFCGBH_00105
+"Putative copper-transporting P-type ATPase B
+GFCGBH_00105"
+GFCGBH_00110
+"HAD-IC family P-type ATPase
+GFCGBH_00110"
+GFCGBH_00115
+"MFS domain-containing protein
+GFCGBH_00115"
+GFCGBH_00120
+"Transcriptional regulator
+GFCGBH_00120"
+GFCGBH_00125
+"ArdcN domain-containing protein
+GFCGBH_00125"
+GFCGBH_00165
+"DNA-binding transcriptional regulator, ArsR family
+GFCGBH_00165"
+GFCGBH_00180
+"hypothetical protein
+GFCGBH_00180"
+GFCGBH_00185
+"Transcriptional regulator
+GFCGBH_00185"
+GFCGBH_00190
+"Toxin-antitoxin system, toxin component, RelE family
+GFCGBH_00190"
+GFCGBH_00200
+"putative arabinose efflux permease AraJ, MFS family
+GFCGBH_00200"
+GFCGBH_00205
+"Formyl-trans-N domain-containing protein
+GFCGBH_00205"
+GFCGBH_00210
+"Molybdopterin and thiamine biosynthesis dinucleotide-utilizing enzyme
+GFCGBH_00210"
+GFCGBH_00215
+"DNA-binding transcriptional regulator, ArsR family
+GFCGBH_00215"
+GFCGBH_00220
+"Transcriptional regulator
+GFCGBH_00220"
+GFCGBH_00225
+"IS256 family transposase
+GFCGBH_00225"
+GFCGBH_00230
+"IS256 family transposase
+GFCGBH_00230"
+IHMNJG_00015
+"hypothetical protein
+IHMNJG_00015"
+IHMNJG_00030
+"Holin-like toxin
+IHMNJG_00030"
+IHMNJG_00035
+"ArdcN domain-containing protein
+IHMNJG_00035"
+IHMNJG_00040
+"Transcriptional regulator
+IHMNJG_00040"
+IHMNJG_00045
+"DNA topoisomerase IA
+IHMNJG_00045"
+IHMNJG_00050
+"DUF3278 domain-containing protein
+IHMNJG_00050"
+IHMNJG_00055
+"Conjugal transfer protein
+IHMNJG_00055"
+IHMNJG_00060
+"Lipoprotein
+IHMNJG_00060"
+IHMNJG_00065
+"Type IV secretory pathway, VirD4 component, TraG/TraD family ATPase
+IHMNJG_00065"
+IHMNJG_00070
+"Conjugal transfer protein
+IHMNJG_00070"
+IHMNJG_00075
+"Thioredoxin domain-containing protein
+IHMNJG_00075"
+IHMNJG_00080
+"Extracellular protein
+IHMNJG_00080"
+IHMNJG_00090
+"Conjugal transfer protein
+IHMNJG_00090"
+IHMNJG_00095
+"Type IV secretory pathway, VirB4 component
+IHMNJG_00095"
+IHMNJG_00100
+"Conjugal transfer protein
+IHMNJG_00100"
+IHMNJG_00105
+"Conjugal transfer protein
+IHMNJG_00105"
+IHMNJG_00110
+"Conjugal transfer protein
+IHMNJG_00110"
+IHMNJG_00115
+"Relaxase
+IHMNJG_00115"
+IHMNJG_00120
+"DUF4283 domain-containing protein
+IHMNJG_00120"
+IHMNJG_00140
+"UDP-N-acetylglucosamine kinase
+IHMNJG_00140"
+IHMNJG_00150
+"Antitoxin component of the RelBE or YafQ-DinJ toxin-antitoxin module
+IHMNJG_00150"
+IHMNJG_00155
+"Replication initiator protein
+IHMNJG_00155"
+IHMNJG_00160
+"CopG family transcriptional regulator
+IHMNJG_00160"
+IHMNJG_00165
+"Chromosome partitioning ATPase
+IHMNJG_00165"
+IHMNJG_00175
+"hypothetical protein
+IHMNJG_00175"
+IHMNJG_00190
+"hypothetical protein
+IHMNJG_00190"
+IHMNJG_00195
+"hypothetical protein
+IHMNJG_00195"
+IHMNJG_00205
+"Alpha/beta hydrolase
+IHMNJG_00205"
+IHMNJG_00210
+"Transposase
+IHMNJG_00210"
+IHMNJG_00220
+"hypothetical protein
+IHMNJG_00220"
+DLFDDM_00005
+"Bac-RepA-C domain-containing protein
+DLFDDM_00005"
+DLFDDM_00010
+"HTH-17 domain-containing protein
+DLFDDM_00010"
+DLFDDM_00015
+"DUF624 domain-containing protein
+DLFDDM_00015"
+DLFDDM_00020
+"Phr family secreted Rap phosphatase inhibitor
+DLFDDM_00020"
+DLFDDM_00025
+"DUF536 domain-containing protein
+DLFDDM_00025"
+DLFDDM_00030
+"hypothetical protein
+DLFDDM_00030"
+DLFDDM_00035
+"Transposase
+DLFDDM_00035"
+DLFDDM_00040
+"RepA-like protein
+DLFDDM_00040"
+DLFDDM_00045
+"Dihydrodipicolinate reductase
+DLFDDM_00045"
+DLFDDM_00050
+"ALP-N domain-containing protein
+DLFDDM_00050"
+DLFDDM_00055
+"IFI27L1
+DLFDDM_00055"
+DLFDDM_00060
+"ABC transporter ATP-binding protein permease
+DLFDDM_00060"
+DLFDDM_00065
+"hypothetical protein
+DLFDDM_00065"
+DLFDDM_00070
+"Serine threonine protein kinase
+DLFDDM_00070"
+DLFDDM_00075
+"MFS domain-containing protein
+DLFDDM_00075"
+DLFDDM_00080
+"IS982 family ISLhe5 transposase
+DLFDDM_00080"
+DLFDDM_00090
+"hypothetical protein
+DLFDDM_00090"
+DLFDDM_00105
+"DUF3847 domain-containing protein
+DLFDDM_00105"
+DLFDDM_00110
+"Addiction module toxin, PemK-like protein
+DLFDDM_00110"
+JBBOBM_00005
+"IS110 family transposase
+JBBOBM_00005"
+JBBOBM_00010
+"Mercuric reductase
+JBBOBM_00010"
+JBBOBM_00015
+"IS5 family transposase
+JBBOBM_00015"
+JBBOBM_00020
+"Transposase
+JBBOBM_00020"
+JBBOBM_00025
+"hypothetical protein
+JBBOBM_00025"
+JBBOBM_00035
+"IS5 family transposase
+JBBOBM_00035"
+JBBOBM_00045
+"ParA-like ATPase involved in chromosome/plasmid partitioning or cellulose biosynthesis protein BcsQ
+JBBOBM_00045"
+JBBOBM_00055
+"RepA protein
+JBBOBM_00055"
+JBBOBM_00070
+"Mobilization protein
+JBBOBM_00070"
+JBBOBM_00075
+"Nickase
+JBBOBM_00075"
+JBBOBM_00080
+"LtrC
+JBBOBM_00080"
+JBBOBM_00085
+"Holin-like toxin
+JBBOBM_00085"
+PNFLII_00010
+"Transcriptional regulator
+PNFLII_00010"
+PNFLII_00030
+"UDP-N-acetylglucosamine kinase
+PNFLII_00030"
+PNFLII_00045
+"Nickase
+PNFLII_00045"
+PNFLII_00065
+"YSIRK-type signal peptide-containing protein
+PNFLII_00065"
+PNFLII_00070
+"Site-specific DNA recombinase SpoIVCA/DNA invertase PinE
+PNFLII_00070"
+PNFLII_00075
+"3-methyladenine DNA glycosylase Tag
+PNFLII_00075"
+PNFLII_00085
+"ThiF family protein
+PNFLII_00085"
+PNFLII_00100
+"IS3 family transposase
+PNFLII_00100"
+PNFLII_00105
+"Transposase
+PNFLII_00105"
+PNFLII_00110
+"HTH marR-type domain-containing protein
+PNFLII_00110"
+PNFLII_00115
+"Macrolide ABC transporter ATP-binding protein
+PNFLII_00115"
+PNFLII_00120
+"ABC transporter permease
+PNFLII_00120"
+PNFLII_00125
+"Collagen-binding protein
+PNFLII_00125"
+PNFLII_00130
+"MFS transporter
+PNFLII_00130"
+PNFLII_00135
+"YffB
+PNFLII_00135"
+PNFLII_00140
+"hypothetical protein
+PNFLII_00140"
+PNFLII_00145
+"UmuC domain-containing protein
+PNFLII_00145"
+PNFLII_00165
+"Integrase catalytic domain-containing protein
+PNFLII_00165"
+PNFLII_00170
+"Transposase
+PNFLII_00170"
+PNFLII_00185
+"UV-resistance
+PNFLII_00185"
+PNFLII_00200
+"DUF1433 domain-containing protein
+PNFLII_00200"
+PNFLII_00205
+"hypothetical protein
+PNFLII_00205"
+PNFLII_00215
+"Toxin-antitoxin addiction module toxin component MazF
+PNFLII_00215"
+PNFLII_00220
+"AbrB/MazE/SpoVT family DNA-binding domain-containing protein
+PNFLII_00220"
+PNFLII_00250
+"HTH tetR-type domain-containing protein
+PNFLII_00250"
+PNFLII_00255
+"DUF536 domain-containing protein
+PNFLII_00255"
+PNFLII_00270
+"Adenylate cyclase
+PNFLII_00270"
+PNFLII_00275
+"Site-specific recombinase, phage integrase family
+PNFLII_00275"
+PNFLII_00280
+"Addiction module antitoxin, RelB/DinJ family
+PNFLII_00280"
+PNFLII_00295
+"ACOX domain-containing protein
+PNFLII_00295"
+PNFLII_00310
+"hypothetical protein
+PNFLII_00310"
+PNFLII_00315
+"HTH luxR-type domain-containing protein
+PNFLII_00315"
+PNFLII_00320
+"hypothetical protein
+PNFLII_00320"
+PNFLII_00325
+"3-hydroxyacyl-ACP dehydratase FabZ
+PNFLII_00325"
+PNFLII_00330
+"Transcriptional regulator, MarR family
+PNFLII_00330"
+PNFLII_00335
+"Beta-ketoacyl-[acyl-carrier-protein] synthase III
+PNFLII_00335"
+PNFLII_00340
+"Acyl carrier protein
+PNFLII_00340"
+PNFLII_00345
+"Malonyl CoA-acyl carrier protein transacylase
+PNFLII_00345"
+PNFLII_00350
+"Oxidoreductase, short chain dehydrogenase/reductase family protein
+PNFLII_00350"
+PNFLII_00355
+"beta-ketoacyl-ACP synthase II
+PNFLII_00355"
+PNFLII_00360
+"acetyl-CoA carboxylase biotin carboxyl carrier protein
+PNFLII_00360"
+PNFLII_00365
+"3-hydroxyacyl-ACP dehydratase FabZ
+PNFLII_00365"
+PNFLII_00370
+"acetyl-CoA carboxylase biotin carboxylase subunit
+PNFLII_00370"
+PNFLII_00375
+"acetyl-CoA carboxylase, carboxyltransferase subunit beta
+PNFLII_00375"
+PNFLII_00380
+"acetyl-CoA carboxytransferase
+PNFLII_00380"
+PNFLII_00385
+"enoyl-ACP reductase FabI
+PNFLII_00385"
+PNFLII_00390
+"Biotin--[acetyl-CoA-carboxylase] ligase
+PNFLII_00390"
+PNFLII_00395
+"Sugar efflux transporter for intercellular exchange
+PNFLII_00395"
+PNFLII_00400
+"Fructokinase
+PNFLII_00400"
+PNFLII_00405
+"helix-turn-helix domain-containing protein
+PNFLII_00405"
+INEGCB_00035
+"Transposase
+INEGCB_00035"
+INEGCB_00040
+"IS256 family transposase
+INEGCB_00040"
+INEGCB_00060
+"hypothetical protein
+INEGCB_00060"
+INEGCB_00080
+"hypothetical protein
+INEGCB_00080"
+INEGCB_00145
+"Pyruvate, water dikinase
+INEGCB_00145"
+INEGCB_00150
+"Zinc-type alcohol dehydrogenase-like protein
+INEGCB_00150"
+INEGCB_00155
+"Transcriptional regulator, HxlR family
+INEGCB_00155"
+INEGCB_00170
+"Cna B-type domain-containing protein
+INEGCB_00170"
+INEGCB_00175
+"Nicotinamide mononucleotide transporter
+INEGCB_00175"
+INEGCB_00185
+"hypothetical protein
+INEGCB_00185"
+INEGCB_00250
+"NlpC/P60 domain-containing protein
+INEGCB_00250"
+MBIFLD_00010
+"Adhesin
+MBIFLD_00010"
+MBIFLD_00040
+"RDD family protein
+MBIFLD_00040"
+MBIFLD_00050
+"hypothetical protein
+MBIFLD_00050"
+MBIFLD_00060
+"Transposase
+MBIFLD_00060"
+MBIFLD_00095
+"Replication initiator protein
+MBIFLD_00095"
+MBIFLD_00120
+"Ferredoxin
+MBIFLD_00120"
+MBIFLD_00130
+"DNA-damage-inducible protein J
+MBIFLD_00130"
+MBIFLD_00145
+"DNA invertase Pin
+MBIFLD_00145"
+MBIFLD_00150
+"DNA-3-methyladenine glycosylase I
+MBIFLD_00150"
+MBIFLD_00155
+"Transcriptional regulator
+MBIFLD_00155"
+MBIFLD_00160
+"Transcriptional regulator-like
+MBIFLD_00160"
+MBIFLD_00165
+"Efflux pump antibiotic resistance protein
+MBIFLD_00165"
+MBIFLD_00170
+"hypothetical protein
+MBIFLD_00170"
+MBIFLD_00175
+"Enoyl reductase (ER) domain-containing protein
+MBIFLD_00175"
+MBIFLD_00180
+"HTH-type transcriptional regulator BetI
+MBIFLD_00180"
+MBIFLD_00220
+"hypothetical protein
+MBIFLD_00220"
+MBIFLD_00240
+"CRISPR-associated protein Cas1 family protein
+MBIFLD_00240"
+MBIFLD_00245
+"Nitrite reductase (NO-forming)
+MBIFLD_00245"
+MBIFLD_00255
+"Inner membrane protein
+MBIFLD_00255"
+EOFFKC_00015
+"HTH hxlR-type domain-containing protein
+EOFFKC_00015"
+EOFFKC_00035
+"LXG domain-containing protein
+EOFFKC_00035"
+EOFFKC_00070
+"Ovule protein
+EOFFKC_00070"
+EOFFKC_00075
+"Electron transfer flavoprotein-ubiquinone oxidoreductase
+EOFFKC_00075"
+EOFFKC_00110
+"hypothetical protein
+EOFFKC_00110"
+EOFFKC_00130
+"ThiF family protein
+EOFFKC_00130"
+EOFFKC_00155
+"Integral membrane protein
+EOFFKC_00155"
+EOFFKC_00185
+"Four helix bundle protein
+EOFFKC_00185"
+EOFFKC_00195
+"hypothetical protein
+EOFFKC_00195"
+ANJHNM_00135
+"DUF4238 domain-containing protein
+ANJHNM_00135"
+ANJHNM_00140
+"Transposase ISLasa18a, IS256 family
+ANJHNM_00140"
+ANJHNM_00195
+"Cna B-type domain-containing protein
+ANJHNM_00195"
+ANJHNM_00230
+"Ovule protein
+ANJHNM_00230"
+ANJHNM_00290
+"DUF4176 domain-containing protein
+ANJHNM_00290"
+ANJHNM_00300
+"Beta-carotene 15,15'-monooxygenase
+ANJHNM_00300"
+ANJHNM_00305
+"hypothetical protein
+ANJHNM_00305"
+ANJHNM_00310
+"Isochorismatase domain-containing protein
+ANJHNM_00310"
+ADLLNK_00005
+"plasmid SOS inhibition protein A
+ADLLNK_00005"
+ADLLNK_00015
+"Transmembrane protein
+ADLLNK_00015"
+ADLLNK_00020
+"Single-stranded DNA-binding protein
+ADLLNK_00020"
+ADLLNK_00025
+"DUF3135 domain-containing protein
+ADLLNK_00025"
+ADLLNK_00030
+"Transposase
+ADLLNK_00030"
+ADLLNK_00035
+"Helix-turn-helix domain-containing protein
+ADLLNK_00035"
+ADLLNK_00040
+"broad-spectrum class A beta-lactamase TEM-1
+ADLLNK_00040"
+ADLLNK_00045
+"Mobile element protein
+ADLLNK_00045"
+ADLLNK_00050
+"DUF262 domain-containing protein
+ADLLNK_00050"
+ADLLNK_00055
+"Endoribonuclease PemK
+ADLLNK_00055"
+ADLLNK_00060
+"type II toxin-antitoxin system antitoxin PemI
+ADLLNK_00060"
+ADLLNK_00065
+"Uncharacterized protein
+ADLLNK_00065"
+ADLLNK_00070
+"hypothetical protein
+ADLLNK_00070"
+ADLLNK_00075
+"IncFII RepA protein family protein
+ADLLNK_00075"
+ADLLNK_00080
+"Putative incF replication protein RepA3
+ADLLNK_00080"
+ADLLNK_00090
+"Protein CopB
+ADLLNK_00090"
+ADLLNK_00100
+"STAS domain-containing protein
+ADLLNK_00100"
+ADLLNK_00105
+"DUF2726 domain-containing protein
+ADLLNK_00105"
+ADLLNK_00110
+"Gene expression modulator
+ADLLNK_00110"
+ADLLNK_00115
+"Uncharacterized endonuclease
+ADLLNK_00115"
+ADLLNK_00125
+"ANR family transcriptional regulator
+ADLLNK_00125"
+ADLLNK_00130
+"sRNA-binding protein ProQ
+ADLLNK_00130"
+ADLLNK_00135
+"conjugal transfer pilus acetylase TraX
+ADLLNK_00135"
+ADLLNK_00140
+"hypothetical protein
+ADLLNK_00140"
+ADLLNK_00145
+"conjugative transfer relaxase/helicase TraI
+ADLLNK_00145"
+ADLLNK_00155
+"type IV conjugative transfer system coupling protein TraD
+ADLLNK_00155"
+ADLLNK_00165
+"hypothetical protein
+ADLLNK_00165"
+ADLLNK_00170
+"Chromate ion transporter
+ADLLNK_00170"
+ADLLNK_00175
+"Helix-turn-helix transcriptional regulator
+ADLLNK_00175"
+ADLLNK_00180
+"Resolvase
+ADLLNK_00180"
+ADLLNK_00185
+"Transposase
+ADLLNK_00185"
+ADLLNK_00190
+"DNA-binding protein, AcrR family, includes nucleoid occlusion protein SlmA
+ADLLNK_00190"
+ADLLNK_00195
+"MFS transporter
+ADLLNK_00195"
+ADLLNK_00200
+"hypothetical protein
+ADLLNK_00200"
+ADLLNK_00205
+"hypothetical protein
+ADLLNK_00205"
+ADLLNK_00210
+"hypothetical protein
+ADLLNK_00210"
+ADLLNK_00215
+"hypothetical protein
+ADLLNK_00215"
+ADLLNK_00220
+"hypothetical protein
+ADLLNK_00220"
+ADLLNK_00225
+"hypothetical protein
+ADLLNK_00225"
+ADLLNK_00230
+"hypothetical protein
+ADLLNK_00230"
+ADLLNK_00235
+"hypothetical protein
+ADLLNK_00235"
+ADLLNK_00240
+"DUF667 domain-containing protein
+ADLLNK_00240"
+ADLLNK_00245
+"Glutamate--cysteine ligase
+ADLLNK_00245"
+ADLLNK_00250
+"YcdA
+ADLLNK_00250"
+ADLLNK_00255
+"Uncharacterized protein
+ADLLNK_00255"
+ADLLNK_00260
+"Protein StbB
+ADLLNK_00260"
+ADLLNK_00265
+"plasmid segregation protein ParM
+ADLLNK_00265"
+ADLLNK_00270
+"Methyltransferase
+ADLLNK_00270"
+ADLLNK_00275
+"Cytoplasmic protein
+ADLLNK_00275"
+ADLLNK_00280
+"DUF1380 domain-containing protein
+ADLLNK_00280"
+ADLLNK_00285
+"YchA
+ADLLNK_00285"
+ADLLNK_00290
+"hypothetical protein
+ADLLNK_00290"
+ADLLNK_00295
+"DUF1380 domain-containing protein
+ADLLNK_00295"
+ADLLNK_00300
+"Plasmid protein
+ADLLNK_00300"
+ADLLNK_00305
+"hypothetical protein
+ADLLNK_00305"
+NBGEGH_00005
+"Replication initiator protein
+NBGEGH_00005"
+NBGEGH_00010
+"Ovule protein
+NBGEGH_00010"
+NBGEGH_00090
+"hypothetical protein
+NBGEGH_00090"
+NBGEGH_00100
+"hypothetical protein
+NBGEGH_00100"
+NBGEGH_00110
+"hypothetical protein
+NBGEGH_00110"
+NBGEGH_00115
+"hypothetical protein
+NBGEGH_00115"
+NBGEGH_00145
+"hypothetical protein
+NBGEGH_00145"
+NBGEGH_00180
+"Ovule protein
+NBGEGH_00180"
+NBGEGH_00190
+"AAA-31 domain-containing protein
+NBGEGH_00190"
+NBGEGH_00195
+"CopG family transcriptional regulator
+NBGEGH_00195"

@@ -30,6 +30,6 @@ def filenames_from_contig_ids(annotations_path: str) -> pd.Series:
     plasmid_names, contig_ids = [], []
     for path in fna_files:
         plasmid_names.append(path.split('/')[-2])
-        with open(path) as instream: contig_ids.append(instream.readline()[1:-1])
+        with open(path) as instream: contig_ids.append(instream.readline().split(" ")[0][1:].split("\n")[0])
 
     return pd.Series(plasmid_names, index = contig_ids, name = 'contig_ids')

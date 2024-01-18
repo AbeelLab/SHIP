@@ -1,5 +1,5 @@
 {% set name = "ship_plasmid" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -58,4 +58,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - AddYourGitHubIdHere
+    - marcoteix

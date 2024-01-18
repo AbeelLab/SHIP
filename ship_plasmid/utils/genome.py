@@ -60,21 +60,33 @@ class GraphGenome:
             format = ['.gff', '.gff3']
         )[0]
 
-        # Check if input is from bakta or prokka
-        is_bakta = self.path_to_gff.endswith(".gff3")
-        if is_bakta: product_colname = "NAME"
-        else: product_colname = "product"
-
         with open(self.path_to_gff, 'r') as file: 
             contents = next(parse(file)).features
+
+        prod_types = ["CDS", "ncRNA"]
         
         self.strands = pd.DataFrame(
-            [[x.strand, x.qualifiers[product_colname][0]] for x in contents if x.type=="CDS"],
-            index = [x.id for x in contents if x.type=="CDS"],
+            [[x.strand, self.__get_product(x.qualifiers)] for x in contents if x.type in prod_types],
+            index = [x.id for x in contents if x.type in prod_types],
             columns = ['Strands', 'Product']
         )
 
         return self.strands
+    
+    def __get_product(self, qualifiers: dict) -> str:
+        """
+        Fetches the feature product from a GFF3 qualifier. Supports multiple Prokka and
+        Bakta versions.
+        """
+
+        keys = ["product", "name"]
+        keys += [x.upper() for x in keys] + [x.capitalize() for x in keys]
+
+        for k in keys:
+            if k in list(qualifiers.keys()): return qualifiers[k][0]
+        
+        raise KeyError(f"No valid product key found in the GFF3 file. Got keys [{', '.join(list(qualifiers.keys()))}] \
+but was expecting one of [{', '.join(keys)}].")
 
     def get_amr_gene_names(self) -> list:
         '''

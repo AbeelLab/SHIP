@@ -1516,3 +1516,1005 @@
 >Cluster 489
 0	30aa, >HFILBOGL_00138... *
 1	30aa, >ACKNMMCH_00136... at 100.00%
+>Cluster 0
+0	1756aa, >ADLLNK_00145... *
+>Cluster 1
+0	1242aa, >MBIFLD_00010... *
+1	128aa, >EOFFKC_00250... at 99.22%
+2	646aa, >ANJHNM_00200... at 97.37%
+>Cluster 2
+0	1066aa, >DLFDDM_00090... *
+1	1066aa, >DLFDDM_00090... at 100.00%
+>Cluster 3
+0	954aa, >GFCGBH_00150... at 96.96%
+1	336aa, >IHMNJG_00005... at 92.26%
+2	964aa, >INEGCB_00170... *
+>Cluster 4
+0	950aa, >BPLPFO_00130... *
+1	677aa, >IHMNJG_00225... at 94.68%
+2	769aa, >NBGEGH_00095... at 93.76%
+>Cluster 5
+0	853aa, >JBBOBM_00025... *
+1	853aa, >JBBOBM_00025... at 100.00%
+>Cluster 6
+0	527aa, >KALMMD_00065... at 98.10%
+1	527aa, >KALMMD_00065... at 98.10%
+2	848aa, >PNFLII_00065... *
+>Cluster 7
+0	782aa, >PNFLII_00125... *
+1	555aa, >EOFFKC_00005... at 96.40%
+>Cluster 8
+0	750aa, >PNFLII_00120... *
+1	750aa, >MBIFLD_00005... at 99.33%
+2	166aa, >NBGEGH_00105... at 98.80%
+>Cluster 9
+0	159aa, >GFCGBH_00075... at 91.82%
+1	711aa, >IHMNJG_00045... *
+2	711aa, >INEGCB_00210... at 100.00%
+>Cluster 10
+0	690aa, >JBBOBM_00075... *
+1	687aa, >EOFFKC_00040... at 91.41%
+>Cluster 11
+0	641aa, >IHMNJG_00125... at 95.16%
+1	687aa, >PNFLII_00045... *
+2	641aa, >INEGCB_00030... at 95.16%
+3	686aa, >MBIFLD_00065... at 91.84%
+4	686aa, >ANJHNM_00110... at 92.27%
+5	686aa, >NBGEGH_00035... at 93.59%
+>Cluster 12
+0	686aa, >BPLPFO_00050... *
+1	686aa, >KALMMD_00120... at 96.94%
+2	546aa, >GFCGBH_00065... at 92.49%
+>Cluster 13
+0	672aa, >IHMNJG_00095... *
+1	672aa, >INEGCB_00260... at 99.26%
+>Cluster 14
+0	643aa, >INEGCB_00145... *
+1	643aa, >EOFFKC_00190... at 98.13%
+>Cluster 15
+0	614aa, >BPLPFO_00205... *
+1	119aa, >EOFFKC_00145... at 96.64%
+2	54aa, >EOFFKC_00150... at 96.30%
+>Cluster 16
+0	604aa, >ADLLNK_00155... *
+>Cluster 17
+0	600aa, >GFCGBH_00105... *
+>Cluster 18
+0	541aa, >DLFDDM_00060... *
+>Cluster 19
+0	528aa, >BPLPFO_00165... *
+1	507aa, >ANJHNM_00240... at 99.61%
+>Cluster 20
+0	511aa, >KALMMD_00010... *
+1	511aa, >KALMMD_00010... at 100.00%
+>Cluster 21
+0	503aa, >IHMNJG_00065... *
+1	503aa, >INEGCB_00230... at 100.00%
+>Cluster 22
+0	479aa, >BPLPFO_00225... *
+1	479aa, >PNFLII_00240... at 98.54%
+2	479aa, >MBIFLD_00230... at 98.96%
+3	479aa, >EOFFKC_00240... at 98.75%
+4	301aa, >ANJHNM_00005... at 99.34%
+5	177aa, >ANJHNM_00315... at 97.18%
+6	479aa, >NBGEGH_00135... at 99.37%
+>Cluster 23
+0	472aa, >IHMNJG_00090... *
+1	472aa, >INEGCB_00255... at 93.64%
+>Cluster 24
+0	463aa, >PNFLII_00370... *
+>Cluster 25
+0	460aa, >PNFLII_00130... *
+>Cluster 26
+0	449aa, >BPLPFO_00125... at 94.21%
+1	449aa, >KALMMD_00085... at 97.55%
+2	449aa, >GFCGBH_00145... at 96.66%
+3	449aa, >IHMNJG_00025... at 96.21%
+4	459aa, >JBBOBM_00010... *
+5	449aa, >PNFLII_00060... at 97.10%
+6	449aa, >INEGCB_00190... at 95.77%
+7	449aa, >ANJHNM_00190... at 94.43%
+>Cluster 27
+0	454aa, >MBIFLD_00165... *
+>Cluster 28
+0	450aa, >GFCGBH_00200... *
+1	450aa, >PNFLII_00080... at 98.67%
+2	450aa, >EOFFKC_00135... at 99.33%
+>Cluster 29
+0	443aa, >BPLPFO_00175... *
+1	443aa, >ANJHNM_00250... at 99.32%
+>Cluster 30
+0	436aa, >ADLLNK_00050... *
+>Cluster 31
+0	410aa, >PNFLII_00355... *
+>Cluster 32
+0	75aa, >BPLPFO_00070... at 96.00%
+1	75aa, >BPLPFO_00245... at 96.00%
+2	57aa, >BPLPFO_00255... at 92.98%
+3	303aa, >KALMMD_00075... at 98.35%
+4	57aa, >KALMMD_00180... at 91.23%
+5	75aa, >KALMMD_00190... at 97.33%
+6	212aa, >PNFLII_00285... at 92.92%
+7	406aa, >INEGCB_00040... *
+8	406aa, >INEGCB_00065... at 100.00%
+9	406aa, >INEGCB_00180... at 100.00%
+10	51aa, >ANJHNM_00020... at 94.12%
+11	75aa, >ANJHNM_00040... at 94.67%
+12	57aa, >ANJHNM_00050... at 92.98%
+>Cluster 33
+0	401aa, >JBBOBM_00005... *
+>Cluster 34
+0	384aa, >IHMNJG_00085... at 98.18%
+1	385aa, >INEGCB_00250... *
+>Cluster 35
+0	85aa, >DLFDDM_00120... at 96.47%
+1	379aa, >JBBOBM_00055... *
+>Cluster 36
+0	374aa, >IHMNJG_00035... *
+1	374aa, >INEGCB_00200... at 100.00%
+2	191aa, >EOFFKC_00030... at 91.10%
+>Cluster 37
+0	370aa, >KALMMD_00155... at 96.76%
+1	373aa, >NBGEGH_00005... *
+>Cluster 38
+0	370aa, >BPLPFO_00005... at 95.14%
+1	372aa, >IHMNJG_00155... *
+2	369aa, >PNFLII_00005... at 95.12%
+3	372aa, >INEGCB_00075... at 100.00%
+4	364aa, >ANJHNM_00085... at 95.88%
+>Cluster 39
+0	368aa, >GFCGBH_00030... at 94.02%
+1	372aa, >MBIFLD_00095... *
+>Cluster 40
+0	368aa, >GFCGBH_00215... *
+1	368aa, >PNFLII_00090... at 98.10%
+2	368aa, >EOFFKC_00125... at 99.46%
+>Cluster 41
+0	247aa, >KALMMD_00115... at 90.28%
+1	244aa, >GFCGBH_00130... at 90.57%
+2	312aa, >DLFDDM_00100... at 90.71%
+3	368aa, >JBBOBM_00080... *
+>Cluster 42
+0	366aa, >DLFDDM_00050... *
+>Cluster 43
+0	366aa, >MBIFLD_00160... *
+>Cluster 44
+0	340aa, >INEGCB_00150... *
+1	340aa, >MBIFLD_00015... at 98.82%
+2	340aa, >EOFFKC_00010... at 98.24%
+3	340aa, >ANJHNM_00130... at 99.41%
+4	340aa, >NBGEGH_00080... at 99.12%
+>Cluster 45
+0	334aa, >MBIFLD_00175... *
+>Cluster 46
+0	323aa, >BPLPFO_00170... *
+1	323aa, >ANJHNM_00245... at 99.69%
+>Cluster 47
+0	321aa, >PNFLII_00335... *
+>Cluster 48
+0	320aa, >ADLLNK_00265... *
+>Cluster 49
+0	319aa, >KALMMD_00210... *
+>Cluster 50
+0	319aa, >DLFDDM_00040... *
+>Cluster 51
+0	309aa, >PNFLII_00345... *
+>Cluster 52
+0	305aa, >BPLPFO_00235... *
+1	305aa, >KALMMD_00200... at 99.67%
+2	305aa, >ANJHNM_00030... at 99.02%
+>Cluster 53
+0	301aa, >GFCGBH_00210... *
+>Cluster 54
+0	296aa, >EOFFKC_00075... *
+>Cluster 55
+0	291aa, >GFCGBH_00085... *
+>Cluster 56
+0	290aa, >PNFLII_00100... *
+>Cluster 57
+0	289aa, >BPLPFO_00095... *
+1	289aa, >ANJHNM_00165... at 98.27%
+>Cluster 58
+0	289aa, >MBIFLD_00120... *
+1	273aa, >MBIFLD_00260... at 91.58%
+>Cluster 59
+0	288aa, >BPLPFO_00075... *
+1	288aa, >ANJHNM_00145... at 98.96%
+>Cluster 60
+0	268aa, >BPLPFO_00270... at 95.90%
+1	268aa, >KALMMD_00165... at 95.90%
+2	287aa, >JBBOBM_00045... *
+3	268aa, >PNFLII_00420... at 95.90%
+>Cluster 61
+0	286aa, >BPLPFO_00080... *
+1	286aa, >ANJHNM_00150... at 100.00%
+>Cluster 62
+0	286aa, >ADLLNK_00040... *
+>Cluster 63
+0	281aa, >EOFFKC_00155... *
+1	277aa, >ANJHNM_00285... at 94.22%
+>Cluster 64
+0	280aa, >BPLPFO_00145... *
+1	280aa, >MBIFLD_00200... at 98.57%
+2	280aa, >EOFFKC_00210... at 98.93%
+3	185aa, >ANJHNM_00215... at 93.51%
+4	103aa, >ANJHNM_00220... at 99.03%
+5	103aa, >ANJHNM_00220... at 99.03%
+6	280aa, >NBGEGH_00165... at 98.57%
+>Cluster 65
+0	280aa, >GFCGBH_00205... *
+>Cluster 66
+0	279aa, >IHMNJG_00055... *
+1	279aa, >INEGCB_00220... at 99.64%
+>Cluster 67
+0	279aa, >ADLLNK_00170... *
+>Cluster 68
+0	278aa, >PNFLII_00375... *
+>Cluster 69
+0	275aa, >ADLLNK_00285... *
+>Cluster 70
+0	273aa, >ADLLNK_00185... *
+>Cluster 71
+0	271aa, >BPLPFO_00150... *
+1	271aa, >MBIFLD_00195... at 99.26%
+2	271aa, >EOFFKC_00205... at 98.52%
+3	271aa, >ANJHNM_00225... at 98.52%
+4	271aa, >NBGEGH_00160... at 98.89%
+>Cluster 72
+0	269aa, >NBGEGH_00190... *
+>Cluster 73
+0	265aa, >PNFLII_00390... *
+>Cluster 74
+0	264aa, >BPLPFO_00140... *
+1	264aa, >MBIFLD_00205... at 97.73%
+2	264aa, >EOFFKC_00215... at 98.11%
+3	264aa, >ANJHNM_00210... at 98.11%
+4	264aa, >NBGEGH_00170... at 98.11%
+>Cluster 75
+0	264aa, >DLFDDM_00080... *
+>Cluster 76
+0	264aa, >ANJHNM_00195... *
+>Cluster 77
+0	263aa, >GFCGBH_00020... *
+1	263aa, >MBIFLD_00105... at 98.48%
+2	261aa, >EOFFKC_00085... at 98.47%
+3	261aa, >ANJHNM_00075... at 98.85%
+>Cluster 78
+0	263aa, >IHMNJG_00165... *
+1	263aa, >INEGCB_00090... at 100.00%
+>Cluster 79
+0	260aa, >PNFLII_00385... *
+>Cluster 80
+0	256aa, >PNFLII_00380... *
+>Cluster 81
+0	250aa, >BPLPFO_00015... at 96.40%
+1	251aa, >KALMMD_00145... *
+2	248aa, >GFCGBH_00035... at 93.15%
+3	248aa, >PNFLII_00015... at 96.37%
+4	248aa, >ANJHNM_00095... at 95.56%
+>Cluster 82
+0	251aa, >DLFDDM_00070... *
+>Cluster 83
+0	122aa, >IHMNJG_00010... at 100.00%
+1	122aa, >IHMNJG_00010... at 100.00%
+2	247aa, >INEGCB_00175... *
+>Cluster 84
+0	246aa, >PNFLII_00165... *
+1	246aa, >PNFLII_00265... at 100.00%
+>Cluster 85
+0	245aa, >ANJHNM_00300... *
+>Cluster 86
+0	243aa, >PNFLII_00350... *
+>Cluster 87
+0	234aa, >BPLPFO_00230... *
+1	234aa, >PNFLII_00245... at 98.72%
+2	234aa, >MBIFLD_00235... at 99.15%
+3	234aa, >EOFFKC_00245... at 99.57%
+4	234aa, >ANJHNM_00010... at 99.57%
+5	234aa, >NBGEGH_00130... at 99.57%
+>Cluster 88
+0	101aa, >BPLPFO_00100... at 94.06%
+1	234aa, >GFCGBH_00225... *
+2	101aa, >ANJHNM_00170... at 95.05%
+>Cluster 89
+0	229aa, >PNFLII_00115... *
+1	229aa, >MBIFLD_00270... at 100.00%
+>Cluster 90
+0	227aa, >ADLLNK_00270... *
+>Cluster 91
+0	63aa, >BPLPFO_00030... at 100.00%
+1	226aa, >KALMMD_00130... *
+2	226aa, >GFCGBH_00050... at 97.35%
+3	218aa, >MBIFLD_00080... at 94.95%
+4	201aa, >EOFFKC_00055... at 96.52%
+>Cluster 92
+0	136aa, >BPLPFO_00035... at 94.85%
+1	226aa, >IHMNJG_00140... *
+2	226aa, >INEGCB_00055... at 100.00%
+>Cluster 93
+0	226aa, >ANJHNM_00135... *
+>Cluster 94
+0	222aa, >BPLPFO_00195... *
+1	222aa, >BPLPFO_00195... at 100.00%
+2	222aa, >KALMMD_00220... at 95.05%
+3	222aa, >KALMMD_00220... at 95.05%
+4	164aa, >IHMNJG_00185... at 93.90%
+5	164aa, >PNFLII_00300... at 96.34%
+6	164aa, >INEGCB_00110... at 93.90%
+7	218aa, >MBIFLD_00135... at 96.33%
+8	222aa, >MBIFLD_00250... at 95.50%
+9	218aa, >MBIFLD_00135... at 96.33%
+10	222aa, >MBIFLD_00250... at 95.50%
+11	211aa, >EOFFKC_00170... at 95.73%
+12	211aa, >EOFFKC_00170... at 95.73%
+13	164aa, >ANJHNM_00270... at 95.12%
+>Cluster 95
+0	219aa, >IHMNJG_00100... *
+1	219aa, >INEGCB_00005... at 96.80%
+>Cluster 96
+0	219aa, >DLFDDM_00015... *
+>Cluster 97
+0	214aa, >MBIFLD_00180... *
+>Cluster 98
+0	209aa, >KALMMD_00215... *
+>Cluster 99
+0	208aa, >MBIFLD_00155... *
+>Cluster 100
+0	206aa, >ADLLNK_00030... *
+1	199aa, >ADLLNK_00160... at 98.99%
+>Cluster 101
+0	206aa, >ADLLNK_00065... *
+>Cluster 102
+0	205aa, >IHMNJG_00080... *
+1	205aa, >INEGCB_00245... at 100.00%
+>Cluster 103
+0	205aa, >PNFLII_00070... *
+>Cluster 104
+0	204aa, >IHMNJG_00115... *
+1	204aa, >INEGCB_00020... at 98.53%
+>Cluster 105
+0	202aa, >JBBOBM_00035... *
+>Cluster 106
+0	200aa, >BPLPFO_00135... *
+1	200aa, >MBIFLD_00210... at 98.00%
+2	180aa, >EOFFKC_00220... at 98.33%
+3	200aa, >ANJHNM_00205... at 99.00%
+4	50aa, >NBGEGH_00175... at 98.00%
+>Cluster 107
+0	199aa, >DLFDDM_00025... *
+>Cluster 108
+0	197aa, >GFCGBH_00230... *
+>Cluster 109
+0	196aa, >ADLLNK_00105... *
+>Cluster 110
+0	194aa, >BPLPFO_00180... *
+1	194aa, >KALMMD_00230... at 97.94%
+2	194aa, >GFCGBH_00175... at 97.42%
+3	194aa, >IHMNJG_00200... at 98.45%
+4	194aa, >DLFDDM_00085... at 96.91%
+5	68aa, >JBBOBM_00030... at 92.65%
+6	122aa, >JBBOBM_00040... at 91.80%
+7	194aa, >PNFLII_00230... at 98.45%
+8	194aa, >INEGCB_00125... at 98.45%
+9	194aa, >MBIFLD_00185... at 97.42%
+10	148aa, >MBIFLD_00215... at 96.62%
+11	194aa, >EOFFKC_00180... at 98.45%
+12	148aa, >EOFFKC_00225... at 99.32%
+13	194aa, >ANJHNM_00255... at 98.45%
+14	194aa, >NBGEGH_00150... at 97.42%
+15	149aa, >NBGEGH_00185... at 97.32%
+>Cluster 111
+0	194aa, >MBIFLD_00150... *
+>Cluster 112
+0	194aa, >ADLLNK_00190... *
+>Cluster 113
+0	191aa, >BPLPFO_00210... *
+>Cluster 114
+0	190aa, >GFCGBH_00220... *
+1	190aa, >PNFLII_00095... at 95.79%
+2	190aa, >EOFFKC_00120... at 96.32%
+>Cluster 115
+0	189aa, >ADLLNK_00135... *
+>Cluster 116
+0	152aa, >GFCGBH_00195... at 98.68%
+1	186aa, >PNFLII_00075... *
+2	152aa, >EOFFKC_00140... at 96.71%
+>Cluster 117
+0	186aa, >PNFLII_00275... *
+>Cluster 118
+0	184aa, >PNFLII_00030... *
+>Cluster 119
+0	182aa, >BPLPFO_00220... *
+1	182aa, >PNFLII_00235... at 99.45%
+2	182aa, >MBIFLD_00225... at 99.45%
+3	182aa, >EOFFKC_00235... at 99.45%
+4	182aa, >NBGEGH_00140... at 98.90%
+>Cluster 120
+0	178aa, >ADLLNK_00115... *
+>Cluster 121
+0	177aa, >PNFLII_00170... *
+1	177aa, >PNFLII_00260... at 100.00%
+>Cluster 122
+0	177aa, >NBGEGH_00115... *
+1	177aa, >NBGEGH_00115... at 100.00%
+>Cluster 123
+0	175aa, >IHMNJG_00205... *
+>Cluster 124
+0	175aa, >ADLLNK_00165... *
+1	175aa, >ADLLNK_00165... at 100.00%
+>Cluster 125
+0	172aa, >DLFDDM_00075... *
+>Cluster 126
+0	76aa, >BPLPFO_00115... at 96.05%
+1	75aa, >KALMMD_00090... at 96.00%
+2	134aa, >PNFLII_00180... at 96.27%
+3	172aa, >MBIFLD_00040... *
+4	75aa, >ANJHNM_00185... at 94.67%
+5	134aa, >NBGEGH_00050... at 96.27%
+>Cluster 127
+0	171aa, >DLFDDM_00110... *
+1	168aa, >NBGEGH_00020... at 98.81%
+>Cluster 128
+0	167aa, >BPLPFO_00240... *
+1	167aa, >KALMMD_00195... at 100.00%
+2	167aa, >IHMNJG_00020... at 100.00%
+3	167aa, >ANJHNM_00035... at 100.00%
+>Cluster 129
+0	164aa, >GFCGBH_00110... *
+>Cluster 130
+0	162aa, >PNFLII_00135... *
+>Cluster 131
+0	157aa, >GFCGBH_00070... *
+>Cluster 132
+0	157aa, >ADLLNK_00100... *
+>Cluster 133
+0	156aa, >IHMNJG_00070... *
+1	156aa, >INEGCB_00235... at 100.00%
+>Cluster 134
+0	155aa, >KALMMD_00045... *
+1	155aa, >KALMMD_00205... at 99.35%
+>Cluster 135
+0	153aa, >ADLLNK_00195... *
+>Cluster 136
+0	151aa, >PNFLII_00110... *
+1	151aa, >MBIFLD_00265... at 100.00%
+>Cluster 137
+0	150aa, >BPLPFO_00085... *
+1	150aa, >ANJHNM_00155... at 99.33%
+>Cluster 138
+0	150aa, >BPLPFO_00110... *
+1	150aa, >KALMMD_00095... at 100.00%
+2	150aa, >IHMNJG_00170... at 96.67%
+3	150aa, >PNFLII_00175... at 97.33%
+4	150aa, >PNFLII_00290... at 97.33%
+5	150aa, >INEGCB_00095... at 96.67%
+6	150aa, >MBIFLD_00045... at 96.67%
+7	150aa, >MBIFLD_00140... at 95.33%
+8	150aa, >EOFFKC_00175... at 95.33%
+9	150aa, >ANJHNM_00180... at 98.67%
+10	150aa, >NBGEGH_00045... at 96.67%
+>Cluster 139
+0	149aa, >ADLLNK_00130... *
+>Cluster 140
+0	147aa, >PNFLII_00360... *
+>Cluster 141
+0	146aa, >KALMMD_00035... *
+1	146aa, >KALMMD_00035... at 100.00%
+>Cluster 142
+0	146aa, >PNFLII_00330... *
+>Cluster 143
+0	145aa, >PNFLII_00325... *
+>Cluster 144
+0	144aa, >PNFLII_00365... *
+>Cluster 145
+0	144aa, >ADLLNK_00280... *
+>Cluster 146
+0	143aa, >GFCGBH_00100... *
+>Cluster 147
+0	140aa, >ADLLNK_00295... *
+>Cluster 148
+0	136aa, >IHMNJG_00050... *
+1	136aa, >INEGCB_00215... at 100.00%
+>Cluster 149
+0	134aa, >BPLPFO_00090... *
+1	134aa, >ANJHNM_00160... at 99.25%
+>Cluster 150
+0	133aa, >ADLLNK_00035... *
+>Cluster 151
+0	132aa, >EOFFKC_00130... *
+>Cluster 152
+0	131aa, >KALMMD_00055... *
+>Cluster 153
+0	129aa, >IHMNJG_00060... *
+1	129aa, >INEGCB_00225... at 100.00%
+>Cluster 154
+0	128aa, >PNFLII_00105... *
+>Cluster 155
+0	124aa, >PNFLII_00295... *
+>Cluster 156
+0	122aa, >IHMNJG_00075... *
+1	122aa, >INEGCB_00240... at 100.00%
+>Cluster 157
+0	120aa, >KALMMD_00235... *
+1	120aa, >GFCGBH_00170... at 94.17%
+2	77aa, >PNFLII_00225... at 94.81%
+3	120aa, >INEGCB_00130... at 92.50%
+>Cluster 158
+0	120aa, >GFCGBH_00190... *
+>Cluster 159
+0	120aa, >IHMNJG_00105... *
+1	120aa, >INEGCB_00010... at 100.00%
+>Cluster 160
+0	120aa, >ADLLNK_00205... *
+1	120aa, >ADLLNK_00205... at 100.00%
+>Cluster 161
+0	119aa, >DLFDDM_00005... *
+>Cluster 162
+0	117aa, >ADLLNK_00260... *
+>Cluster 163
+0	116aa, >DLFDDM_00035... *
+>Cluster 164
+0	115aa, >INEGCB_00155... *
+1	115aa, >MBIFLD_00020... at 98.26%
+2	59aa, >EOFFKC_00020... at 98.31%
+3	115aa, >ANJHNM_00125... at 98.26%
+4	113aa, >NBGEGH_00075... at 97.35%
+>Cluster 165
+0	114aa, >PNFLII_00215... *
+>Cluster 166
+0	114aa, >ADLLNK_00080... *
+>Cluster 167
+0	112aa, >KALMMD_00030... *
+1	112aa, >KALMMD_00030... at 100.00%
+>Cluster 168
+0	112aa, >JBBOBM_00015... *
+>Cluster 169
+0	111aa, >BPLPFO_00265... *
+1	111aa, >KALMMD_00170... at 99.10%
+2	111aa, >PNFLII_00415... at 95.50%
+3	111aa, >EOFFKC_00100... at 93.69%
+4	111aa, >ANJHNM_00060... at 96.40%
+>Cluster 170
+0	111aa, >IHMNJG_00110... *
+1	111aa, >INEGCB_00015... at 100.00%
+>Cluster 171
+0	94aa, >BPLPFO_00200... at 96.81%
+1	56aa, >IHMNJG_00180... at 100.00%
+2	56aa, >PNFLII_00305... at 96.43%
+3	56aa, >INEGCB_00105... at 100.00%
+4	111aa, >MBIFLD_00130... *
+5	73aa, >EOFFKC_00165... at 95.89%
+6	56aa, >ANJHNM_00275... at 100.00%
+>Cluster 172
+0	110aa, >ADLLNK_00055... *
+>Cluster 173
+0	110aa, >NBGEGH_00145... *
+1	110aa, >NBGEGH_00145... at 100.00%
+>Cluster 174
+0	108aa, >ADLLNK_00215... *
+1	108aa, >ADLLNK_00215... at 100.00%
+>Cluster 175
+0	107aa, >IHMNJG_00190... *
+1	107aa, >IHMNJG_00190... at 100.00%
+2	107aa, >INEGCB_00115... at 100.00%
+3	107aa, >INEGCB_00115... at 100.00%
+4	107aa, >ANJHNM_00265... at 97.20%
+5	107aa, >ANJHNM_00265... at 97.20%
+>Cluster 176
+0	107aa, >ADLLNK_00200... *
+1	107aa, >ADLLNK_00200... at 100.00%
+>Cluster 177
+0	106aa, >BPLPFO_00065... *
+1	106aa, >BPLPFO_00250... at 100.00%
+2	104aa, >KALMMD_00185... at 100.00%
+3	103aa, >ANJHNM_00025... at 95.15%
+4	106aa, >ANJHNM_00045... at 99.06%
+>Cluster 178
+0	106aa, >GFCGBH_00095... *
+>Cluster 179
+0	106aa, >ANJHNM_00140... *
+>Cluster 180
+0	106aa, >ADLLNK_00290... *
+1	106aa, >ADLLNK_00290... at 100.00%
+>Cluster 181
+0	103aa, >GFCGBH_00165... *
+1	103aa, >INEGCB_00135... at 98.06%
+>Cluster 182
+0	103aa, >IHMNJG_00120... *
+1	103aa, >INEGCB_00025... at 100.00%
+>Cluster 183
+0	102aa, >KALMMD_00050... *
+>Cluster 184
+0	102aa, >GFCGBH_00010... *
+1	102aa, >MBIFLD_00115... at 100.00%
+2	102aa, >EOFFKC_00095... at 100.00%
+3	102aa, >ANJHNM_00065... at 100.00%
+>Cluster 185
+0	102aa, >JBBOBM_00020... *
+>Cluster 186
+0	102aa, >PNFLII_00250... *
+1	102aa, >ANJHNM_00015... at 98.04%
+>Cluster 187
+0	101aa, >GFCGBH_00125... *
+>Cluster 188
+0	101aa, >ADLLNK_00175... *
+>Cluster 189
+0	99aa, >BPLPFO_00260... *
+1	99aa, >KALMMD_00175... at 98.99%
+2	98aa, >GFCGBH_00235... at 100.00%
+3	99aa, >PNFLII_00410... at 100.00%
+4	99aa, >EOFFKC_00105... at 98.99%
+5	99aa, >ANJHNM_00055... at 97.98%
+>Cluster 190
+0	98aa, >DLFDDM_00020... *
+>Cluster 191
+0	96aa, >PNFLII_00280... *
+>Cluster 192
+0	96aa, >ANJHNM_00290... *
+>Cluster 193
+0	96aa, >ADLLNK_00140... *
+1	96aa, >ADLLNK_00140... at 100.00%
+>Cluster 194
+0	95aa, >KALMMD_00060... *
+>Cluster 195
+0	95aa, >GFCGBH_00015... *
+1	95aa, >MBIFLD_00110... at 98.95%
+2	95aa, >EOFFKC_00090... at 98.95%
+3	95aa, >ANJHNM_00070... at 98.95%
+>Cluster 196
+0	95aa, >PNFLII_00270... *
+>Cluster 197
+0	95aa, >PNFLII_00310... *
+1	95aa, >PNFLII_00310... at 100.00%
+2	95aa, >ANJHNM_00280... at 95.79%
+3	95aa, >ANJHNM_00280... at 95.79%
+>Cluster 198
+0	94aa, >IHMNJG_00220... *
+1	94aa, >IHMNJG_00220... at 100.00%
+2	93aa, >NBGEGH_00085... at 97.85%
+3	93aa, >NBGEGH_00085... at 97.85%
+>Cluster 199
+0	92aa, >BPLPFO_00040... at 93.48%
+1	92aa, >KALMMD_00125... at 93.48%
+2	92aa, >GFCGBH_00055... at 93.48%
+3	92aa, >IHMNJG_00135... at 93.48%
+4	94aa, >DLFDDM_00105... *
+5	92aa, >JBBOBM_00065... at 93.48%
+6	92aa, >PNFLII_00035... at 93.48%
+7	92aa, >INEGCB_00050... at 93.48%
+8	92aa, >MBIFLD_00075... at 94.57%
+9	92aa, >EOFFKC_00050... at 91.30%
+10	92aa, >ANJHNM_00100... at 93.48%
+11	92aa, >NBGEGH_00025... at 94.57%
+>Cluster 200
+0	94aa, >PNFLII_00085... *
+>Cluster 201
+0	93aa, >BPLPFO_00020... *
+1	93aa, >KALMMD_00140... at 92.47%
+2	93aa, >GFCGBH_00040... at 93.55%
+3	75aa, >PNFLII_00020... at 90.67%
+>Cluster 202
+0	93aa, >IHMNJG_00150... *
+1	93aa, >DLFDDM_00115... at 95.70%
+2	93aa, >JBBOBM_00060... at 95.70%
+3	93aa, >INEGCB_00070... at 100.00%
+4	93aa, >MBIFLD_00090... at 93.55%
+5	93aa, >EOFFKC_00065... at 92.47%
+6	93aa, >NBGEGH_00015... at 95.70%
+>Cluster 203
+0	93aa, >ADLLNK_00255... *
+>Cluster 204
+0	91aa, >GFCGBH_00185... *
+>Cluster 205
+0	91aa, >DLFDDM_00045... *
+>Cluster 206
+0	89aa, >KALMMD_00070... *
+1	89aa, >KALMMD_00070... at 100.00%
+>Cluster 207
+0	88aa, >PNFLII_00200... *
+>Cluster 208
+0	87aa, >PNFLII_00220... *
+>Cluster 209
+0	87aa, >PNFLII_00395... *
+>Cluster 210
+0	86aa, >PNFLII_00185... *
+1	84aa, >NBGEGH_00055... at 94.05%
+>Cluster 211
+0	85aa, >MBIFLD_00245... *
+1	85aa, >NBGEGH_00120... at 100.00%
+>Cluster 212
+0	85aa, >ADLLNK_00060... *
+>Cluster 213
+0	84aa, >INEGCB_00185... *
+1	84aa, >INEGCB_00185... at 100.00%
+>Cluster 214
+0	83aa, >GFCGBH_00080... *
+>Cluster 215
+0	83aa, >PNFLII_00340... *
+>Cluster 216
+0	83aa, >MBIFLD_00240... *
+1	83aa, >NBGEGH_00125... at 100.00%
+>Cluster 217
+0	83aa, >ADLLNK_00230... *
+1	83aa, >ADLLNK_00230... at 100.00%
+>Cluster 218
+0	82aa, >BPLPFO_00275... *
+1	82aa, >KALMMD_00160... at 98.78%
+2	82aa, >JBBOBM_00050... at 97.56%
+3	82aa, >PNFLII_00425... at 98.78%
+>Cluster 219
+0	61aa, >BPLPFO_00025... at 98.36%
+1	61aa, >KALMMD_00135... at 95.08%
+2	61aa, >GFCGBH_00045... at 96.72%
+3	61aa, >IHMNJG_00145... at 100.00%
+4	61aa, >PNFLII_00025... at 96.72%
+5	82aa, >INEGCB_00060... *
+6	82aa, >INEGCB_00060... at 100.00%
+7	63aa, >MBIFLD_00085... at 98.41%
+8	61aa, >EOFFKC_00060... at 96.72%
+>Cluster 220
+0	82aa, >MBIFLD_00255... *
+1	82aa, >ANJHNM_00295... at 91.46%
+>Cluster 221
+0	82aa, >ADLLNK_00090... *
+>Cluster 222
+0	81aa, >BPLPFO_00215... *
+1	81aa, >BPLPFO_00215... at 100.00%
+>Cluster 223
+0	80aa, >KALMMD_00240... *
+1	80aa, >MBIFLD_00125... at 96.25%
+2	78aa, >EOFFKC_00160... at 93.59%
+>Cluster 224
+0	80aa, >ADLLNK_00025... *
+>Cluster 225
+0	80aa, >NBGEGH_00090... *
+1	80aa, >NBGEGH_00090... at 100.00%
+>Cluster 226
+0	80aa, >NBGEGH_00195... *
+>Cluster 227
+0	79aa, >BPLPFO_00185... *
+1	79aa, >BPLPFO_00185... at 100.00%
+>Cluster 228
+0	79aa, >IHMNJG_00160... *
+1	79aa, >INEGCB_00085... at 100.00%
+>Cluster 229
+0	79aa, >PNFLII_00320... *
+1	79aa, >PNFLII_00320... at 100.00%
+>Cluster 230
+0	78aa, >GFCGBH_00005... *
+>Cluster 231
+0	78aa, >ADLLNK_00250... *
+>Cluster 232
+0	77aa, >KALMMD_00225... *
+>Cluster 233
+0	76aa, >MBIFLD_00145... *
+>Cluster 234
+0	76aa, >MBIFLD_00220... *
+1	76aa, >MBIFLD_00220... at 100.00%
+2	76aa, >EOFFKC_00230... at 98.68%
+3	76aa, >EOFFKC_00230... at 98.68%
+>Cluster 235
+0	76aa, >ADLLNK_00070... *
+1	76aa, >ADLLNK_00070... at 100.00%
+>Cluster 236
+0	75aa, >IHMNJG_00175... *
+1	75aa, >IHMNJG_00175... at 100.00%
+2	75aa, >INEGCB_00100... at 100.00%
+3	75aa, >INEGCB_00100... at 100.00%
+>Cluster 237
+0	69aa, >GFCGBH_00060... at 95.65%
+1	69aa, >IHMNJG_00130... at 95.65%
+2	75aa, >JBBOBM_00070... *
+3	69aa, >PNFLII_00040... at 98.55%
+4	69aa, >INEGCB_00045... at 95.65%
+5	69aa, >MBIFLD_00070... at 98.55%
+6	69aa, >ANJHNM_00105... at 97.10%
+>Cluster 238
+0	75aa, >PNFLII_00255... *
+>Cluster 239
+0	75aa, >PNFLII_00400... *
+>Cluster 240
+0	74aa, >BPLPFO_00060... *
+1	74aa, >BPLPFO_00060... at 100.00%
+2	49aa, >GFCGBH_00140... at 97.96%
+3	48aa, >PNFLII_00155... at 91.67%
+>Cluster 241
+0	74aa, >DLFDDM_00030... *
+1	74aa, >DLFDDM_00030... at 100.00%
+>Cluster 242
+0	74aa, >ADLLNK_00005... *
+>Cluster 243
+0	74aa, >ADLLNK_00240... *
+>Cluster 244
+0	73aa, >MBIFLD_00050... *
+1	73aa, >MBIFLD_00050... at 100.00%
+>Cluster 245
+0	73aa, >ADLLNK_00245... *
+>Cluster 246
+0	73aa, >ADLLNK_00275... *
+>Cluster 247
+0	72aa, >BPLPFO_00155... *
+1	72aa, >MBIFLD_00190... at 93.06%
+2	69aa, >EOFFKC_00200... at 94.20%
+3	72aa, >NBGEGH_00155... at 93.06%
+>Cluster 248
+0	72aa, >EOFFKC_00035... *
+>Cluster 249
+0	72aa, >ADLLNK_00015... *
+>Cluster 250
+0	71aa, >IHMNJG_00040... *
+1	71aa, >INEGCB_00205... at 100.00%
+>Cluster 251
+0	70aa, >ADLLNK_00125... *
+>Cluster 252
+0	69aa, >BPLPFO_00045... *
+1	69aa, >EOFFKC_00045... at 91.30%
+2	69aa, >NBGEGH_00030... at 95.65%
+>Cluster 253
+0	69aa, >ADLLNK_00110... *
+>Cluster 254
+0	68aa, >GFCGBH_00090... *
+>Cluster 255
+0	67aa, >GFCGBH_00025... *
+1	67aa, >MBIFLD_00100... at 98.51%
+2	67aa, >EOFFKC_00080... at 100.00%
+3	67aa, >ANJHNM_00080... at 100.00%
+>Cluster 256
+0	66aa, >DLFDDM_00055... *
+>Cluster 257
+0	66aa, >PNFLII_00405... *
+>Cluster 258
+0	66aa, >MBIFLD_00170... *
+1	66aa, >MBIFLD_00170... at 100.00%
+>Cluster 259
+0	66aa, >ADLLNK_00075... *
+>Cluster 260
+0	65aa, >BPLPFO_00010... *
+1	65aa, >KALMMD_00150... at 90.77%
+>Cluster 261
+0	65aa, >BPLPFO_00120... *
+1	65aa, >BPLPFO_00120... at 100.00%
+>Cluster 262
+0	65aa, >PNFLII_00010... *
+1	65aa, >ANJHNM_00090... at 93.85%
+>Cluster 263
+0	63aa, >GFCGBH_00115... *
+>Cluster 264
+0	63aa, >EOFFKC_00185... *
+>Cluster 265
+0	63aa, >ADLLNK_00225... *
+1	63aa, >ADLLNK_00225... at 100.00%
+>Cluster 266
+0	63aa, >ADLLNK_00300... *
+>Cluster 267
+0	62aa, >EOFFKC_00015... *
+>Cluster 268
+0	61aa, >NBGEGH_00100... *
+1	61aa, >NBGEGH_00100... at 100.00%
+>Cluster 269
+0	60aa, >DLFDDM_00010... *
+>Cluster 270
+0	60aa, >ADLLNK_00045... *
+>Cluster 271
+0	60aa, >ADLLNK_00180... *
+>Cluster 272
+0	59aa, >IHMNJG_00210... *
+1	59aa, >INEGCB_00160... at 96.61%
+2	58aa, >INEGCB_00195... at 91.38%
+3	59aa, >EOFFKC_00025... at 96.61%
+>Cluster 273
+0	59aa, >MBIFLD_00060... *
+1	58aa, >NBGEGH_00040... at 93.10%
+>Cluster 274
+0	59aa, >NBGEGH_00180... *
+>Cluster 275
+0	58aa, >BPLPFO_00160... *
+1	58aa, >ANJHNM_00235... at 100.00%
+>Cluster 276
+0	55aa, >PNFLII_00315... *
+1	55aa, >EOFFKC_00115... at 92.73%
+>Cluster 277
+0	55aa, >EOFFKC_00110... *
+1	55aa, >EOFFKC_00110... at 100.00%
+>Cluster 278
+0	54aa, >NBGEGH_00110... *
+1	54aa, >NBGEGH_00110... at 100.00%
+>Cluster 279
+0	52aa, >BPLPFO_00190... *
+1	52aa, >BPLPFO_00190... at 100.00%
+>Cluster 280
+0	52aa, >ANJHNM_00230... *
+>Cluster 281
+0	52aa, >ADLLNK_00220... *
+1	52aa, >ADLLNK_00220... at 100.00%
+>Cluster 282
+0	51aa, >PNFLII_00140... *
+1	51aa, >PNFLII_00140... at 100.00%
+>Cluster 283
+0	51aa, >INEGCB_00080... *
+1	51aa, >INEGCB_00080... at 100.00%
+>Cluster 284
+0	50aa, >DLFDDM_00065... *
+1	50aa, >DLFDDM_00065... at 100.00%
+>Cluster 285
+0	50aa, >ADLLNK_00210... *
+1	50aa, >ADLLNK_00210... at 100.00%
+>Cluster 286
+0	48aa, >EOFFKC_00070... *
+>Cluster 287
+0	48aa, >NBGEGH_00010... *
+>Cluster 288
+0	47aa, >KALMMD_00040... *
+>Cluster 289
+0	47aa, >ANJHNM_00305... *
+1	47aa, >ANJHNM_00305... at 100.00%
+>Cluster 290
+0	47aa, >ADLLNK_00235... *
+1	47aa, >ADLLNK_00235... at 100.00%
+>Cluster 291
+0	46aa, >KALMMD_00100... *
+1	46aa, >KALMMD_00100... at 100.00%
+>Cluster 292
+0	45aa, >GFCGBH_00120... *
+>Cluster 293
+0	45aa, >GFCGBH_00180... *
+1	45aa, >GFCGBH_00180... at 100.00%
+>Cluster 294
+0	45aa, >PNFLII_00145... *
+>Cluster 295
+0	43aa, >IHMNJG_00195... *
+1	43aa, >IHMNJG_00195... at 100.00%
+2	43aa, >INEGCB_00120... at 100.00%
+3	43aa, >INEGCB_00120... at 100.00%
+4	43aa, >ANJHNM_00260... at 97.67%
+5	43aa, >ANJHNM_00260... at 97.67%
+>Cluster 296
+0	41aa, >BPLPFO_00105... *
+1	41aa, >BPLPFO_00105... at 100.00%
+2	41aa, >KALMMD_00105... at 92.68%
+3	41aa, >KALMMD_00105... at 92.68%
+4	41aa, >PNFLII_00160... at 100.00%
+5	41aa, >PNFLII_00160... at 100.00%
+6	41aa, >MBIFLD_00055... at 100.00%
+7	41aa, >MBIFLD_00055... at 100.00%
+8	41aa, >ANJHNM_00175... at 100.00%
+9	41aa, >ANJHNM_00175... at 100.00%
+>Cluster 297
+0	41aa, >PNFLII_00205... *
+1	41aa, >PNFLII_00205... at 100.00%
+>Cluster 298
+0	40aa, >KALMMD_00005... *
+1	40aa, >KALMMD_00005... at 100.00%
+>Cluster 299
+0	40aa, >IHMNJG_00015... *
+1	40aa, >IHMNJG_00015... at 100.00%
+>Cluster 300
+0	36aa, >KALMMD_00080... *
+1	36aa, >KALMMD_00080... at 100.00%
+>Cluster 301
+0	36aa, >ANJHNM_00310... *
+>Cluster 302
+0	32aa, >EOFFKC_00195... *
+1	32aa, >EOFFKC_00195... at 100.00%
+>Cluster 303
+0	30aa, >KALMMD_00110... *
+1	30aa, >KALMMD_00110... at 100.00%
+>Cluster 304
+0	29aa, >IHMNJG_00030... *
+1	29aa, >PNFLII_00055... at 96.55%
+2	29aa, >ANJHNM_00120... at 100.00%
+>Cluster 305
+0	29aa, >JBBOBM_00085... *
+>Cluster 306
+0	28aa, >INEGCB_00035... *
+>Cluster 307
+0	28aa, >ADLLNK_00020... *
+>Cluster 308
+0	25aa, >KALMMD_00020... *
+1	25aa, >GFCGBH_00160... at 100.00%
+2	25aa, >PNFLII_00195... at 100.00%
+3	25aa, >MBIFLD_00030... at 100.00%
+4	25aa, >NBGEGH_00065... at 100.00%
+>Cluster 309
+0	24aa, >ADLLNK_00305... *
+1	24aa, >ADLLNK_00305... at 100.00%
